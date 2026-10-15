@@ -1,0 +1,56 @@
+TAG   : l2
+GO    : RadioVolume
+FSM   : Consumption
+PATH  : CARPARTS/PartsCar/radio(Clone)/ButtonsRadio/RadioVolume
+SIZE  : 2044
+
+start : Consumption
+
+STRINGS (47):
+  Consumption
+  Consumption
+  Consumption
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.SubtractFsmFloat
+  db_Required1
+  Knob
+  Volume
+  Data
+  Charge
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  subtractValue
+  everyFrame
+  perSecond
+  State 1
+  FINISHED
+  Consumption
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  FINISHED
+  ON
+  Consumption
+  Volume
+  db_Required1

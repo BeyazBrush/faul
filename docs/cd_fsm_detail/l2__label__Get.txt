@@ -1,0 +1,89 @@
+TAG   : l2
+GO    : label
+FSM   : Get
+PATH  : ITEMS/CDs/cd case(item3)/label
+SIZE  : 3308
+
+start : State 1
+
+STRINGS (80):
+  Get
+  State 1
+  State 1
+  FINISHED
+  State 2
+  FAIL
+  State 3
+  HutongGames.PlayMaker.Actions.GetAppPath
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.WWWPOST
+  Folder
+  file:///
+  Folder
+  FolderName
+  CD1/
+  coverart.png
+  Address
+  Address
+  Error
+  Poster
+  UnityEngine.Object
+  UnityEngine.Object
+  UnityEngine.Object
+  HutongGames.PlayMaker.FsmString
+  HutongGames.PlayMaker.FsmString
+  HutongGames.PlayMaker.FsmVar
+  DataPathResult
+  AppFolderResult
+  PersistentPathResult
+  PlaformResult
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  url
+  postKeys
+  postValues
+  storeText
+  storeTexture
+  storeMovieTexture
+  storeAudio
+  audio3d
+  audioStream
+  audioType
+  errorString
+  progress
+  isDone
+  isError
+  State 2
+  FINISHED
+  State 3
+  HutongGames.PlayMaker.Actions.SetMaterialTexture
+  _MainTex
+  Material
+  UnityEngine.Object
+  Poster
+  UnityEngine.Object
+  gameObject
+  materialIndex
+  material
+  namedTexture
+  texture
+  State 3
+  HutongGames.PlayMaker.Actions.EnableFSM
+  Get
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  FINISHED
+  FAIL
+  Address
+  Error
+  Folder
+  FolderName
+  CD3/
+  Material
+  UnityEngine.Object
+  Poster
+  UnityEngine.Object

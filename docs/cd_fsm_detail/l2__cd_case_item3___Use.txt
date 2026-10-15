@@ -1,0 +1,201 @@
+TAG   : l2
+GO    : cd case(item3)
+FSM   : Use
+PATH  : ITEMS/CDs/cd case(item3)
+SIZE  : 7528
+
+start : State 4
+
+STRINGS (192):
+  Use
+  State 4
+  State 1
+  FINISHED
+  Load
+  SAVE
+  Save
+  HutongGames.PlayMaker.Actions.Exists
+  UTTransform
+  CD1CaseTransform
+  defaultES2File.txt
+  FINISHEDSAVE
+  ifExists
+  ifDoesNotExist
+  uniqueTag
+  saveFile
+  Load
+  PLAYER
+  In player
+  FINISHED
+  State 3
+  ON
+  In case
+  HutongGames.PlayMaker.Actions.LoadTransform
+  HutongGames.PlayMaker.Actions.LoadTransform
+  HutongGames.PlayMaker.Actions.LoadBool
+  HutongGames.PlayMaker.Actions.LoadBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  HutongGames.PlayMaker.Actions.BoolTest
+  Disc
+  UTTransform
+  CD1CaseTransform
+  defaultES2File.txt
+  UTTransformLid
+  CD1Transform
+  defaultES2File.txt
+  UTDisc
+  CD1InCase
+  defaultES2File.txt
+  UTDiscInPlayer
+  CD1InPlayer
+  defaultES2File.txt
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Save
+  FINISHED
+  Load
+  HutongGames.PlayMaker.Actions.SaveTransform
+  HutongGames.PlayMaker.Actions.SaveTransform
+  HutongGames.PlayMaker.Actions.SaveBool
+  HutongGames.PlayMaker.Actions.SaveBool
+  Disc
+  UTTransform
+  CD1CaseTransform
+  defaultES2File.txt
+  UTTransformLid
+  CD1Transform
+  defaultES2File.txt
+  UTDisc
+  CD1InCase
+  defaultES2File.txt
+  UTDiscInPlayer
+  CD1InPlayer
+  defaultES2File.txt
+  saveValue
+  uniqueTag
+  saveFile
+  saveValue
+  uniqueTag
+  saveFile
+  saveValue
+  uniqueTag
+  saveFile
+  saveValue
+  uniqueTag
+  saveFile
+  In case
+  FINISHED
+  State 3
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SendEvent
+  Assembly
+  boolVariable
+  boolValue
+  everyFrame
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  State 3
+  In player
+  FINISHED
+  State 3
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetFsmGameObject
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  Disc
+  Disc
+  Assembly
+  Part
+  Player
+  Assembly
+  CDin
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  State 4
+  DESTROY
+  State 2
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.ArrayListCount
+  HutongGames.PlayMaker.Actions.IntCompare
+  ^&
+  SongDatabaseCD
+  CD3
+  gameObject
+  reference
+  count
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  State 2
+  HutongGames.PlayMaker.Actions.DestroyObject
+  HutongGames.PlayMaker.Actions.DestroySelf
+  q|
+  Disc
+  gameObject
+  delay
+  detachChildren
+  detachChildren
+  FINISHED
+  GLOBALEVENT
+  ON
+  PLAYER
+  SAVE
+  SAVEGAME
+  DESTROY
+  SAVEGAME
+  Save
+  Count
+  DiscIn
+  DiscInPlayer
+  UTDisc
+  CD3InCase
+  UTDiscInPlayer
+  CD3InPlayer
+  UTTransform
+  CD3CaseTransform
+  UTTransformLid
+  CD3Transform
+  Disc

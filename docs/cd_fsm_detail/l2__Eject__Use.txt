@@ -1,0 +1,107 @@
+TAG   : l2
+GO    : Eject
+FSM   : Use
+PATH  : STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/Eject
+SIZE  : 4228
+
+start : Wait player
+
+STRINGS (98):
+  Use
+  Wait player
+  Wait player
+  FINISHED
+  Wait button
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  Switch
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  GUIinteraction
+  EJECT
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  Switch
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SendEventByName
+  HutongGames.PlayMaker.Actions.SendEventByName
+  Update
+  Assembly
+  GUIinteraction
+  CarFoley
+  cd_button
+  STOP CD
+  EJECT
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  FINISHED
+  BATTERY
+  OFF
+  ON
+  USE
+  RadioOn
+  RadioChannels

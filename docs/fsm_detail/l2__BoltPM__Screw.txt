@@ -1,0 +1,459 @@
+TAG   : l2
+GO    : BoltPM
+FSM   : Screw
+PATH  : SATSUMA(557kg, 248)/Interior/n2o bottle holder(xxxxx)/Bolts/BoltPM
+start : Setup 2
+
+STRINGS (452):
+  Screw
+  Setup 2
+  Save data 2
+  FINISHED
+  Stages 2
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.GetName
+  HutongGames.PlayMaker.Actions.GetStringRight
+  HutongGames.PlayMaker.Actions.ConvertStringToInt
+  HutongGames.PlayMaker.Actions.ArrayListGet
+  ThisBolt
+  ThisBolt
+  PartAssembled
+  Untagged
+  Bolt
+  Bolt
+  ArrayIndex
+  ArrayIndex
+  Stage
+  gameObject
+  childName
+  withTag
+  storeResult
+  gameObject
+  storeName
+  everyFrame
+  stringVariable
+  charCount
+  storeResult
+  everyFrame
+  stringVariable
+  intVariable
+  everyFrame
+  gameObject
+  reference
+  atIndex
+  result
+  failureEvent
+  1 2
+  FINISHED
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  ThisBolt
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  Stages 2
+  1 2
+  2 2
+  3 2
+  4 2
+  5 2
+  6 2
+  7 2
+  8 2
+  0 2
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Get scroll 2
+  FINISHED
+  Idle
+  HutongGames.PlayMaker.Actions.IntClamp
+  HutongGames.PlayMaker.Actions.SetFsmInt
+  HutongGames.PlayMaker.Actions.ArrayListSet
+  PartAssembled
+  PartAssembled
+  BoltCheck
+  Bolt
+  Stage
+  intVariable
+  minValue
+  maxValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  reference
+  atIndex
+  everyFrame
+  variable
+  2 2
+  FINISHED
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  ThisBolt
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  3 2
+  FINISHED
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  ThisBolt
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  4 2
+  FINISHED
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  ThisBolt
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  5 2
+  FINISHED
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  ThisBolt
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  6 2
+  FINISHED
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  ThisBolt
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  7 2
+  FINISHED
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  ThisBolt
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  8 2
+  FINISHED
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  ThisBolt
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  Unscrew 2
+  FINISHED
+  Wait 4
+  OFF
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.IntAdd
+  HutongGames.PlayMaker.Actions.IntCompare
+  intVariable
+  add
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Screw 2
+  FINISHED
+  Wait 3
+  OFF
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.IntAdd
+  HutongGames.PlayMaker.Actions.IntCompare
+  intVariable
+  add
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  0 2
+  FINISHED
+  Get scroll 2
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  ThisBolt
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  Wait 3
+  FINISHED
+  Stages 2
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.AddFsmFloat
+  tp
+  PartAssembled
+  CarBuilding
+  bolt_screw
+  BoltCheck
+  Tightness
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  gameObject
+  fsmName
+  variableName
+  addValue
+  everyFrame
+  perSecond
+  Wait 4
+  FINISHED
+  Stages 2
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.AddFsmFloat
+  tp
+  PartAssembled
+  CarBuilding
+  bolt_screw
+  BoltCheck
+  Tightness
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  gameObject
+  fsmName
+  variableName
+  addValue
+  everyFrame
+  perSecond
+  Setup 2
+  FINISHED
+  Save data 2
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  Idle
+  State 1
+  HutongGames.PlayMaker.Actions.SetProperty
+  Collider
+  UnityEngine.SphereCollider
+  UnityEngine.SphereCollider
+  enabled
+  System.Boolean
+  targetProperty
+  everyFrame
+  State 2
+  HutongGames.PlayMaker.Actions.SetProperty
+  Collider
+  UnityEngine.SphereCollider
+  UnityEngine.SphereCollider
+  enabled
+  System.Boolean
+  targetProperty
+  everyFrame
+  FINISHED
+  ASSEMBLE
+  OFF
+  SAVEGAME
+  TIGHTEN
+  UNTIGHTEN
+  REPAIRMODE_ON
+  REPAIRMODE_OFF
+  REPAIRMODE_ON
+  State 1
+  REPAIRMODE_OFF
+  State 2
+  UNTIGHTEN
+  Unscrew 2
+  TIGHTEN
+  Screw 2
+  BoltSize
+  Scroll
+  Index
+  Stage
+  ArrayIndex
+  Bolt
+  PartAssembled
+  ThisBolt
+  Collider
+  UnityEngine.SphereCollider

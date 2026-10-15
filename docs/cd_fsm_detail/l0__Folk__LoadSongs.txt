@@ -1,0 +1,170 @@
+TAG   : l0
+GO    : Folk
+FSM   : LoadSongs
+PATH  : Radio/Folk
+SIZE  : 6528
+
+start : Init
+
+STRINGS (161):
+  LoadSongs
+  Init
+  Load
+  FAIL
+  Fail
+  LOAD
+  Add List
+  HutongGames.PlayMaker.Actions.WWWObjectRelative
+  HutongGames.PlayMaker.Actions.WWWPOST
+  Path
+  file:///Radio/
+  Error
+  Path
+  file:///Radio/
+  Error
+  UnityEngine.Object
+  Song
+  UnityEngine.AudioClip
+  UnityEngine.Object
+  UnityEngine.Object
+  UnityEngine.Object
+  Song
+  UnityEngine.AudioClip
+  HutongGames.PlayMaker.FsmString
+  HutongGames.PlayMaker.FsmVar
+  url
+  pathIsRelative
+  storeText
+  storeTexture
+  storeAudio
+  storeMovieTexture
+  errorString
+  progress
+  isDone
+  isError
+  url
+  postKeys
+  postValues
+  storeText
+  storeTexture
+  storeMovieTexture
+  storeAudio
+  audio3d
+  audioStream
+  audioType
+  errorString
+  progress
+  isDone
+  isError
+  Fail
+  FINISHED
+  Get file name
+  Add List
+  FINISHED
+  Get file name
+  HutongGames.PlayMaker.Actions.ArrayListAdd
+  Songs
+  Song
+  gameObject
+  reference
+  variable
+  Get file name
+  FINISHED
+  Load
+  LOAD
+  Off
+  HutongGames.PlayMaker.Actions.GetAppPath
+  HutongGames.PlayMaker.Actions.IntAdd
+  HutongGames.PlayMaker.Actions.ConvertIntToString
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.IntCompare
+  Name
+  file:///
+  Radio/
+  track
+  Name
+  .ogg
+  Path
+  NOT IMPORTED
+  HutongGames.PlayMaker.FsmString
+  DataPathResult
+  AppFolderResult
+  PersistentPathResult
+  PlaformResult
+  intVariable
+  add
+  everyFrame
+  intVariable
+  stringVariable
+  format
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Off
+  HutongGames.PlayMaker.Actions.SetIntValue
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.EnableFSM
+  SongDatabaseCD
+  Path
+  NOT IMPORTED
+  RADIO IMPORTED
+  Playlist
+  Import
+  LoadSongs
+  intVariable
+  intValue
+  everyFrame
+  stringVariable
+  stringValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  Init
+  FINISHED
+  Get file name
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.ArrayListClear
+  HutongGames.PlayMaker.Actions.Wait
+  Path
+  NOT IMPORTED
+  NOT IMPORTED
+  Songs
+  stringVariable
+  stringValue
+  everyFrame
+  gameObject
+  reference
+  time
+  finishEvent
+  realTime
+  FINISHED
+  FAIL
+  JINGLE
+  LOAD
+  PLAY
+  RADIO_FOLK
+  WAKEUP
+  MaxTracks
+  Track
+  Error
+  Name
+  Path
+  NOT IMPORTED
+  Song
+  UnityEngine.AudioClip

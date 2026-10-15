@@ -1,0 +1,69 @@
+TAG   : l2
+GO    : Starter
+FSM   : MotorParts
+PATH  : SATSUMA(557kg, 248)/CarSimulation/Car/Starter
+start : Not installed
+
+STRINGS (62):
+  MotorParts
+  Not installed
+  Not installed
+  FINISHED
+  Installed
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  db_Block
+  UnityEngine.Object
+  Drivetrain
+  gear
+  System.Int32
+  Starter
+  MotorInstalled
+  Data
+  Bolted
+  targetProperty
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Installed
+  FINISHED
+  Not installed
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  db_Block
+  Starter
+  MotorInstalled
+  Data
+  Bolted
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  FINISHED
+  Installed
+  db_Block

@@ -1,0 +1,226 @@
+TAG   : l2
+GO    : Power
+FSM   : Knob
+PATH  : ITEMS/radio(itemx)/Power
+SIZE  : 8604
+
+start : Mouse off 2
+
+STRINGS (217):
+  Knob
+  Mouse off 2
+  Mouse off 2
+  FINISHED
+  Get scroll
+  ON
+  Check channel
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Get scroll
+  OFF
+  Mouse off 2
+  FINISHED
+  Switch
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetButtonDown
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  GUIinteraction
+  ON/OFF
+  Use
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  buttonName
+  sendEvent
+  storeResult
+  button
+  sendEvent
+  storeResult
+  Channel 1
+  FINISHED
+  Mouse off 2
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  RadioChannels
+  RadioChannels
+  RadioChannels
+  Fetch
+  OnMuteChannel1
+  Fetch
+  OnMuteFolk
+  Fetch
+  OnStatic
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  Off
+  FINISHED
+  Mouse off 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.SendEventByName
+  RadioChannels
+  Fetch
+  OFF
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Check channel
+  RADIO 1
+  Channel 1
+  FOLKRADIO
+  Folk Radio
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  Speaker
+  RadioChannels
+  RadioChannels
+  Fetch
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Folk Radio
+  FINISHED
+  Mouse off 2
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  RadioChannels
+  RadioChannels
+  RadioChannels
+  Fetch
+  OnMuteChannel1
+  Fetch
+  OnMuteFolk
+  Fetch
+  OnStatic
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  Switch
+  ON
+  Check channel
+  OFF
+  Off
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.BoolFlip
+  HutongGames.PlayMaker.Actions.BoolTest
+  CarFoley
+  radio_button
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  FINISHED
+  FOLKRADIO
+  GLOBALEVENT
+  OFF
+  ON
+  RADIO 1
+  SHUTOFF
+  GLOBALEVENT
+  Check channel
+  SHUTOFF
+  Switch
+  Channel
+  On
+  RadioChannels
+  Speaker

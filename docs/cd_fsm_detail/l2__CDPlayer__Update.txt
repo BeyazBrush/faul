@@ -1,0 +1,205 @@
+TAG   : l2
+GO    : CDPlayer
+FSM   : Update
+PATH  : SATSUMA(557kg, 248)/Electricity/SpeakerBass/CDPlayer
+SIZE  : 8508
+
+start : State 1
+
+STRINGS (196):
+  Update
+  State 1
+  State 1
+  State 2
+  LOOP
+  Reset
+  FINISHED
+  Play track
+  FAIL
+  State 4
+  HutongGames.PlayMaker.Actions.IntClamp
+  HutongGames.PlayMaker.Actions.IntOperator
+  HutongGames.PlayMaker.Actions.ArrayListGet
+  HutongGames.PlayMaker.Actions.IntCompare
+  SongDatabaseCD
+  CurrentCD
+  Audio
+  intVariable
+  minValue
+  maxValue
+  everyFrame
+  integer1
+  integer2
+  operation
+  storeResult
+  everyFrame
+  gameObject
+  reference
+  atIndex
+  result
+  failureEvent
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Reset
+  FINISHED
+  Play track
+  HutongGames.PlayMaker.Actions.SetIntValue
+  intVariable
+  intValue
+  everyFrame
+  Play track
+  FINISHED
+  State 4
+  NEXT
+  State 6
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  HutongGames.PlayMaker.Actions.AudioPlay
+  HutongGames.PlayMaker.Actions.ConvertIntToString
+  HutongGames.PlayMaker.Actions.BuildStringFast
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetFsmString
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  Text
+  System.String
+  Text
+  00
+  track 
+  Text
+  Text
+  Knob
+  Channel
+  Text
+  Audio
+  UnityEngine.AudioClip
+  UnityEngine.Object
+  HutongGames.PlayMaker.FsmString
+  gameObject
+  audioClip
+  gameObject
+  volume
+  oneShotClip
+  finishedEvent
+  intVariable
+  stringVariable
+  format
+  everyFrame
+  stringParts
+  separator
+  addToEnd
+  storeResult
+  everyFrame
+  targetProperty
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  State 4
+  FINISHED
+  State 6
+  NEXT
+  State 6
+  HutongGames.PlayMaker.Actions.AudioStop
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  HutongGames.PlayMaker.Actions.Wait
+  UnityEngine.AudioClip
+  gameObject
+  gameObject
+  audioClip
+  time
+  finishEvent
+  realTime
+  State 3
+  FINISHED
+  State 7
+  HutongGames.PlayMaker.Actions.IntAdd
+  intVariable
+  add
+  everyFrame
+  State 5
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.AudioStop
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  UnityEngine.AudioClip
+  gameObject
+  gameObject
+  audioClip
+  State 6
+  FINISHED
+  State 7
+  HutongGames.PlayMaker.Actions.IntAdd
+  intVariable
+  add
+  everyFrame
+  State 7
+  FINISHED
+  State 2
+  STOP CD
+  State 8
+  HutongGames.PlayMaker.Actions.IntCompare
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  State 8
+  State 9
+  FINISHED
+  State 7
+  HutongGames.PlayMaker.Actions.ArrayListCount
+  HutongGames.PlayMaker.Actions.IntAdd
+  ^&
+  SongDatabaseCD
+  CurrentCD
+  gameObject
+  reference
+  count
+  intVariable
+  add
+  everyFrame
+  FINISHED
+  10
+  12
+  14
+  16
+  18
+  20
+  22
+  24
+  DOESNOTEXISTS
+  EXISTS
+  FAIL
+  FOLK
+  GLOBALEVENT
+  LOOP
+  NEXT
+  PLAY CD
+  PLAYLIST
+  PREVIOUS
+  RADIO_FOLK
+  RADIO_UPDATE
+  SAVEGAME
+  STOP CD
+  PREVIOUS
+  State 3
+  STOP CD
+  State 5
+  PLAY CD
+  State 9
+  CurrentTrack
+  Index
+  MaxTracks
+  CurrentCD
+  CD1
+  Text
+  Audio
+  UnityEngine.AudioClip

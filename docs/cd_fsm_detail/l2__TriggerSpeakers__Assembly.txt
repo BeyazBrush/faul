@@ -1,0 +1,163 @@
+TAG   : l2
+GO    : TriggerSpeakers
+FSM   : Assembly
+PATH  : YARD/Building/BEDROOM1/COMPUTER/TriggersAssembly/TriggerSpeakers
+SIZE  : 6372
+
+start : Check for Part collision
+
+STRINGS (154):
+  Assembly
+  Check for Part collision
+  Check for Part collision
+  FINISHED
+  Find correct part
+  HutongGames.PlayMaker.Actions.GetFsmGameObject
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.FloatCompare
+  Target
+  Target
+  db_ThisPart
+  Data
+  SpawnThis
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  target
+  storeResult
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Find correct part
+  FINISHED
+  Wait for assembly
+  LOOP
+  Wait
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.GameObjectIsNull
+  Part
+  Part
+  ItemPivot
+  HandChild
+  xmas lights(Clone)
+  PART
+  gameObject
+  childName
+  withTag
+  storeResult
+  gameObject
+  isNull
+  isNotNull
+  storeResult
+  everyFrame
+  Wait for assembly
+  ASSEMBLE
+  Assemble
+  LOOP
+  Wait
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.FloatCompare
+  Target
+  boolVariable
+  boolValue
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  gameObject
+  target
+  storeResult
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Assemble
+  FINISHED
+  End
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.DestroyObject
+  Part
+  db_ThisPart
+  ActivateThis
+  CarBuilding
+  assemble
+  Data
+  Installed
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  delay
+  detachChildren
+  End
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Wait
+  FINISHED
+  Check for Part collision
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  FINISHED
+  TRIGGER ENTER
+  ASSEMBLE
+  DISASSEMBLE
+  LOOP
+  Distance
+  HandChild
+  speakers(Clone)
+  ActivateThis
+  Part
+  Target
+  db_ThisPart

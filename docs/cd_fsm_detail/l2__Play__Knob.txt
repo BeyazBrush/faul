@@ -1,0 +1,121 @@
+TAG   : l2
+GO    : Play
+FSM   : Knob
+PATH  : ITEMS/radio(itemx)/Play
+SIZE  : 5000
+
+start : Mouse off 2
+
+STRINGS (112):
+  Knob
+  Mouse off 2
+  Mouse off 2
+  FINISHED
+  Get scroll
+  ON
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Get scroll
+  OFF
+  Mouse off 2
+  FINISHED
+  Switch
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetButtonDown
+  GUIinteraction
+  CHANNEL SWITCH
+  Use
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  buttonName
+  sendEvent
+  storeResult
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetFsmInt
+  Knob
+  Channel
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  Switch
+  ON
+  OFF
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.BoolFlip
+  HutongGames.PlayMaker.Actions.BoolTest
+  CarFoley
+  radio_button
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetFsmInt
+  Knob
+  Channel
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  State 1
+  FINISHED
+  Mouse off 2
+  HutongGames.PlayMaker.Actions.SendEvent
+  Knob
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  FINISHED
+  OFF
+  ON
+  On

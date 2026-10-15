@@ -1,0 +1,146 @@
+TAG   : l2
+GO    : cd player(Clone)
+FSM   : Use
+PATH  : STORE/Boxes/cd player(Clone)
+SIZE  : 5588
+
+start : Wait player
+
+STRINGS (137):
+  Use
+  Wait player
+  Wait player
+  FINISHED
+  Wait button
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  db_ThisPart
+  Data
+  Purchased
+  HutongGames.PlayMaker.FsmInt
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  State 1
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetButtonDown
+  Use
+  HutongGames.PlayMaker.FsmInt
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  buttonName
+  sendEvent
+  storeResult
+  State 1
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.GetRotation
+  HutongGames.PlayMaker.Actions.GetScale
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.CreateObject
+  HutongGames.PlayMaker.Actions.SetScale
+  HutongGames.PlayMaker.Actions.DestroySelf
+  ThisPart
+  GFX
+  GFX
+  Folding
+  Parent
+  ThisPart
+  GFX
+  GFX
+  ThisPart
+  Folding
+  PART
+  _gfx
+  Untagged
+  gameObject
+  childName
+  withTag
+  storeResult
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  gameObject
+  childName
+  withTag
+  storeResult
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  gameObject
+  vector
+  xScale
+  yScale
+  zScale
+  space
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  spawnPoint
+  position
+  rotation
+  storeObject
+  networkInstantiate
+  networkGroup
+  gameObject
+  vector
+  everyFrame
+  lateUpdate
+  detachChildren
+  FINISHED
+  USE
+  Purchased
+  Pos
+  Rot
+  Scale
+  Child
+  Folding
+  GFX
+  Parent
+  ThisPart
+  db_ThisPart

@@ -1,0 +1,193 @@
+﻿================================================================================
+ MSCSteamMP — CD / Radyo FSM Envanteri (tam tarama)
+================================================================================
+Tarih      : 2026-10-07
+Kaynaklar  :
+  - dnSpy  : Assembly-CSharp.dll (1335 tip), PlayMaker.dll (98 tip)
+  - assetler: l0(69), l1(9), l2(6548), l3(13), maindata(4)  → rad = l2 kopyası
+  - tüm sahnelerde CD/radyo ile ilgili 104 BENZERSİZ FSM bulundu
+Tam string listeleri: docs/cd_fsm_detail/<sahne>__<go>__<fsm>.txt
+İndeks             : docs/cd_fsm_index.txt
+
+--------------------------------------------------------------------------------
+ 1. IMPORT ZİNCİRİ  (l0 — ana menü, DontDestroyOnLoad)
+--------------------------------------------------------------------------------
+Bu zincirin TAMAMINI CdMusicImport.cs biliyor. Değişken adları asset'ten
+doğrulandı, tahmin yok.
+
+  Radio/CD         GO "CD"  FSM "Playlist"    (start: Check)
+      Check   → DontDestroyOnLoad + GetOwner → storeGameObject = SongDatabaseCD
+      Init    → GameObjectCompare(SongDatabaseCD) → DestroySelf → State 3
+      State 3 → ActivateGameObject ×3 + BoolAllTrue → State 1
+      State 1 → SetStringValue  Path = "NOT IMPORTED" / "CD'S IMPORTED"
+      olaylar : ADVERT1 DESTROY FAIL JINGLE LOAD LOOP "NEXT SONG" PLAY
+                "PREVIOUS SONG" RADIO_FOLK WAKEUP CD1 CD2 CD3 Import
+
+  Radio/CD/CD1     GO "CD1" FSM "LoadSongs"  (start: Init)   [ayni CD2, CD3]
+      Init          ArrayListClear("Ref") + Wait + SetFsmString
+      Get file name GetAppPath → DataPathResult / AppFolderResult /
+                    PersistentPathResult / PlaformResult
+                    IntAdd(Name,+1) → ConvertIntToString → BuildString(
+                      "file:///" + <appPath> + FolderName + "track" + Name + ".ogg"
+                      → Path)
+                    IntCompare(Name, MaxTracks): lessThan→Load, equal→Off
+      Load          WWWPOST(url=Path, storeAudio=Song, errorString=Error)
+                    error→"Fail", başarı→"Add List"
+      Add List      ArrayListAdd("Ref", Song)      ← ASIL IMPORT
+      Off           SetFsmBool + SetIntValue + EnableFSM
+      değişkenler  : MaxTracks(int) Track(int) Error(str) FolderName(str)
+                    Name(str) Path(str) Ref(list) Song(AudioClip)
+      MaxTracks = 16  → BU SLOT SAYISI, yüklenen şarkı sayısı DEĞİL
+
+  Streaming        GO "Streaming" FSM "Kansanradio"   (radyo kanalları için
+                    Playlist'in birebir aynısı; SongDatabase + "file:///Radio/")
+
+  Radio/Folk       GO "Folk" FSM "LoadSongs"  +  FSM "Kansanradio"
+      WWWObjectRelative + WWWPOST  →  Song  →  "Folk/Ads" liste
+
+  Interface/Songs  GO "LoadingCD" FSM "Text"     (import sırasında "Loading"
+                    yazan arayüz; olay listesi BOŞ → bizimkinin yedeği)
+                   GO "LoadingRadio" FSM "Text"
+
+--------------------------------------------------------------------------------
+ 2. ÇALMA ZİNCİRİ  (l2 — oyun dünyası, CD takılı değilken de yaşar)
+--------------------------------------------------------------------------------
+  SATSUMA(557kg, 248)/Electricity/SpeakerBass/CDPlayer
+      GO "CDPlayer" FSM "Fetch"   (start: Fetch)
+        GetFsmFloat(Settings/Volume) → SetProperty(AudioSource.volume)
+        GetParent → Parent
+        GetFsmFloat(Settings/DistortionLevel)
+        GetFsmBool (Settings/HighPass) → SetProperty(AudioHighPassFilter.enabled)
+        GetFsmBool (Settings/LowPass)  → SetProperty(AudioLowPassFilter.enabled)
+        GetFsmBool(Data/Installed) → BoolTest(db_Required)
+        ON: SetFloatValue(Volume) + SetProperty(volume) + Wait
+        değişkenler : Volume, _DistortionLevel, _HighPass, _LowPass,
+                      Installed, db_Required, Parent
+        olaylar     : FINISHED, FETCH, ON, OFF
+        ➜ CD takılı değilse Installed=false → "No sound" → ses yok
+
+      GO "CDPlayer" FSM "Update"  (start: State 1)
+        IntClamp + IntOperator
+        ArrayListGet (gameObject=SongDatabaseCD, reference=CurrentCD, atIndex=Audio)
+        ArrayListCount(SongDatabaseCD, CurrentCD)
+        IntCompare(CurrentTrack, MaxTracks) → State 8 → "STOP CD"
+        SetAudioClip + AudioPlay + AudioStop + Wait + IntAdd
+        ConvertIntToString + BuildStringFast("00","track ") → Text
+        SetFsmString → Text / Knob:Channel
+        değişkenler : CurrentTrack, Index, MaxTracks, CurrentCD, CD1,
+                      Text, Audio(AudioClip)
+        olaylar     : DOESNOTEXISTS EXISTS FAIL FOLK GLOBALEVENT LOOP NEXT
+                      "PLAY CD" PLAYLIST PREVIOUS RADIO_FOLK RADIO_UPDATE
+                      SAVEGAME "STOP CD"
+
+  SATSUMA(557kg, 248)/Electricity/SpeakerBass
+      GO "SpeakerBass" FSM "Settings"  (start: Check speakers)
+        GetFsmBool(Data/Installed) → BoolTest(db_Required1)
+        SetBoolValue + SetFloatValue + Wait
+        BoolAllTrue / BoolNoneTrue / BoolAnyTrue (db_Required2/3, Data/Bolted)
+        olaylar : FINISHED ON OFF "ANTENNA0..2"
+      GO "SpeakerDash" FSM "Settings"   (aynı desen, gösterge)
+
+  RADIO/RadioChannels
+      GO "RadioChannels" FSM "Fetch"  (start: Fetch)
+        SetAudioVolume ×4 + SetProperty(mute) + ActivateGameObject
+        Channel1 / Folk / Static / StaticAntenna
+        GetFsmBool  → OnMuteChannel1 / OnMuteFolk
+        Settings/StaticAntenna1, Settings/Volume
+        ➜ RADİO ses seviyesi ve kanal mute buradan
+      GO "Channel1" FSM "Update"   (10-12-14-16-18-20-22-24 saat dilimleri)
+      GO "Folk"     FSM "Update"   SetAudioClip(RadioOnFolk) + AudioPlay
+                                   → SendEventByName(SongDatabase/Kansanradio)
+
+  RADIO/Paikallisradio  GO "Paikallisradio" FSM "Play"  + FSM "PlayOld"
+
+--------------------------------------------------------------------------------
+ 3. CD CASES & CD PLAYER PARÇALARI  (l2 mağaza)
+--------------------------------------------------------------------------------
+  STORE/Boxes/cd player(Clone)                       GO "cd player(Clone)" FSM "Use"
+                                                      (db_ThisPart / Data.Purchased)
+  STORE/Boxes/cd player(Clone)/cd player(Clone)      GO "cd player(Clone)" FSM "Removal"
+  .../ButtonsCD/RadioCDSwitch      GO "RadioCDSwitch" FSM "Use"        ("RADIO / CD")
+  .../ButtonsCD/TrackChannelSwitch GO "TrackChannelSwitch" FSM "ChangeTrack"
+                                   GO "TrackChannelSwitch" FSM "ChangeChannel"
+        ➜ "NEXT TRACK" butonu; Check disc → RadioChannels/Fetch OFF
+  .../ButtonsCD/Eject              GO "Eject"         FSM "Use"       ("EJECT")
+  .../ButtonsCD/RadioVolume         GO "RadioVolume"   FSM "Knob" + FSM "Consumption"
+  .../trigger_disc                  GO "trigger_disc"  FSM "Assembly"  (CD1/CD2/CD3 seçer)
+
+  ITEMS/CDs/cd case(item1|2|3)   GO "cd case(itemN)" FSM "Use" + FSM "Open"
+                                 GO "trigger_cd"      FSM "Assembly"
+                                 GO "label"           FSM "Get"
+  ITEMS/CDs/cd(item1|2|3)         GO "cd(itemN)" FSM "Player" + FSM "Removal"
+                                 SetParent(Case) + SetFsmBool(Use/DiscInPlayer)
+
+  CARPARTS/PartsCar/dashboard meters(Clone)/TriggersRadio
+      GO "trigger_radio" FSM "Assembly"
+      GO "trigger_cd"    FSM "Assembly"    (araç CD yuvası)
+
+--------------------------------------------------------------------------------
+ 4. ARAÇ/VERİTABANI FSM'LERİ
+--------------------------------------------------------------------------------
+  SATSUMA(557kg, 248)/Dashboard/.../pivot_radio/cd
+      GO "cd" FSM "Knob" / "Use" / "ChangeChannel" / "ChangeTrack"
+      (log kanıtı: "[SatsumaFSM] 'ChangeChannel' -> 'Wait player' @ .../pivot_radio/cd")
+  Database/DatabaseOrders/CD_player        GO "CD_player" FSM "Data"
+  Database/DatabaseMechanics/Radio         GO "Radio"     FSM "Data"
+  Database/PartsStatus/Radio               GO "Radio"     FSM "Status"
+  Database/DatabaseWiring/WiringRadio      GO "WiringRadio"   FSM "Data"
+  Database/DatabaseWiring/WiringSpeakers   GO "WiringSpeakers" FSM "Data"
+  Database/DatabaseComputer/Speakers       GO "Speakers"      FSM "Data"
+
+  RADİO DÜĞMELERİ (her araçta aynı):
+      GO "RadioVolume" FSM "Knob" + FSM "Consumption"
+      GO "RadioTuner"  FSM "Knob"
+      GO "Power"       FSM "Use" + FSM "Consumption"
+      GO "Volume"      FSM "Knob"     (KEKMET)
+      GO "Channel"     FSM "Knob",  GO "Play" FSM "Knob",  GO "Open" FSM "Knob"
+      GO "Remove"      FSM "Knob",  GO "Insert" FSM "Assembly"
+      GO "RadioAmplifier" FSM "Assemble", GO "AmplifierRadio" FSM "Assemble"
+      GO "RadioPivot"  FSM "Horn"    (HAYOSIKO)
+      GO "RADIO_speaker" FSM "Channel2"  (KEKMET, 494 string — saat dilimleri)
+      GO "HarnessRadio"/"RadioHarness" FSM "Assemble"  (SATSUMA kablolama)
+
+--------------------------------------------------------------------------------
+ 5. DİĞER SAHNELER
+--------------------------------------------------------------------------------
+  l1  Intro/Music              GO "Music" FSM "Destroy"
+  l3  CAR/MenuCar/Rigid/MESH/cd player(Clone) 1/ACTIVATE_CD
+                               GO "ACTIVATE_CD" FSM "Knob"
+  maindata                      GO "Disclaimer" FSM "FSM"  (ilgisiz)
+
+  İLGİSİZ (regresyon filtresi): discbrake_* , BuyClutchDisc , Discbrake_FL/FR,
+       trigger_discbrake_fl/fr , PriceDiscount , RadioMast/Blink
+
+  FOLK / JUKEBOX (farklı sistem, oyuncu müziği):
+      STORE/LOD/ActivateBar/JukeboxStore        GO "JukeboxStore"    FSM "Logic"
+      REPAIRSHOP/LOD/Office/Fleetari/Jukebox…    GO "JukeboxFleetari" FSM "Logic"
+      ITEMS/radio(itemx)/Play                   GO "Play"  FSM "Charge"
+      ITEMS/radio(itemx)                        GO "radio(itemx)" FSM "Data"
+      YARD/…/Seikailu-MusicActivator            GO "Seikailu-MusicActivator"
+
+--------------------------------------------------------------------------------
+ 6. DLL TARAMASI (dnSpy)
+--------------------------------------------------------------------------------
+  Assembly-CSharp.dll → CD için DEDİK C# SINIFI YOK.
+       CD mantığı %100 PlayMaker FSM (asset) + PlayMaker.dll action'ları.
+       İlgili tek tip: MusicSetting (MasterAudio) — clip/songName/volume/
+       pitch/songIndex; CD player'ın kullandığı değil, jukebox/müzik menüsü.
+  PlayMaker.dll (98 tip) → CD FSM'lerinin kullandığı tüm action'lar DOĞRULANDI:
+       ArrayListGet, ArrayListCount, ArrayListAdd, ArrayListClear, GetAppPath,
+       SetAudioClip, AudioPlay, AudioStop, SetAudioVolume, SendEventByName,
+       EnableFSM, SetFsmBool, SetFsmString, GetFsmBool, GetFsmFloat, GetFsmInt,
+       BuildStringFast, GetParent, SetProperty, MasterAudioPlaySound,
+       IntClamp, IntOperator, BoolTest, ConvertIntToString, GetName, Wait
+  dnSpy ile DOĞRULANAN kritik gerçek:
+       FsmVariables  → ArrayLists alanı YOK (13 dizi: bool/int/float/string/
+                        vector2/vector3/color/rect/quaternion/gameObject/
+                        object/material/texture)
+                        → "Ref" listeleri PlayMakerArrayListProxy bileşeninde
+       PlayMakerArrayListProxy → public field referenceName, arrayList
+       ArrayListAdd.OnEnter → SetUpArrayListProxyProxy(gameObject, reference)
+  ➜ CD listeleri `Radio/CD` nesnesinin ÜSTÜNDE, referenceName = "CD1"/"CD2"/"CD3"
+     (canlı log kanıtı: "arraylist proxies -> CD/CD1=0, CD/CD2=0, CD/CD3=0")
+     Bu nesnenin Playlist FSM'indeki değişken adı `SongDatabaseCD`.

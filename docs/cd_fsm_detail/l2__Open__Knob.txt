@@ -1,0 +1,135 @@
+TAG   : l2
+GO    : Open
+FSM   : Knob
+PATH  : ITEMS/radio(itemx)/Open
+SIZE  : 5268
+
+start : Mouse off 2
+
+STRINGS (126):
+  Knob
+  Mouse off 2
+  Mouse off 2
+  FINISHED
+  Get scroll
+  ON
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Get scroll
+  OFF
+  Mouse off 2
+  FINISHED
+  Switch
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetButtonDown
+  GUIinteraction
+  BATTERY COVER
+  Use
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  buttonName
+  sendEvent
+  storeResult
+  Off
+  FINISHED
+  Mouse off 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.SetRotation
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  Switch
+  ON
+  On
+  OFF
+  Off
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.BoolFlip
+  HutongGames.PlayMaker.Actions.BoolTest
+  HouseFoley
+  cd_caseopen
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  On
+  FINISHED
+  Mouse off 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.SetRotation
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  FINISHED
+  OFF
+  ON
+  Channel
+  On
+  RadioChannels
+  Speaker

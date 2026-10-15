@@ -1,0 +1,231 @@
+TAG   : l2
+GO    : BeerCamp
+FSM   : OpeningHours
+PATH  : JOBS/HouseDrunk/BeerCampOld/BeerCamp
+start : Activate
+
+STRINGS (224):
+  OpeningHours
+  Activate
+  Close
+  FINISHED
+  Check distance 3
+  PARTY
+  Other drunks
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.Wait
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.SendRandomEvent
+  HutongGames.PlayMaker.FsmEvent
+  HutongGames.PlayMaker.FsmFloat
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  time
+  finishEvent
+  realTime
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  events
+  weights
+  delay
+  Check distance
+  OFF
+  Check distance 2
+  FINISHED
+  Wait
+  HutongGames.PlayMaker.Actions.GetFsmInt
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  Color
+  Time
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Check distance 2
+  ACTIVATE
+  Wait
+  OFF
+  Close
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.FloatCompare
+  gameObject
+  target
+  storeResult
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Wait
+  FINISHED
+  Check distance
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  Activate
+  FINISHED
+  Check distance
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.Wait
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Check distance 3
+  OFF
+  Wait 2
+  FINISHED
+  Check distance 4
+  HutongGames.PlayMaker.Actions.GetFsmInt
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  Color
+  Time
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Check distance 4
+  ACTIVATE
+  Open
+  OFF
+  Wait 2
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.FloatCompare
+  gameObject
+  target
+  storeResult
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Wait 2
+  FINISHED
+  Check distance 3
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  Open
+  FINISHED
+  Check distance
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.Wait
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Other drunks
+  FINISHED
+  Check distance 3
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  FINISHED
+  ACTIVATE
+  OFF
+  PARTY
+  Distance
+  Time

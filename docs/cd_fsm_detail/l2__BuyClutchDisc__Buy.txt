@@ -1,0 +1,200 @@
+TAG   : l2
+GO    : BuyClutchDisc
+FSM   : Buy
+PATH  : RALLY/PartsSalesman/Functions/Parts/BuyClutchDisc
+SIZE  : 7692
+
+start : State 2
+
+STRINGS (191):
+  Buy
+  State 2
+  State 2
+  INSTALLED
+  State 3
+  FINISHED
+  Wait player 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  Product
+  db_Thispart
+  Data
+  Installed
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  State 3
+  FINISHED
+  Wait player 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  Product
+  db_Thispart
+  Data
+  Installed
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Wait player 2
+  FINISHED
+  Wait button 2
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button 2
+  FINISHED
+  Wait player 2
+  USE
+  Money
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  GUIinteraction
+  Notification
+  FAN BELT 295 MK
+  HutongGames.PlayMaker.FsmInt
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  Wait
+  FINISHED
+  Wait player 2
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  Purchase
+  HutongGames.PlayMaker.Actions.FloatSubtract
+  HutongGames.PlayMaker.Actions.SetFsmGameObject
+  HutongGames.PlayMaker.Actions.SendEventByName
+  Product
+  PurchaseDB
+  PurchaseDB
+  Data
+  Data
+  _SpawnPoint
+  EventName
+  PISTON1
+  floatVariable
+  subtract
+  everyFrame
+  perSecond
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Money
+  STOP
+  Wait
+  FINISHED
+  Purchase
+  INSTALLED
+  State 3
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  HutongGames.PlayMaker.Actions.FloatCompare
+  db_Thispart
+  GUIinteraction
+  Data
+  Installed
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  FINISHED
+  GLOBALEVENT
+  INSTALLED
+  STOP
+  USE
+  WORK
+  Price
+  Installed
+  EventName
+  CLUTCHDISC
+  Notification
+  CLUTCH DISC 200 MK
+  Product
+  PurchaseDB
+  db_Thispart

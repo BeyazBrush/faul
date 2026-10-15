@@ -1,0 +1,28 @@
+TAG   : l2
+GO    : Rapula-Enemy-L20BeerBottles02
+FSM   : Animation
+PATH  : YARD/Building/BEDROOM1/COMPUTER/SYSTEM/RAMI-Rapula/Rapula-Enemies/Rapula-Enemy-L20BeerBottles02
+start : Alkuasetus
+
+STRINGS (21):
+  Animation
+  Alkuasetus
+  Alkuasetus
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetScale
+  HutongGames.PlayMaker.Actions.SetMaterialTexture
+  _MainTex
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  vector
+  everyFrame
+  lateUpdate
+  gameObject
+  materialIndex
+  material
+  namedTexture
+  texture

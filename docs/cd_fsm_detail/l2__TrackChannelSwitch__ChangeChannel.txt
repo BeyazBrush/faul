@@ -1,0 +1,238 @@
+TAG   : l2
+GO    : TrackChannelSwitch
+FSM   : ChangeChannel
+PATH  : STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/TrackChannelSwitch
+SIZE  : 9792
+
+start : State 1
+
+STRINGS (229):
+  ChangeChannel
+  State 1
+  Wait player
+  FINISHED
+  Wait button
+  OFF
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  Check status
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  GUIinteraction
+  RADIO CHANNEL
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  stringVariable
+  stringValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  Check status
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.BoolFlip
+  GUIinteraction
+  CarFoley
+  cd_button
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  State 1
+  FOLKRADIO
+  Folkradio
+  CHANNEL2
+  Channel 1
+  HutongGames.PlayMaker.Actions.GetFsmGameObject
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.BoolTest
+  SpeakerParent
+  SpeakerParent
+  RadioChannels
+  RadioChannels
+  Subwoofer
+  SpeakerParent
+  Fetch
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Folkradio
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmString
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  RadioChannels
+  RadioChannels
+  RadioChannels
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  toiveradio
+  System.String
+  Fetch
+  OnMuteChannel1
+  Fetch
+  OnMuteFolk
+  Fetch
+  OnStatic
+  Knob
+  Channel
+  toiveradio
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  targetProperty
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  Channel 1
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmString
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  RadioChannels
+  RadioChannels
+  RadioChannels
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  alivieskan
+  System.String
+  Fetch
+  OnMuteChannel1
+  Fetch
+  OnMuteFolk
+  Fetch
+  OnStatic
+  Knob
+  Channel
+  alivieskan
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  targetProperty
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  FINISHED
+  CHANNEL2
+  FOLKRADIO
+  OFF
+  ON
+  SUSKI
+  USE
+  SUSKI
+  Check status
+  Channel
+  RadioChannels
+  SpeakerParent

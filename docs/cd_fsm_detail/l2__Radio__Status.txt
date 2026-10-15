@@ -1,0 +1,229 @@
+TAG   : l2
+GO    : Radio
+FSM   : Status
+PATH  : Database/PartsStatus/Radio
+SIZE  : 9644
+
+start : State 1
+
+STRINGS (220):
+  Status
+  State 1
+  Check CD
+  FINISHED
+  CD Out
+  ON
+  CD OK
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolAllTrue
+  db_Required1
+  db_Required2
+  db_Required3
+  db_Required4
+  db_Required6
+  Electrics
+  ElectricsOK
+  Data
+  Installed
+  Data
+  Installed
+  Data
+  Installed
+  Data
+  Installed
+  HutongGames.PlayMaker.FsmBool
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariables
+  sendEvent
+  storeResult
+  everyFrame
+  CD OK
+  FINISHED
+  CD OK 2
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.Wait
+  boolVariable
+  boolValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  CD Out
+  FINISHED
+  Check Radio
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.Wait
+  boolVariable
+  boolValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Check Radio
+  FINISHED
+  Radio Out
+  ON
+  Radio OK
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolAllTrue
+  db_Required1
+  db_Required2
+  db_Required3
+  db_Required5
+  db_Required6
+  Electrics
+  ElectricsOK
+  Data
+  Installed
+  Data
+  Installed
+  Data
+  Installed
+  Data
+  Installed
+  HutongGames.PlayMaker.FsmBool
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariables
+  sendEvent
+  storeResult
+  everyFrame
+  Radio OK
+  FINISHED
+  Radio OK 2
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.Wait
+  boolVariable
+  boolValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Radio Out
+  FINISHED
+  Check CD
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.Wait
+  boolVariable
+  boolValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  CD OK 2
+  FINISHED
+  Check Radio
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  ButtonsRadio
+  ButtonsCD
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Radio OK 2
+  FINISHED
+  Check CD
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  ButtonsRadio
+  ButtonsCD
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  State 1
+  FINISHED
+  Check Radio
+  HutongGames.PlayMaker.Actions.SetProperty
+  UnityEngine.Object
+  UnityEngine.Material
+  mainTextureOffset.y
+  System.Single
+  targetProperty
+  everyFrame
+  FINISHED
+  ON
+  CDPlayerOK
+  RadioOK
+  Required1
+  Required2
+  Required3
+  Required4
+  Required5
+  Required6
+  ButtonsCD
+  ButtonsRadio
+  db_Required1
+  db_Required2
+  db_Required3
+  db_Required4
+  db_Required5
+  db_Required6

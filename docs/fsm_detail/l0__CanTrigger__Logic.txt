@@ -1,0 +1,94 @@
+TAG   : l0
+GO    : CanTrigger
+FSM   : Logic
+PATH  : BeerCamp/KiljuBuyer/CanTrigger
+start : Drink
+
+STRINGS (87):
+  Logic
+  Drink
+  Drink
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetFsmGameObject
+  HutongGames.PlayMaker.Actions.Wait
+  Look
+  Target
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  State 2
+  FINISHED
+  Drink
+  HutongGames.PlayMaker.Actions.SetFsmGameObject
+  HutongGames.PlayMaker.Actions.RandomFloat
+  HutongGames.PlayMaker.Actions.Wait
+  Look
+  Target
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  min
+  max
+  storeResult
+  time
+  finishEvent
+  realTime
+  State 1
+  FINISHED
+  State 3
+  HutongGames.PlayMaker.Actions.PlayAnimation
+  lifter_drink_kilju2
+  gameObject
+  animName
+  playMode
+  blendTime
+  finishEvent
+  loopEvent
+  stopOnExit
+  State 3
+  LOOP
+  State 4
+  OKAY
+  State 2
+  HutongGames.PlayMaker.Actions.SendRandomEvent
+  HutongGames.PlayMaker.FsmEvent
+  HutongGames.PlayMaker.FsmFloat
+  events
+  weights
+  delay
+  State 4
+  FINISHED
+  Drink
+  HutongGames.PlayMaker.Actions.SetFsmGameObject
+  HutongGames.PlayMaker.Actions.RandomFloat
+  HutongGames.PlayMaker.Actions.Wait
+  Look
+  Target
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  min
+  max
+  storeResult
+  time
+  finishEvent
+  realTime
+  FINISHED
+  GLOBALEVENT
+  GOOD
+  LOOP
+  OKAY
+  PROCEED
+  SHIT
+  STOP
+  Wait

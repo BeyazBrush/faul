@@ -1,0 +1,148 @@
+TAG   : l2
+GO    : CDPlayer
+FSM   : Fetch
+PATH  : SATSUMA(557kg, 248)/Electricity/SpeakerBass/CDPlayer
+SIZE  : 7404
+
+start : Fetch
+
+STRINGS (139):
+  Fetch
+  Fetch
+  Volume
+  FINISHED
+  Check speakers
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.Wait
+  Parent
+  UnityEngine.Object
+  UnityEngine.AudioSource
+  volume
+  Volume
+  System.Single
+  Settings
+  Volume
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  targetProperty
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Fetch
+  FINISHED
+  Set settings
+  HutongGames.PlayMaker.Actions.GetParent
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  Parent
+  Parent
+  Parent
+  Parent
+  Parent
+  Settings
+  DistortionLevel
+  Settings
+  HighPass
+  Settings
+  LowPass
+  gameObject
+  storeResult
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  Set settings
+  FINISHED
+  Check speakers
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetProperty
+  UnityEngine.Object
+  UnityEngine.AudioHighPassFilter
+  enabled
+  _HighPass
+  System.Boolean
+  UnityEngine.Object
+  UnityEngine.AudioLowPassFilter
+  enabled
+  _LowPass
+  System.Boolean
+  UnityEngine.Object
+  UnityEngine.AudioDistortionFilter
+  distortionLevel
+  _DistortionLevel
+  System.Single
+  targetProperty
+  everyFrame
+  targetProperty
+  everyFrame
+  targetProperty
+  everyFrame
+  Check speakers
+  ON
+  Volume
+  OFF
+  No sound
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  db_Required
+  Data
+  Installed
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  No sound
+  FINISHED
+  Check speakers
+  HutongGames.PlayMaker.Actions.SetFloatValue
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.Wait
+  UnityEngine.Object
+  UnityEngine.AudioSource
+  volume
+  Volume
+  System.Single
+  floatVariable
+  floatValue
+  everyFrame
+  targetProperty
+  everyFrame
+  time
+  finishEvent
+  realTime
+  FINISHED
+  FETCH
+  OFF
+  ON
+  FETCH
+  Fetch
+  Volume
+  _DistortionLevel
+  Installed
+  _HighPass
+  _LowPass
+  Parent
+  db_Required

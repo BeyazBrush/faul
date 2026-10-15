@@ -1,0 +1,193 @@
+TAG   : l2
+GO    : Insert
+FSM   : Assembly
+PATH  : ITEMS/radio(itemx)/ChangeBatteries/Insert
+SIZE  : 7708
+
+start : Check batteries
+
+STRINGS (184):
+  Assembly
+  Check batteries
+  Check for Part collision
+  TRIGGER ENTER
+  Find correct part
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.TriggerEvent
+  Part
+  PART
+  boolVariable
+  boolValue
+  everyFrame
+  trigger
+  collideTag
+  sendEvent
+  storeCollider
+  Find correct part
+  FINISHED
+  Wait for assembly
+  LOOP
+  Check for Part collision
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.GameObjectIsNull
+  HutongGames.PlayMaker.Actions.TriggerEvent
+  Part
+  Part
+  ItemPivot
+  HandChild
+  r20 battery(Clone)
+  PART
+  PART
+  gameObject
+  childName
+  withTag
+  storeResult
+  gameObject
+  isNull
+  isNotNull
+  storeResult
+  everyFrame
+  trigger
+  collideTag
+  sendEvent
+  storeCollider
+  Wait for assembly
+  ASSEMBLE
+  Wait
+  LOOP
+  Check for Part collision
+  STOP
+  Stop
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  HutongGames.PlayMaker.Actions.TriggerEvent
+  PART
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  trigger
+  collideTag
+  sendEvent
+  storeCollider
+  Wait
+  FINISHED
+  Add battery
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.Wait
+  HouseFoley
+  fuse_install
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  boolValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Add battery
+  FINISHED
+  Check batteries
+  HutongGames.PlayMaker.Actions.SendEventByName
+  HutongGames.PlayMaker.Actions.IntAdd
+  HutongGames.PlayMaker.Actions.AddFsmFloat
+  HutongGames.PlayMaker.Actions.ConvertIntToString
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.SetRandomRotation
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  Battery
+  Battery
+  Battery
+  Part
+  Use
+  GARBAGE
+  Charge
+  Charge
+  NameS
+  NameS
+  Untagged
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  intVariable
+  add
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  addValue
+  everyFrame
+  perSecond
+  intVariable
+  stringVariable
+  format
+  everyFrame
+  gameObject
+  childName
+  withTag
+  storeResult
+  gameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Stop
+  FINISHED
+  Check for Part collision
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.Wait
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Check batteries
+  FINISHED
+  Check for Part collision
+  STOP
+  Stop
+  HutongGames.PlayMaker.Actions.IntClamp
+  HutongGames.PlayMaker.Actions.IntCompare
+  intVariable
+  minValue
+  maxValue
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  FINISHED
+  TRIGGER ENTER
+  ASSEMBLE
+  LOOP
+  STOP
+  Batteries
+  HandChild
+  r20 battery(Clone)
+  NameS
+  Battery
+  Part

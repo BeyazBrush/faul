@@ -1,0 +1,123 @@
+TAG   : l2
+GO    : SpeakerDash
+FSM   : Settings
+PATH  : SATSUMA(557kg, 248)/Electricity/SpeakerDash
+SIZE  : 4764
+
+start : Volume
+
+STRINGS (114):
+  Settings
+  Volume
+  Volume
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  State 1
+  ANTENNA0
+  State 4
+  ANTENNA1
+  State 5
+  ANTENNA2
+  State 2
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolNoneTrue
+  HutongGames.PlayMaker.Actions.BoolAllTrue
+  HutongGames.PlayMaker.Actions.BoolAnyTrue
+  db_Required2
+  db_Required3
+  Data
+  Bolted
+  Data
+  Bolted
+  HutongGames.PlayMaker.FsmBool
+  HutongGames.PlayMaker.FsmBool
+  HutongGames.PlayMaker.FsmBool
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariables
+  sendEvent
+  storeResult
+  everyFrame
+  boolVariables
+  sendEvent
+  storeResult
+  everyFrame
+  boolVariables
+  sendEvent
+  storeResult
+  everyFrame
+  State 2
+  FINISHED
+  Volume
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  State 5
+  FINISHED
+  Volume
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  State 4
+  FINISHED
+  Volume
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  FINISHED
+  10
+  12
+  14
+  16
+  18
+  20
+  22
+  24
+  DOESNOTEXISTS
+  EXISTS
+  OFF
+  ON
+  RADIO_UPDATE
+  SAVEGAME
+  ANTENNA0
+  ANTENNA1
+  ANTENNA2
+  DistortionLevel
+  Volume
+  AntennaLeft
+  AntennaRight
+  HighPass
+  Installed
+  LowPass
+  StaticAntenna
+  StaticAntenna1
+  db_Required2
+  db_Required3

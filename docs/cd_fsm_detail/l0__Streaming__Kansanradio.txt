@@ -1,0 +1,184 @@
+TAG   : l0
+GO    : Streaming
+FSM   : Kansanradio
+PATH  : Streaming
+SIZE  : 7472
+
+start : State 3
+
+STRINGS (175):
+  Kansanradio
+  State 3
+  State 10
+  FINISHED
+  Get file name
+  Init
+  FINISHED
+  State 10
+  HutongGames.PlayMaker.Actions.DontDestroyOnLoad
+  HutongGames.PlayMaker.Actions.GetOwner
+  SongDatabase
+  gameObject
+  storeGameObject
+  Check
+  FINISHED
+  Init
+  DESTROY
+  State 4
+  HutongGames.PlayMaker.Actions.GameObjectCompare
+  SongDatabase
+  gameObjectVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  State 4
+  HutongGames.PlayMaker.Actions.DestroySelf
+  detachChildren
+  Load
+  FAIL
+  State 3
+  LOAD
+  State 1
+  HutongGames.PlayMaker.Actions.WWWObjectRelative
+  HutongGames.PlayMaker.Actions.WWWPOST
+  HutongGames.PlayMaker.Actions.FloatCompare
+  Path
+  NOT IMPORTED
+  Error
+  Path
+  NOT IMPORTED
+  Error
+  UnityEngine.Object
+  Song
+  UnityEngine.AudioClip
+  UnityEngine.Object
+  UnityEngine.Object
+  UnityEngine.Object
+  Song
+  UnityEngine.AudioClip
+  HutongGames.PlayMaker.FsmString
+  HutongGames.PlayMaker.FsmVar
+  url
+  pathIsRelative
+  storeText
+  storeTexture
+  storeAudio
+  storeMovieTexture
+  errorString
+  progress
+  isDone
+  isError
+  url
+  postKeys
+  postValues
+  storeText
+  storeTexture
+  storeMovieTexture
+  storeAudio
+  audio3d
+  audioStream
+  audioType
+  errorString
+  progress
+  isDone
+  isError
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Get file name
+  FINISHED
+  Load
+  LOAD
+  HutongGames.PlayMaker.Actions.GetStreamingAssetsPath
+  HutongGames.PlayMaker.Actions.GetAppPath
+  HutongGames.PlayMaker.Actions.RandomInt
+  HutongGames.PlayMaker.Actions.ConvertIntToString
+  HutongGames.PlayMaker.Actions.BuildString
+  Name
+  file:///
+  StreamingAssets/
+  track
+  Name
+  .ogg
+  Path
+  NOT IMPORTED
+  HutongGames.PlayMaker.FsmString
+  DataPathResult
+  AppFolderResult
+  PersistentPathResult
+  PlaformResult
+  DataPathResult
+  AppFolderResult
+  PersistentPathResult
+  PlaformResult
+  min
+  max
+  storeResult
+  inclusiveMax
+  intVariable
+  stringVariable
+  format
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  State 1
+  FINISHED
+  State 10
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  HutongGames.PlayMaker.Actions.AudioPlay
+  HutongGames.PlayMaker.Actions.GetKeyDown
+  Song
+  UnityEngine.AudioClip
+  UnityEngine.AudioClip
+  gameObject
+  audioClip
+  gameObject
+  volume
+  oneShotClip
+  finishedEvent
+  key
+  sendEvent
+  storeResult
+  State 3
+  FINISHED
+  State 10
+  HutongGames.PlayMaker.Actions.GetKeyDown
+  key
+  sendEvent
+  storeResult
+  FINISHED
+  ADVERT1
+  DESTROY
+  FAIL
+  JINGLE
+  LOAD
+  PLAY
+  RADIO_FOLK
+  WAKEUP
+  WAKEUP
+  State 10
+  Progress
+  MaxTracks
+  Track
+  Imported
+  Error
+  Name
+  Path
+  NOT IMPORTED
+  Parent
+  Advert1
+  UnityEngine.AudioClip
+  Jingle
+  UnityEngine.AudioClip
+  Mute
+  UnityEngine.AudioClip
+  Song
+  UnityEngine.AudioClip

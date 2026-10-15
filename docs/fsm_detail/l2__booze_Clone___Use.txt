@@ -1,0 +1,133 @@
+TAG   : l2
+GO    : booze(Clone)
+FSM   : Use
+PATH  : DANCEHALL/Functions/FIGHTER/Fighter/Pivot/Char/skeleton/pelvis/spine_middle/spine_upper/collar_left/shoulder_left/arm_left/hand_left/finger_left/bottle/booze(Clone)
+start : Wait player 2
+
+STRINGS (126):
+  Use
+  Wait player 2
+  Destroy
+  HutongGames.PlayMaker.Actions.DestroySelf
+  detachChildren
+  Wait player 2
+  FINISHED
+  Wait button 2
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button 2
+  FINISHED
+  Wait player 2
+  USE
+  Check drink
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetButtonDown
+  Use
+  HutongGames.PlayMaker.FsmInt
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  buttonName
+  sendEvent
+  storeResult
+  Eat 2
+  FINISHED
+  Play anim
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SaveBool
+  HutongGames.PlayMaker.Actions.SaveTransform
+  UniqueTagConsumed
+  items.txt
+  UniqueTagTransform
+  items.txt
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  saveValue
+  uniqueTag
+  saveFile
+  saveValue
+  uniqueTag
+  saveFile
+  Play anim
+  FINISHED
+  Destroy
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.SendEvent
+  Hand
+  SavePlayerCam
+  SavePlayerCam
+  Hand
+  Drink
+  PlayerFunctions
+  Drink
+  Untagged
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  gameObject
+  childName
+  withTag
+  storeResult
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Check drink
+  USE
+  Eat 2
+  STOP
+  Wait player 2
+  HutongGames.PlayMaker.Actions.BoolTest
+  HutongGames.PlayMaker.Actions.BoolTest
+  34
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  FINISHED
+  DESTROY
+  SAVE
+  SAVEGAME
+  STOP
+  USE
+  ItemConsumed
+  ID
+  UniqueTag
+  UniqueTagConsumed
+  UniqueTagTransform
+  Hand
+  Owner

@@ -1,0 +1,63 @@
+TAG   : l2
+GO    : Folk
+FSM   : Update
+PATH  : RADIO/RadioChannels/Folk
+SIZE  : 2420
+
+start : Play radio
+
+STRINGS (54):
+  Update
+  Play radio
+  Play radio
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  HutongGames.PlayMaker.Actions.AudioPlay
+  RadioOnFolk
+  UnityEngine.AudioClip
+  UnityEngine.Object
+  gameObject
+  audioClip
+  gameObject
+  volume
+  oneShotClip
+  finishedEvent
+  State 2
+  FINISHED
+  Play radio
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  State 1
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  HutongGames.PlayMaker.Actions.SendEvent
+  SongDatabase
+  Kansanradio
+  UnityEngine.AudioClip
+  gameObject
+  audioClip
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  FINISHED
+  10
+  12
+  14
+  16
+  18
+  20
+  22
+  24
+  DOESNOTEXISTS
+  EXISTS
+  RADIO_FOLK
+  RADIO_UPDATE
+  SAVEGAME
+  RADIO_FOLK
+  State 2
+  Volume

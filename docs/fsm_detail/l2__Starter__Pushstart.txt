@@ -1,0 +1,211 @@
+TAG   : l2
+GO    : Starter
+FSM   : Pushstart
+PATH  : SATSUMA(557kg, 248)/CarSimulation/Car/Starter
+start : State 1
+
+STRINGS (204):
+  Pushstart
+  State 1
+  Engine off
+  ON
+  Engine on
+  GEAR
+  Clutch?
+  HutongGames.PlayMaker.Actions.BoolTest
+  HutongGames.PlayMaker.Actions.GetProperty
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.GetProperty
+  HutongGames.PlayMaker.Actions.FloatCompare
+  UnityEngine.Object
+  Drivetrain
+  gear
+  Gear
+  System.Int32
+  UnityEngine.Object
+  AxisCarController
+  clutchInput
+  Clutch
+  System.Single
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  targetProperty
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  targetProperty
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Engine on
+  OFF
+  Engine off
+  HutongGames.PlayMaker.Actions.BoolTest
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Gear?
+  1st
+  2nd
+  3rd
+  4th
+  FINISHED
+  Engine off
+  HutongGames.PlayMaker.Actions.GetProperty
+  HutongGames.PlayMaker.Actions.GetProperty
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.Wait
+  UnityEngine.Object
+  Drivetrain
+  gear
+  Gear
+  System.Int32
+  UnityEngine.Object
+  Drivetrain
+  differentialSpeed
+  DiffSpeed
+  System.Single
+  targetProperty
+  everyFrame
+  targetProperty
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  time
+  finishEvent
+  realTime
+  1st
+  FINISHED
+  Compare speed
+  HutongGames.PlayMaker.Actions.FloatOperator
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  Compare speed
+  ON
+  Start
+  FINISHED
+  Engine off
+  HutongGames.PlayMaker.Actions.FloatCompare
+  HutongGames.PlayMaker.Actions.Wait
+  SH
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  time
+  finishEvent
+  realTime
+  2nd
+  FINISHED
+  Compare speed
+  HutongGames.PlayMaker.Actions.FloatOperator
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  3rd
+  FINISHED
+  Compare speed
+  HutongGames.PlayMaker.Actions.FloatOperator
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  4th
+  FINISHED
+  Compare speed
+  HutongGames.PlayMaker.Actions.FloatOperator
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  Start
+  FINISHED
+  Engine off
+  HutongGames.PlayMaker.Actions.SendEventByName
+  HutongGames.PlayMaker.Actions.Wait
+  Starter
+  PUSHSTART
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Clutch?
+  GEAR
+  Gear?
+  HutongGames.PlayMaker.Actions.GetProperty
+  HutongGames.PlayMaker.Actions.FloatCompare
+  UnityEngine.Object
+  AxisCarController
+  clutchInput
+  Clutch
+  System.Single
+  targetProperty
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  State 1
+  FINISHED
+  GEAR
+  OFF
+  ON
+  Clutch
+  DiffSpeed
+  RequiredSpd
+  Gear
+  EngineRunning
+  Compare speed

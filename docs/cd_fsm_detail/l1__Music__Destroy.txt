@@ -1,0 +1,19 @@
+TAG   : l1
+GO    : Music
+FSM   : Destroy
+PATH  : Intro/Music
+SIZE  : 736
+
+start : State 1
+
+STRINGS (10):
+  Destroy
+  State 1
+  State 1
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.DontDestroyOnLoad
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  gameObject

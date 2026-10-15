@@ -1,0 +1,95 @@
+/// <summary>
+		/// '/npc outfit' — NPC görünümü (kıyafet) yönetimi.
+		///
+		/// ASSET'TEN ÖLÇÜLEN GERÇEK: MSC'de bütün insanlar AYNI mesh'i
+		/// kullanır (`bodymesh`); görünüm farkı yalnızca 3 materyalden gelir
+		/// (char_shirt / char_pants / char_face). Katalog: 21 gömlek
+		/// (char_shirt01..20, 22), 8 pantolon (char_pants01..08), 11 yüz
+		/// (char_face01..11, face07 = kadın) + cop_* ve char_ghost.
+		/// Sahne genelinde 586 benzersiz (ad, materyal) kombinasyonu var.
+		///
+		/// Kullanım:
+		///   /npc outfit list                  katalogu ve sınırları yaz
+		///   /npc outfit wear &lt;ad&gt;          o NPC'nin kıyafetini test
+		///                                    gövdelerine + ağ kuklasına uygula
+		///   /npc outfit mine &lt;g&gt; &lt;p&gt; &lt;y&gt;    belirli kombinasyon
+		///   /npc outfit who &lt;ad&gt;            o NPC'nin kıyafetini oku
+		/// </summary>
+		static void Outfit(string[] args) {
+			if (SatsumaRegistry.Root == null) {
+				SmpLog.Error("no world loaded. Press CONTINUE first.");
+				return;
+			}
+			NpcOutfit.Scan();
+
+			// args[0] == "outfit"; gerisi alt komut.
+			string sub = args.Length >= 2 ? args[1].ToLowerInvariant() : "list";
+
+			if (sub == "list" || sub == "?") { NpcOutfit.ReportCatalog(); return; }
+
+			if (sub == "who" && args.Length >= 3) {
+				GameObject t = RemotePlayerFactory.FindTemplateForRead(args[2]);
+				if (t == null) { SmpLog.Error("no NPC named '" + args[2] + "'."); return; }
+				SmpLog.Print(args[2] + " wears: " + NpcOutfit.Describe(t));
+				return;
+			}
+
+			if (sub == "wear" && args.Length >= 3) {
+				GameObject t = RemotePlayerFactory.FindTemplateForRead(args[2]);
+				if (t == null) { SmpLog.Error("no NPC named '" + args[2] + "'."); return; }
+
+				int done = 0, failed = 0;
+				for (int i = 0; i < spawned.Count; i++) {
+					if (spawned[i] == null) continue;
+					string what;
+					if (NpcOutfit.CopyFrom(t, spawned[i], out what)) {
+						SmpLog.Print("  '" + spawned[i].name + "' now wears " + what);
+						done++;
+					}
+					else failed++;
+				}
+				RemotePlayerBehaviour peer = RemotePlayerSync.Peer;
+				if (peer != null) {
+					string what;
+					if (NpcOutfit.CopyFrom(t, peer.gameObject, out what)) {
+						SmpLog.Print("  network dummy now wears " + what);
+						done++;
+					}
+					else failed++;
+				}
+				if (done == 0) {
+					SmpLog.Error("nothing to dress. Spawn a body first: /npc Ahmet");
+					if (failed > 0) SmpLog.Error(failed + " target(s) had no bodymesh clothing.");
+				}
+				else {
+					SmpLog.Print("applied '" + args[2] + "' outfit to " + done
+						+ " body/bodies (" + NpcOutfit.Describe(t) + ")");
+				}
+				return;
+			}
+
+			if (sub == "mine" && args.Length >= 5) {
+				string shirt = args[2], pants = args[3], face = args[4];
+				int done = 0;
+				for (int i = 0; i < spawned.Count; i++) {
+					if (spawned[i] == null) continue;
+					if (NpcOutfit.Write(spawned[i], shirt, pants, face)) {
+						done++;
+						SmpLog.Print("  '" + spawned[i].name + "' -> " + shirt + " + " + pants + " + " + face);
+					}
+				}
+				RemotePlayerBehaviour peer = RemotePlayerSync.Peer;
+				if (peer != null && NpcOutfit.Write(peer.gameObject, shirt, pants, face)) {
+					done++;
+					SmpLog.Print("  network dummy -> " + shirt + " + " + pants + " + " + face);
+				}
+				if (done == 0) {
+					SmpLog.Error("no body to dress. Spawn one first: /npc Ahmet");
+					SmpLog.Error("materials must exist in this scene; check '/npc outfit list'.");
+				}
+				else SmpLog.Print("dressed " + done + " body/bodies.");
+				return;
+			}
+
+			NpcOutfit.ReportCatalog();
+		}

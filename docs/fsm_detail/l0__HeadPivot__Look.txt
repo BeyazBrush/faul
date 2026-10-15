@@ -1,0 +1,96 @@
+TAG   : l0
+GO    : HeadPivot
+FSM   : Look
+PATH  : BeerCamp/KiljuBuyer/Char/skeleton/pelvis/spine_middle/spine_upper/HeadPivot
+start : State 2
+
+STRINGS (89):
+  Look
+  State 2
+  State 1
+  HutongGames.PlayMaker.Actions.LookAt
+  HutongGames.PlayMaker.Actions.SmoothLookAt
+  Target
+  gameObject
+  targetObject
+  targetPosition
+  upVector
+  keepVertical
+  debug
+  debugLineColor
+  everyFrame
+  gameObject
+  targetObject
+  targetPosition
+  upVector
+  keepVertical
+  speed
+  debug
+  finishTolerance
+  finishEvent
+  State 2
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetRotation
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  State 3
+  FINISHED
+  State 4
+  HutongGames.PlayMaker.Actions.GetRotation
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  State 4
+  FINISHED
+  State 5
+  HutongGames.PlayMaker.Actions.EaseVector3
+  HutongGames.PlayMaker.Actions.SetRotation
+  fromValue
+  toValue
+  vector3Variable
+  time
+  speed
+  delay
+  easeType
+  reverse
+  finishEvent
+  realTime
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  State 5
+  HutongGames.PlayMaker.Actions.EnableFSM
+  Look
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  FINISHED
+  GLOBALEVENT
+  GLOBALEVENT
+  State 3
+  Rot
+  NewRot
+  OldRot
+  Target
+  GLOBALEVENT
+  State 1

@@ -1,0 +1,214 @@
+TAG   : l2
+GO    : trigger_cd
+FSM   : Assembly
+PATH  : CARPARTS/PartsCar/dashboard meters(Clone)/TriggersRadio/trigger_cd
+SIZE  : 8332
+
+start : Check for Part collision
+
+STRINGS (205):
+  Assembly
+  Check for Part collision
+  Check for Part collision
+  FINISHED
+  Find correct part
+  ASSEMBLE
+  Assemble 2
+  HutongGames.PlayMaker.Actions.GetFsmGameObject
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.BoolTest
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.FloatCompare
+  Part
+  Part
+  db_ThisPart
+  Data
+  ThisPart
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  gameObject
+  target
+  storeResult
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Find correct part
+  FINISHED
+  Wait for assembly
+  LOOP
+  Wait
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.GameObjectCompare
+  PartHand
+  Part
+  ItemPivot
+  PartHand
+  HandChild
+  amplifier(Clone)
+  PART
+  gameObject
+  childName
+  withTag
+  storeResult
+  gameObjectVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  Wait for assembly
+  ASSEMBLE
+  Wait 2
+  LOOP
+  Wait
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.FloatCompare
+  Part
+  boolVariable
+  boolValue
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  gameObject
+  target
+  storeResult
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Wait
+  FINISHED
+  Check for Part collision
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.Wait
+  boolVariable
+  boolValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Assemble 2
+  FINISHED
+  End 2
+  HutongGames.PlayMaker.Actions.SetTag
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.DestroyComponent
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  Parent
+  Bolts
+  Part
+  Part
+  Part
+  Part
+  Bolts
+  db_ThisPart
+  Untagged
+  Rigidbody
+  Bolts
+  Untagged
+  Data
+  Installed
+  gameObject
+  tag
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  component
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  gameObject
+  childName
+  withTag
+  storeResult
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  Wait 2
+  FINISHED
+  Assemble 2
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.Wait
+  CarBuilding
+  assemble
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  boolValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  End 2
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  Part
+  Triggers
+  Removal
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  FINISHED
+  TRIGGER ENTER
+  ASSEMBLE
+  DISASSEMBLE
+  LOOP
+  Distance
+  DistanceTolerance
+  Setup
+  HandChild
+  cd player(Clone)
+  Bolts
+  Parent
+  Part
+  PartHand
+  Triggers
+  db_ThisPart

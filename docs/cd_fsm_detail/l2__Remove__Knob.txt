@@ -1,0 +1,185 @@
+TAG   : l2
+GO    : Remove
+FSM   : Knob
+PATH  : ITEMS/radio(itemx)/ChangeBatteries/Remove
+SIZE  : 7284
+
+start : State 1
+
+STRINGS (176):
+  Knob
+  State 1
+  Mouse off 2
+  FINISHED
+  Get scroll
+  ON
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Get scroll
+  OFF
+  Mouse off 2
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetButtonDown
+  GUIinteraction
+  REMOVE BATTERY
+  Use
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  buttonName
+  sendEvent
+  storeResult
+  State 1
+  FINISHED
+  Mouse off 2
+  OFF
+  State 3
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  HutongGames.PlayMaker.Actions.FloatCompare
+  3s
+  Charge
+  Charge
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  State 2
+  FINISHED
+  State 1
+  OFF
+  State 4
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.CreateObject
+  HutongGames.PlayMaker.Actions.GetFsmInt
+  HutongGames.PlayMaker.Actions.SubtractFsmInt
+  HutongGames.PlayMaker.Actions.ConvertIntToString
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntCompare
+  Battery
+  Battery
+  HouseFoley
+  fuse_remove
+  Assembly
+  Batteries
+  Assembly
+  Batteries
+  NameS
+  NameS
+  Untagged
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  gameObject
+  spawnPoint
+  position
+  rotation
+  storeObject
+  networkInstantiate
+  networkGroup
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  subtractValue
+  everyFrame
+  perSecond
+  intVariable
+  stringVariable
+  format
+  everyFrame
+  gameObject
+  childName
+  withTag
+  storeResult
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  State 3
+  State 4
+  HutongGames.PlayMaker.Actions.SetFsmInt
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  Assembly
+  Batteries
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  FINISHED
+  OFF
+  ON
+  Charge
+  Batteries
+  On
+  NameS
+  Battery
+  Part
+  RadioChannels
+  Speaker

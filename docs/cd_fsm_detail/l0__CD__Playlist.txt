@@ -1,0 +1,88 @@
+TAG   : l0
+GO    : CD
+FSM   : Playlist
+PATH  : Radio/CD
+SIZE  : 3560
+
+start : Check
+
+STRINGS (79):
+  Playlist
+  Check
+  Init
+  FINISHED
+  State 3
+  HutongGames.PlayMaker.Actions.DontDestroyOnLoad
+  HutongGames.PlayMaker.Actions.GetOwner
+  SongDatabaseCD
+  gameObject
+  storeGameObject
+  Check
+  FINISHED
+  Init
+  DESTROY
+  State 4
+  HutongGames.PlayMaker.Actions.GameObjectCompare
+  SongDatabaseCD
+  gameObjectVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  State 4
+  HutongGames.PlayMaker.Actions.DestroySelf
+  detachChildren
+  State 3
+  LOAD
+  State 1
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.BoolAllTrue
+  HutongGames.PlayMaker.FsmBool
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  boolVariables
+  sendEvent
+  storeResult
+  everyFrame
+  State 1
+  HutongGames.PlayMaker.Actions.SetStringValue
+  Path
+  NOT IMPORTED
+  CD'S IMPORTED
+  stringVariable
+  stringValue
+  everyFrame
+  FINISHED
+  ADVERT1
+  DESTROY
+  FAIL
+  JINGLE
+  LOAD
+  LOOP
+  NEXT SONG
+  PLAY
+  PREVIOUS SONG
+  RADIO_FOLK
+  WAKEUP
+  CD1
+  CD2
+  CD3
+  Import
+  Path
+  NOT IMPORTED

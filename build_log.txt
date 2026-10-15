@@ -1,0 +1,3 @@
+﻿[1/1] Compiling MSCSteamMP.dll against "D:\Steam\steamapps\common\My Summer Car"
+
+Done: "D:\modmscMP\MSCSteamMP\bin\Release\MSCSteamMP.dll"

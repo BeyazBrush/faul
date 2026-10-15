@@ -1,0 +1,96 @@
+TAG   : l2
+GO    : Dynamics
+FSM   : Pressure
+PATH  : STORE/GeneralItems/n2obottle/Dynamics
+start : State 1
+
+STRINGS (89):
+  Pressure
+  State 1
+  State 1
+  FINISHED
+  Gauge
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  3s
+  Use
+  Fluid
+  Use
+  Setting
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  Gauge
+  FINISHED
+  Loop
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.SetMass
+  HutongGames.PlayMaker.Actions.FloatClamp
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.FloatClamp
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.SetRotation
+  HutongGames.PlayMaker.Actions.Wait
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  gameObject
+  mass
+  floatVariable
+  minValue
+  maxValue
+  everyFrame
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  floatVariable
+  minValue
+  maxValue
+  everyFrame
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  time
+  finishEvent
+  realTime
+  Loop
+  FINISHED
+  Gauge
+  FINISHED
+  UPDATE
+  UPDATE
+  Loop
+  Fluid
+  Mass
+  MaxPSI
+  Needle
+  PSI
+  Setting

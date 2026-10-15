@@ -1,0 +1,123 @@
+TAG   : l3
+GO    : ACTIVATE_CD
+FSM   : Knob
+PATH  : CAR/MenuCar/Rigid/MESH/cd player(Clone) 1/ACTIVATE_CD
+SIZE  : 5508
+
+start : On
+
+STRINGS (114):
+  Knob
+  On
+  Wait1
+  FINISHED
+  Check status
+  HutongGames.PlayMaker.Actions.FloatClamp
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.SetRotation
+  HutongGames.PlayMaker.Actions.Wait
+  floatVariable
+  minValue
+  maxValue
+  everyFrame
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  time
+  finishEvent
+  realTime
+  On
+  FINISHED
+  Wait1
+  HutongGames.PlayMaker.Actions.FloatClamp
+  floatVariable
+  minValue
+  maxValue
+  everyFrame
+  State 1
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.ConvertFloatToString
+  HutongGames.PlayMaker.Actions.BuildStringFast
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.Wait
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  Data2
+  System.String
+  Data2
+  00
+  vol 
+  Data2
+  Data2
+  HutongGames.PlayMaker.FsmString
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  floatVariable
+  stringVariable
+  format
+  everyFrame
+  stringParts
+  separator
+  addToEnd
+  storeResult
+  everyFrame
+  targetProperty
+  everyFrame
+  time
+  finishEvent
+  realTime
+  State 2
+  HutongGames.PlayMaker.Actions.SetProperty
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  playing
+  System.String
+  targetProperty
+  everyFrame
+  Check status
+  ON
+  State 1
+  OFF
+  HutongGames.PlayMaker.Actions.FloatCompare
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  FINISHED
+  ASSEMBLE
+  BATTERY
+  NOCURRENT
+  OFF
+  ON
+  SAVEGAME
+  SUSKI
+  TIGHTEN
+  UNTIGHTEN
+  Data1
+  Rot
+  Volume
+  Channel
+  Data2
+  SpeakerBass
+  SpeakerDash

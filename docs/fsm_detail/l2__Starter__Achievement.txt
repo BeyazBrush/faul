@@ -1,0 +1,43 @@
+TAG   : l2
+GO    : Starter
+FSM   : Achievement
+PATH  : SATSUMA(557kg, 248)/CarSimulation/Car/Starter
+start : Wait
+
+STRINGS (36):
+  Achievement
+  Wait
+  Wait
+  FINISHED
+  Steam
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.Wait
+  GT
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  time
+  finishEvent
+  realTime
+  Steam
+  FINISHED
+  Close
+  HutongGames.PlayMaker.Actions.SendEventByName
+  HutongGames.PlayMaker.Actions.NextFrameEvent
+  Steam
+  Achi
+  IT_RUNS
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  sendEvent
+  Close
+  HutongGames.PlayMaker.Actions.EnableFSM
+  Achievement
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  FINISHED

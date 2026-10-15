@@ -1,0 +1,62 @@
+TAG   : l2
+GO    : LookTarget
+FSM   : Move
+PATH  : JOBS/HouseDrunk/BeerCampOld/BeerCamp/KiljuBuyer/LookTarget
+start : Look player
+
+STRINGS (55):
+  Move
+  Look player
+  Look at
+  FINISHED
+  Stop looking
+  HutongGames.PlayMaker.Actions.MoveTowards
+  HutongGames.PlayMaker.Actions.GetPosition
+  HutongGames.PlayMaker.Actions.FloatCompare
+  Target
+  gameObject
+  targetObject
+  targetPosition
+  ignoreVertical
+  maxSpeed
+  finishDistance
+  finishEvent
+  gameObject
+  vector
+  space
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Look player
+  FINISHED
+  Look at
+  HutongGames.PlayMaker.Actions.SetGameObject
+  Target
+  variable
+  gameObject
+  everyFrame
+  Stop looking
+  FINISHED
+  Look at
+  HutongGames.PlayMaker.Actions.MoveTowards
+  HutongGames.PlayMaker.Actions.Wait
+  gameObject
+  targetObject
+  targetPosition
+  ignoreVertical
+  maxSpeed
+  finishDistance
+  finishEvent
+  time
+  finishEvent
+  realTime
+  FINISHED
+  GLOBALEVENT
+  PLAYER
+  REGISTER
+  Target

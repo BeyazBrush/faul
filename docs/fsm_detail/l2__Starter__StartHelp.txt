@@ -1,0 +1,24 @@
+TAG   : l2
+GO    : Starter
+FSM   : StartHelp
+PATH  : SATSUMA(557kg, 248)/CarSimulation/Car/Starter
+start : State 1
+
+STRINGS (17):
+  StartHelp
+  State 1
+  State 1
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetProperty
+  UnityEngine.Object
+  AxisCarController
+  clutchInput
+  System.Single
+  UnityEngine.Object
+  Drivetrain
+  gear
+  System.Int32
+  targetProperty
+  everyFrame
+  targetProperty
+  everyFrame

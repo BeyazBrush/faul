@@ -1,0 +1,206 @@
+TAG   : l2
+GO    : n2o bottle holder(xxxxx)
+FSM   : Removal
+PATH  : SATSUMA(557kg, 248)/Interior/n2o bottle holder(xxxxx)
+start : Disable trigger
+
+STRINGS (199):
+  Removal
+  Disable trigger
+  Mouse off
+  FINISHED
+  Requirements
+  REMOVE
+  Remove part
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.BoolTest
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Mouse over
+  FINISHED
+  Mouse off
+  REMOVE
+  Remove part
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  Disable trigger
+  FINISHED
+  Mouse off
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  Trigger
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Requirements
+  LOOP
+  Mouse off
+  REMOVE
+  Check bottle
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolNoneTrue
+  HutongGames.PlayMaker.Actions.BoolAnyTrue
+  db_ThisPart
+  db_ThisPart
+  Data
+  Bolted
+  Data
+  Bolted
+  HutongGames.PlayMaker.FsmBool
+  HutongGames.PlayMaker.FsmBool
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariables
+  sendEvent
+  storeResult
+  everyFrame
+  boolVariables
+  sendEvent
+  storeResult
+  everyFrame
+  Remove part
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SendEvent
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.CreateObject
+  HutongGames.PlayMaker.Actions.SetFsmGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  SpawnPart
+  SpawnPartLocation
+  Part
+  Part
+  db_ThisPart
+  db_ThisPart
+  db_ThisPart
+  Trigger
+  BoltCheck
+  CarBuilding
+  disassemble
+  Data
+  Installed
+  Data
+  Bolted
+  Data
+  SpawnThis
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  spawnPoint
+  position
+  rotation
+  storeObject
+  networkInstantiate
+  networkGroup
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Check bottle
+  LOOP
+  Mouse off
+  REMOVE
+  Mouse over
+  HutongGames.PlayMaker.Actions.GameObjectHasChildren
+  gameObject
+  trueEvent
+  falseEvent
+  storeResult
+  everyFrame
+  FINISHED
+  REMOVE
+  ASSEMBLE
+  LOOP
+  Detach
+  Required1
+  Required2
+  Part
+  SpawnPart
+  SpawnPartLocation
+  Trigger
+  db_Required1
+  db_ThisPart

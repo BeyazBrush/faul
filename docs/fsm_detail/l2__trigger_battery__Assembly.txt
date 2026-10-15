@@ -1,0 +1,225 @@
+TAG   : l2
+GO    : trigger_battery
+FSM   : Assembly
+PATH  : SATSUMA(557kg, 248)/MiscParts/trigger_battery
+start : Check Assembly
+
+STRINGS (218):
+  Assembly
+  Check Assembly
+  Assemble
+  FINISHED
+  Assemble 2
+  HutongGames.PlayMaker.Actions.SetTag
+  HutongGames.PlayMaker.Actions.Wait
+  Part
+  Untagged
+  gameObject
+  tag
+  time
+  finishEvent
+  realTime
+  End
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  Part
+  Part
+  Data
+  Installed
+  Use
+  Installed
+  Removal
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Assemble 2
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.AddComponent
+  Part
+  Part
+  FixedJoint
+  JointBattery
+  UnityEngine.FixedJoint
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  gameObject
+  component
+  storeComponent
+  removeOnExit
+  Assemble 3
+  FINISHED
+  End
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  CarBuilding
+  assemble
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  State 1
+  FINISHED
+  Assemble 3
+  HutongGames.PlayMaker.Actions.SetJointConnectedBody
+  Part
+  joint
+  rigidBody
+  Check for Part collision 2
+  TRIGGER ENTER
+  Find correct part 2
+  ASSEMBLE
+  Assemble
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.TriggerEvent
+  Part
+  PART
+  boolVariable
+  boolValue
+  everyFrame
+  trigger
+  collideTag
+  sendEvent
+  storeCollider
+  Find correct part 2
+  FINISHED
+  Check shoes
+  LOOP
+  Check for Part collision 2
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.GameObjectIsNull
+  HutongGames.PlayMaker.Actions.TriggerEvent
+  Part
+  Part
+  ItemPivot
+  HandChild
+  battery(Clone)
+  PART
+  PART
+  gameObject
+  childName
+  withTag
+  storeResult
+  gameObject
+  isNull
+  isNotNull
+  storeResult
+  everyFrame
+  trigger
+  collideTag
+  sendEvent
+  storeCollider
+  Wait for assembly 2
+  ASSEMBLE
+  Assemble
+  LOOP
+  Check for Part collision 2
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  HutongGames.PlayMaker.Actions.TriggerEvent
+  PART
+  boolVariable
+  boolValue
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  trigger
+  collideTag
+  sendEvent
+  storeCollider
+  Check Assembly
+  FINISHED
+  Check for Part collision 2
+  ASSEMBLE
+  Assemble
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  HutongGames.PlayMaker.Actions.Wait
+  Data
+  Installed
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Check shoes
+  FINISHED
+  Check for Part collision 2
+  ASSEMBLE
+  Wait for assembly 2
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolNoneTrue
+  Data
+  Bolted
+  Data
+  Bolted
+  HutongGames.PlayMaker.FsmBool
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariables
+  sendEvent
+  storeResult
+  everyFrame
+  FINISHED
+  TRIGGER ENTER
+  ASSEMBLE
+  DISASSEMBLE
+  GLOBALEVENT
+  LOOP
+  SPAWNITEM
+  Bolted1
+  Bolted2
+  Setup
+  HandChild
+  battery(Clone)
+  Part

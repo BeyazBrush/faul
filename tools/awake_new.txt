@@ -1,0 +1,32 @@
+// Bileşen önbelleği: Update'te GetComponent çağrısı, her karede metadata
+			// araması demektir. Bir kez çözüp saklıyoruz.
+			cachedTransform = transform;
+			cachedAnimation = GetComponentInChildren<Animation>();
+			cachedAnimator = GetComponentInChildren<Animator>();
+			cachedRenderers = GetComponentsInChildren<Renderer>(true);
+
+			// ANİMASYON: MSC'de klip adları "Walk"/"Run" DEĞİL
+			// ("fat_walk", "woman_walk_legs", "kid_run") ve bir karakterin
+			// klipleri birden çok Animation bileşenine BÖLÜNMÜŞ (ölçülen:
+			// Julli'de skeleton(2) + spine_upper(1) + collar_left(1) +
+			// collar_right(2)). CharacterAnimator ikisini de çözüyor.
+			animator = new CharacterAnimator();
+			try { animator.Bind(gameObject); } catch { }
+			LogInfo("dummy animation: " + (animator != null ? animator.Describe() : "none"));
+
+			// KATMAN: "Ignore Raycast" (2). Kullanıcı isteği ve fizik
+			// gerekçesi: kukla aracın içine girince MSC fizik motoru
+			// aracı yerden fırlatıyordu. Ignore Raycast katmanı raycast'leri
+			// kuklanın üzerinden geçirir, aracın hover fiziğini tetiklemez.
+			SetLayerRecursive(gameObject.layer);
+
+			if (cachedAnimation != null) {
+				// Klip adıyla arama CharacterAnimator'da yapılıyor; buradaki
+				// eski tek-bileşen yolu yedek olarak duruyor.
+				hasWalkClip = cachedAnimation.GetClip(LegacyWalkClip) != null;
+				if (!hasWalkClip) hasWalkClip = FindWalkClip();
+				// Kosma klibi ayrica aranir; yoksa yurume kullanilir ve
+				// hiz yine playback olcegiyle kirpiliyor.
+				hasRunClip = cachedAnimation.GetClip(LegacyRunClip) != null;
+				if (!hasRunClip) hasRunClip = FindRunClip();
+			}

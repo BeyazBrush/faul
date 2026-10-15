@@ -1,0 +1,195 @@
+TAG   : l2
+GO    : Speakers
+FSM   : Data
+PATH  : Database/DatabaseComputer/Speakers
+SIZE  : 8308
+
+start : Check data
+
+STRINGS (186):
+  Data
+  Check data
+  Load game
+  FINISHED
+  Purchased
+  HutongGames.PlayMaker.Actions.LoadBool
+  HutongGames.PlayMaker.Actions.LoadBool
+  HutongGames.PlayMaker.Actions.SendEvent
+  UniqueTagInstalled
+  defaultES2File.txt
+  UniqueTagPurchased
+  defaultES2File.txt
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Save game
+  FINISHED
+  Check data
+  HutongGames.PlayMaker.Actions.SaveBool
+  HutongGames.PlayMaker.Actions.SaveBool
+  HutongGames.PlayMaker.Actions.SaveTransform
+  SpawnThis
+  UniqueTagInstalled
+  defaultES2File.txt
+  UniqueTagPurchased
+  defaultES2File.txt
+  UniqueTag
+  defaultES2File.txt
+  saveValue
+  uniqueTag
+  saveFile
+  saveValue
+  uniqueTag
+  saveFile
+  saveValue
+  uniqueTag
+  saveFile
+  Basic state
+  INSTALLED
+  Installed 2
+  NOTINSTALLED
+  Load transform 2
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.DestroyObject
+  HutongGames.PlayMaker.Actions.BoolTest
+  Package
+  SpawnThis
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  gameObject
+  delay
+  detachChildren
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Check data
+  EXISTS
+  Load game
+  NOTEXISTS
+  Save game
+  HutongGames.PlayMaker.Actions.GetName
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.Exists
+  SpawnThis
+  UniqueTag
+  UniqueTag
+  Purchased
+  UniqueTagPurchased
+  UniqueTag
+  Installed
+  UniqueTagInstalled
+  UniqueTagInstalled
+  defaultES2File.txt
+  HutongGames.PlayMaker.FsmString
+  HutongGames.PlayMaker.FsmString
+  gameObject
+  storeName
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  ifExists
+  ifDoesNotExist
+  uniqueTag
+  saveFile
+  Wait
+  FINISHED
+  Basic state
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  Purchased
+  EXISTS
+  Wait
+  NOTEXISTS
+  State 1
+  HutongGames.PlayMaker.Actions.BoolTest
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  State 1
+  Load transform 2
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.LoadTransform
+  SpawnThis
+  SpawnThis
+  UniqueTag
+  defaultES2File.txt
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  State 2
+  Installed 2
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.DestroyObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  SpawnThis
+  ActivateThis1
+  gameObject
+  delay
+  detachChildren
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  FINISHED
+  COLUMN
+  DASH
+  EXISTS
+  GLOBALEVENT
+  INSTALLED
+  NOTEXISTS
+  NOTINSTALLED
+  SAVEGAME
+  SAVEGAME
+  Save game
+  Installed
+  Purchased
+  UniqueTag
+  UniqueTagInstalled
+  UniqueTagPurchased
+  ActivateThis1
+  Package
+  SpawnThis

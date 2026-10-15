@@ -1,0 +1,196 @@
+l0        GO=CD                       FSM=Playlist           PATH=Radio/CD                                                               size=3560
+l0        GO=LoadingRadio             FSM=Text               PATH=Interface/Songs/LoadingRadio                                           size=1356
+l0        GO=CD2                      FSM=LoadSongs          PATH=Radio/CD/CD2                                                           size=5976
+l0        GO=Folk                     FSM=LoadSongs          PATH=Radio/Folk                                                             size=6528
+l0        GO=Folk                     FSM=Kansanradio        PATH=Radio/Folk                                                             size=7948
+l0        GO=Streaming                FSM=Kansanradio        PATH=Streaming                                                              size=7472
+l0        GO=LoadingCD                FSM=Text               PATH=Interface/Songs/LoadingCD                                              size=1356
+l0        GO=CD1                      FSM=LoadSongs          PATH=Radio/CD/CD1                                                           size=5976
+l0        GO=CD3                      FSM=LoadSongs          PATH=Radio/CD/CD3                                                           size=5976
+l1        GO=Music                    FSM=Destroy            PATH=Intro/Music                                                            size=736
+l2        GO=discbrake(flxxx)         FSM=BoltCheck          PATH=SATSUMA(557kg, 248)/FL/AckerFL/wheelFL/TireFL/OFFSET/discbrake(flxxx)  size=9000
+l2        GO=discbrake(flxxx)         FSM=Removal            PATH=SATSUMA(557kg, 248)/FL/AckerFL/wheelFL/TireFL/OFFSET/discbrake(flxxx)  size=8404
+l2        GO=Radio                    FSM=Status             PATH=Database/PartsStatus/Radio                                             size=9644
+l2        GO=RadioVolume              FSM=Knob               PATH=FERNDALE(1630kg)/RadioPivot/Radio/ButtonsRadio/RadioVolume             size=13196
+l2        GO=HarnessRadio             FSM=Assemble           PATH=SATSUMA(557kg, 248)/Wiring/Triggers/Radio/HarnessRadio                 size=6204
+l2        GO=RadioTuner               FSM=Knob               PATH=HAYOSIKO(1500kg, 250)/RadioPivot/Radio/TunerPivot/RadioTuner           size=7972
+l2        GO=trigger_discbrake_fl     FSM=Assembly           PATH=SATSUMA(557kg, 248)/FL/AckerFL/wheelFL/TireFL/OFFSET/trigger_discbrake_fl size=11192
+l2        GO=trigger_radio            FSM=Assembly           PATH=CARPARTS/PartsCar/dashboard meters(Clone)/TriggersRadio/trigger_radio  size=8568
+l2        GO=BuyClutchDisc            FSM=Buy                PATH=REPAIRSHOP/LOD/Store/Parts/BuyClutchDisc                               size=8044
+l2        GO=Remove                   FSM=Knob               PATH=ITEMS/radio(itemx)/ChangeBatteries/Remove                              size=7284
+l2        GO=Volume                   FSM=Knob               PATH=JAIL/RadioPivot/radio(Clone)/Volume                                    size=5764
+l2        GO=TriggerSpeakers          FSM=Assembly           PATH=YARD/Building/BEDROOM1/COMPUTER/TriggersAssembly/TriggerSpeakers       size=6372
+l2        GO=PriceDiscount            FSM=Name               PATH=Sheets/ServiceBrochure/PriceDiscount                                   size=4644
+l2        GO=trigger_cd               FSM=Assembly           PATH=ITEMS/CDs/cd case(item1)/trigger_cd                                    size=6180
+l2        GO=cd case(item2)           FSM=Use                PATH=ITEMS/CDs/cd case(item2)                                               size=7528
+l2        GO=cd case(item2)           FSM=Open               PATH=ITEMS/CDs/cd case(item2)                                               size=5576
+l2        GO=cd player(Clone)         FSM=Removal            PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)                          size=8676
+l2        GO=JukeboxFleetari          FSM=Logic              PATH=REPAIRSHOP/LOD/Office/Fleetari/JukeboxFleetari                         size=3200
+l2        GO=RadioCDSwitch            FSM=Use                PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/RadioCDSwitch  size=5924
+l2        GO=Open                     FSM=Knob               PATH=ITEMS/radio(itemx)/Open                                                size=5268
+l2        GO=Volume                   FSM=Knob               PATH=KEKMET(350-400psi)/Dashboard/Radio/Volume                              size=4612
+l2        GO=cd(item1)                FSM=Removal            PATH=ITEMS/CDs/cd(item1)                                                    size=9044
+l2        GO=cd(item1)                FSM=Player             PATH=ITEMS/CDs/cd(item1)                                                    size=5644
+l2        GO=RadioTuner               FSM=Knob               PATH=KEKMET(350-400psi)/RadioPivot/Radio/TunerPivot/RadioTuner              size=7964
+l2        GO=Power                    FSM=Knob               PATH=JAIL/RadioPivot/radio(Clone)/Power                                     size=8812
+l2        GO=trigger_cd               FSM=Assembly           PATH=ITEMS/CDs/cd case(item2)/trigger_cd                                    size=6180
+l2        GO=discbrake(frxxx)         FSM=BoltCheck          PATH=SATSUMA(557kg, 248)/FR/AckerFR/wheelFR/TireFR/OFFSET/discbrake(frxxx)  size=9000
+l2        GO=discbrake(frxxx)         FSM=Removal            PATH=SATSUMA(557kg, 248)/FR/AckerFR/wheelFR/TireFR/OFFSET/discbrake(frxxx)  size=8404
+l2        GO=Play                     FSM=Knob               PATH=ITEMS/radio(itemx)/Play                                                size=5000
+l2        GO=Play                     FSM=Charge             PATH=ITEMS/radio(itemx)/Play                                                size=3636
+l2        GO=Seikailu-MusicActivator  FSM=MusicActivator     PATH=YARD/Building/BEDROOM1/COMPUTER/SYSTEM/RAMI-Simppa&Jokke/Seikailu-Timer/Seikailu-MusicActivator size=2364
+l2        GO=Insert                   FSM=Assembly           PATH=ITEMS/radio(itemx)/ChangeBatteries/Insert                              size=7708
+l2        GO=Channel1                 FSM=Update             PATH=RADIO/RadioChannels/Channel1                                           size=4032
+l2        GO=CD_player                FSM=Data               PATH=Database/DatabaseOrders/CD_player                                      size=9580
+l2        GO=Power                    FSM=Consumption        PATH=KEKMET(350-400psi)/Dashboard/Radio/Power                               size=2004
+l2        GO=Power                    FSM=Use                PATH=KEKMET(350-400psi)/Dashboard/Radio/Power                               size=4720
+l2        GO=SpeakerDash              FSM=Settings           PATH=SATSUMA(557kg, 248)/Electricity/SpeakerDash                            size=4764
+l2        GO=Folk                     FSM=Update             PATH=RADIO/RadioChannels/Folk                                               size=2420
+l2        GO=RadioChannels            FSM=Fetch              PATH=RADIO/RadioChannels                                                    size=14488
+l2        GO=trigger_discbrake_fr     FSM=Assembly           PATH=SATSUMA(557kg, 248)/FR/AckerFR/wheelFR/TireFR/OFFSET/trigger_discbrake_fr size=11192
+l2        GO=RadioTuner               FSM=Knob               PATH=CARPARTS/PartsCar/radio(Clone)/TunerPivot/RadioTuner                   size=7964
+l2        GO=cd player(Clone)         FSM=Use                PATH=STORE/Boxes/cd player(Clone)                                           size=5588
+l2        GO=Eject                    FSM=Use                PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/Eject          size=4228
+l2        GO=RadioHarness             FSM=Assemble           PATH=SATSUMA(557kg, 248)/Wiring/Triggers/Radio/RadioHarness                 size=6196
+l2        GO=cd(item2)                FSM=Player             PATH=ITEMS/CDs/cd(item2)                                                    size=5644
+l2        GO=cd(item2)                FSM=Removal            PATH=ITEMS/CDs/cd(item2)                                                    size=9044
+l2        GO=label                    FSM=Get                PATH=ITEMS/CDs/cd case(item1)/label                                         size=3308
+l2        GO=RadioTuner               FSM=Knob               PATH=FERNDALE(1630kg)/RadioPivot/Radio/TunerPivot/RadioTuner                size=7972
+l2        GO=Radio                    FSM=Data               PATH=Database/DatabaseMechanics/Radio                                       size=8444
+l2        GO=Paikallisradio           FSM=Play               PATH=RADIO/Paikallisradio                                                   size=36800
+l2        GO=Paikallisradio           FSM=PlayOld            PATH=RADIO/Paikallisradio                                                   size=48532
+l2        GO=WiringSpeakers           FSM=Data               PATH=Database/DatabaseWiring/WiringSpeakers                                 size=6292
+l2        GO=JukeboxStore             FSM=Logic              PATH=STORE/LOD/ActivateBar/JukeboxStore                                     size=3200
+l2        GO=RadioVolume              FSM=Knob               PATH=GIFU(750/450psi)/RadioPivot/Radio/ButtonsRadio/RadioVolume             size=13196
+l2        GO=CDPlayer                 FSM=Fetch              PATH=SATSUMA(557kg, 248)/Electricity/SpeakerBass/CDPlayer                   size=7404
+l2        GO=CDPlayer                 FSM=Update             PATH=SATSUMA(557kg, 248)/Electricity/SpeakerBass/CDPlayer                   size=8508
+l2        GO=label                    FSM=Get                PATH=ITEMS/CDs/cd case(item2)/label                                         size=3308
+l2        GO=RadioTuner               FSM=Knob               PATH=GIFU(750/450psi)/RadioPivot/Radio/TunerPivot/RadioTuner                size=7964
+l2        GO=cd case(item1)           FSM=Open               PATH=ITEMS/CDs/cd case(item1)                                               size=5576
+l2        GO=cd case(item1)           FSM=Use                PATH=ITEMS/CDs/cd case(item1)                                               size=7528
+l2        GO=radio(Clone)             FSM=Removal            PATH=CARPARTS/PartsCar/radio(Clone)                                         size=8364
+l2        GO=Discbrake_FR             FSM=Data               PATH=Database/DatabaseBody/Discbrake_FR                                     size=7364
+l2        GO=trigger_disc             FSM=Assembly           PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/trigger_disc             size=12780
+l2        GO=cd(item3)                FSM=Player             PATH=ITEMS/CDs/cd(item3)                                                    size=5644
+l2        GO=cd(item3)                FSM=Removal            PATH=ITEMS/CDs/cd(item3)                                                    size=9044
+l2        GO=Discbrake_FL             FSM=Data               PATH=Database/DatabaseBody/Discbrake_FL                                     size=7364
+l2        GO=RadioVolume              FSM=Knob               PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/RadioVolume    size=17812
+l2        GO=RadioVolume              FSM=Consumption        PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/RadioVolume    size=2044
+l2        GO=Volume                   FSM=Knob               PATH=ITEMS/radio(itemx)/Volume                                              size=5976
+l2        GO=label                    FSM=Get                PATH=ITEMS/CDs/cd case(item3)/label                                         size=3308
+l2        GO=RadioVolume              FSM=Consumption        PATH=CARPARTS/PartsCar/radio(Clone)/ButtonsRadio/RadioVolume                size=2044
+l2        GO=RadioVolume              FSM=Knob               PATH=CARPARTS/PartsCar/radio(Clone)/ButtonsRadio/RadioVolume                size=21944
+l2        GO=trigger_cd               FSM=Assembly           PATH=ITEMS/CDs/cd case(item3)/trigger_cd                                    size=6180
+l2        GO=trigger_cd               FSM=Assembly           PATH=CARPARTS/PartsCar/dashboard meters(Clone)/TriggersRadio/trigger_cd     size=8332
+l2        GO=RADIO_speaker            FSM=Channel2           PATH=KEKMET(350-400psi)/Dashboard/Radio/RADIO_speaker                       size=19676
+l2        GO=BuyClutchDisc            FSM=Buy                PATH=RALLY/PartsSalesman/Functions/Parts/BuyClutchDisc                      size=7692
+l2        GO=cd case(item3)           FSM=Use                PATH=ITEMS/CDs/cd case(item3)                                               size=7528
+l2        GO=cd case(item3)           FSM=Open               PATH=ITEMS/CDs/cd case(item3)                                               size=5576
+l2        GO=Speakers                 FSM=Data               PATH=Database/DatabaseComputer/Speakers                                     size=8308
+l2        GO=RadioMast                FSM=Blink              PATH=MAP/RadioMast                                                          size=1152
+l2        GO=RadioVolume              FSM=Knob               PATH=HAYOSIKO(1500kg, 250)/RadioPivot/Radio/ButtonsRadio/RadioVolume        size=13196
+l2        GO=RadioVolume              FSM=Knob               PATH=KEKMET(350-400psi)/RadioPivot/Radio/ButtonsRadio/RadioVolume           size=13196
+l2        GO=WiringRadio              FSM=Data               PATH=Database/DatabaseWiring/WiringRadio                                    size=6544
+l2        GO=Power                    FSM=Knob               PATH=ITEMS/radio(itemx)/Power                                               size=8604
+l2        GO=Channel                  FSM=Knob               PATH=JAIL/RadioPivot/radio(Clone)/Channel                                   size=5504
+l2        GO=RadioPivot               FSM=Horn               PATH=HAYOSIKO(1500kg, 250)/RadioPivot                                       size=4552
+l2        GO=TrackChannelSwitch       FSM=ChangeTrack        PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/TrackChannelSwitch size=8040
+l2        GO=TrackChannelSwitch       FSM=ChangeChannel      PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/TrackChannelSwitch size=9792
+l2        GO=radio(itemx)             FSM=Data               PATH=ITEMS/radio(itemx)                                                     size=7724
+l2        GO=SpeakerBass              FSM=Settings           PATH=SATSUMA(557kg, 248)/Electricity/SpeakerBass                            size=6440
+l2        GO=RadioAmplifier           FSM=Assemble           PATH=SATSUMA(557kg, 248)/Wiring/Triggers/AmplifierAudio/RadioAmplifier      size=6196
+l2        GO=AmplifierRadio           FSM=Assemble           PATH=SATSUMA(557kg, 248)/Wiring/Triggers/AmplifierAudio/AmplifierRadio      size=6204
+l3        GO=ACTIVATE_CD              FSM=Knob               PATH=CAR/MenuCar/Rigid/MESH/cd player(Clone) 1/ACTIVATE_CD                  size=5508
+maindata  GO=Disclaimer               FSM=FSM                PATH=Disclaimer                                                             size=2052
+rad       GO=discbrake(flxxx)         FSM=BoltCheck          PATH=SATSUMA(557kg, 248)/FL/AckerFL/wheelFL/TireFL/OFFSET/discbrake(flxxx)  size=9000  [dup]
+rad       GO=discbrake(flxxx)         FSM=Removal            PATH=SATSUMA(557kg, 248)/FL/AckerFL/wheelFL/TireFL/OFFSET/discbrake(flxxx)  size=8404  [dup]
+rad       GO=Radio                    FSM=Status             PATH=Database/PartsStatus/Radio                                             size=9644  [dup]
+rad       GO=RadioVolume              FSM=Knob               PATH=FERNDALE(1630kg)/RadioPivot/Radio/ButtonsRadio/RadioVolume             size=13196  [dup]
+rad       GO=HarnessRadio             FSM=Assemble           PATH=SATSUMA(557kg, 248)/Wiring/Triggers/Radio/HarnessRadio                 size=6204  [dup]
+rad       GO=RadioTuner               FSM=Knob               PATH=HAYOSIKO(1500kg, 250)/RadioPivot/Radio/TunerPivot/RadioTuner           size=7972  [dup]
+rad       GO=trigger_discbrake_fl     FSM=Assembly           PATH=SATSUMA(557kg, 248)/FL/AckerFL/wheelFL/TireFL/OFFSET/trigger_discbrake_fl size=11192  [dup]
+rad       GO=trigger_radio            FSM=Assembly           PATH=CARPARTS/PartsCar/dashboard meters(Clone)/TriggersRadio/trigger_radio  size=8568  [dup]
+rad       GO=BuyClutchDisc            FSM=Buy                PATH=REPAIRSHOP/LOD/Store/Parts/BuyClutchDisc                               size=8044  [dup]
+rad       GO=Remove                   FSM=Knob               PATH=ITEMS/radio(itemx)/ChangeBatteries/Remove                              size=7284  [dup]
+rad       GO=Volume                   FSM=Knob               PATH=JAIL/RadioPivot/radio(Clone)/Volume                                    size=5764  [dup]
+rad       GO=TriggerSpeakers          FSM=Assembly           PATH=YARD/Building/BEDROOM1/COMPUTER/TriggersAssembly/TriggerSpeakers       size=6372  [dup]
+rad       GO=PriceDiscount            FSM=Name               PATH=Sheets/ServiceBrochure/PriceDiscount                                   size=4644  [dup]
+rad       GO=trigger_cd               FSM=Assembly           PATH=ITEMS/CDs/cd case(item1)/trigger_cd                                    size=6180  [dup]
+rad       GO=cd case(item2)           FSM=Use                PATH=ITEMS/CDs/cd case(item2)                                               size=7528  [dup]
+rad       GO=cd case(item2)           FSM=Open               PATH=ITEMS/CDs/cd case(item2)                                               size=5576  [dup]
+rad       GO=cd player(Clone)         FSM=Removal            PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)                          size=8676  [dup]
+rad       GO=JukeboxFleetari          FSM=Logic              PATH=REPAIRSHOP/LOD/Office/Fleetari/JukeboxFleetari                         size=3200  [dup]
+rad       GO=RadioCDSwitch            FSM=Use                PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/RadioCDSwitch  size=5924  [dup]
+rad       GO=Open                     FSM=Knob               PATH=ITEMS/radio(itemx)/Open                                                size=5268  [dup]
+rad       GO=Volume                   FSM=Knob               PATH=KEKMET(350-400psi)/Dashboard/Radio/Volume                              size=4612  [dup]
+rad       GO=cd(item1)                FSM=Removal            PATH=ITEMS/CDs/cd(item1)                                                    size=9044  [dup]
+rad       GO=cd(item1)                FSM=Player             PATH=ITEMS/CDs/cd(item1)                                                    size=5644  [dup]
+rad       GO=RadioTuner               FSM=Knob               PATH=KEKMET(350-400psi)/RadioPivot/Radio/TunerPivot/RadioTuner              size=7964  [dup]
+rad       GO=Power                    FSM=Knob               PATH=JAIL/RadioPivot/radio(Clone)/Power                                     size=8812  [dup]
+rad       GO=trigger_cd               FSM=Assembly           PATH=ITEMS/CDs/cd case(item2)/trigger_cd                                    size=6180  [dup]
+rad       GO=discbrake(frxxx)         FSM=BoltCheck          PATH=SATSUMA(557kg, 248)/FR/AckerFR/wheelFR/TireFR/OFFSET/discbrake(frxxx)  size=9000  [dup]
+rad       GO=discbrake(frxxx)         FSM=Removal            PATH=SATSUMA(557kg, 248)/FR/AckerFR/wheelFR/TireFR/OFFSET/discbrake(frxxx)  size=8404  [dup]
+rad       GO=Play                     FSM=Knob               PATH=ITEMS/radio(itemx)/Play                                                size=5000  [dup]
+rad       GO=Play                     FSM=Charge             PATH=ITEMS/radio(itemx)/Play                                                size=3636  [dup]
+rad       GO=Seikailu-MusicActivator  FSM=MusicActivator     PATH=YARD/Building/BEDROOM1/COMPUTER/SYSTEM/RAMI-Simppa&Jokke/Seikailu-Timer/Seikailu-MusicActivator size=2364  [dup]
+rad       GO=Insert                   FSM=Assembly           PATH=ITEMS/radio(itemx)/ChangeBatteries/Insert                              size=7708  [dup]
+rad       GO=Channel1                 FSM=Update             PATH=RADIO/RadioChannels/Channel1                                           size=4032  [dup]
+rad       GO=CD_player                FSM=Data               PATH=Database/DatabaseOrders/CD_player                                      size=9580  [dup]
+rad       GO=Power                    FSM=Consumption        PATH=KEKMET(350-400psi)/Dashboard/Radio/Power                               size=2004  [dup]
+rad       GO=Power                    FSM=Use                PATH=KEKMET(350-400psi)/Dashboard/Radio/Power                               size=4720  [dup]
+rad       GO=SpeakerDash              FSM=Settings           PATH=SATSUMA(557kg, 248)/Electricity/SpeakerDash                            size=4764  [dup]
+rad       GO=Folk                     FSM=Update             PATH=RADIO/RadioChannels/Folk                                               size=2420  [dup]
+rad       GO=RadioChannels            FSM=Fetch              PATH=RADIO/RadioChannels                                                    size=14488  [dup]
+rad       GO=trigger_discbrake_fr     FSM=Assembly           PATH=SATSUMA(557kg, 248)/FR/AckerFR/wheelFR/TireFR/OFFSET/trigger_discbrake_fr size=11192  [dup]
+rad       GO=RadioTuner               FSM=Knob               PATH=CARPARTS/PartsCar/radio(Clone)/TunerPivot/RadioTuner                   size=7964  [dup]
+rad       GO=cd player(Clone)         FSM=Use                PATH=STORE/Boxes/cd player(Clone)                                           size=5588  [dup]
+rad       GO=Eject                    FSM=Use                PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/Eject          size=4228  [dup]
+rad       GO=RadioHarness             FSM=Assemble           PATH=SATSUMA(557kg, 248)/Wiring/Triggers/Radio/RadioHarness                 size=6196  [dup]
+rad       GO=cd(item2)                FSM=Player             PATH=ITEMS/CDs/cd(item2)                                                    size=5644  [dup]
+rad       GO=cd(item2)                FSM=Removal            PATH=ITEMS/CDs/cd(item2)                                                    size=9044  [dup]
+rad       GO=label                    FSM=Get                PATH=ITEMS/CDs/cd case(item1)/label                                         size=3308  [dup]
+rad       GO=RadioTuner               FSM=Knob               PATH=FERNDALE(1630kg)/RadioPivot/Radio/TunerPivot/RadioTuner                size=7972  [dup]
+rad       GO=Radio                    FSM=Data               PATH=Database/DatabaseMechanics/Radio                                       size=8444  [dup]
+rad       GO=Paikallisradio           FSM=Play               PATH=RADIO/Paikallisradio                                                   size=36800  [dup]
+rad       GO=Paikallisradio           FSM=PlayOld            PATH=RADIO/Paikallisradio                                                   size=48532  [dup]
+rad       GO=WiringSpeakers           FSM=Data               PATH=Database/DatabaseWiring/WiringSpeakers                                 size=6292  [dup]
+rad       GO=JukeboxStore             FSM=Logic              PATH=STORE/LOD/ActivateBar/JukeboxStore                                     size=3200  [dup]
+rad       GO=RadioVolume              FSM=Knob               PATH=GIFU(750/450psi)/RadioPivot/Radio/ButtonsRadio/RadioVolume             size=13196  [dup]
+rad       GO=CDPlayer                 FSM=Fetch              PATH=SATSUMA(557kg, 248)/Electricity/SpeakerBass/CDPlayer                   size=7404  [dup]
+rad       GO=CDPlayer                 FSM=Update             PATH=SATSUMA(557kg, 248)/Electricity/SpeakerBass/CDPlayer                   size=8508  [dup]
+rad       GO=label                    FSM=Get                PATH=ITEMS/CDs/cd case(item2)/label                                         size=3308  [dup]
+rad       GO=RadioTuner               FSM=Knob               PATH=GIFU(750/450psi)/RadioPivot/Radio/TunerPivot/RadioTuner                size=7964  [dup]
+rad       GO=cd case(item1)           FSM=Open               PATH=ITEMS/CDs/cd case(item1)                                               size=5576  [dup]
+rad       GO=cd case(item1)           FSM=Use                PATH=ITEMS/CDs/cd case(item1)                                               size=7528  [dup]
+rad       GO=radio(Clone)             FSM=Removal            PATH=CARPARTS/PartsCar/radio(Clone)                                         size=8364  [dup]
+rad       GO=Discbrake_FR             FSM=Data               PATH=Database/DatabaseBody/Discbrake_FR                                     size=7364  [dup]
+rad       GO=trigger_disc             FSM=Assembly           PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/trigger_disc             size=12780  [dup]
+rad       GO=cd(item3)                FSM=Player             PATH=ITEMS/CDs/cd(item3)                                                    size=5644  [dup]
+rad       GO=cd(item3)                FSM=Removal            PATH=ITEMS/CDs/cd(item3)                                                    size=9044  [dup]
+rad       GO=Discbrake_FL             FSM=Data               PATH=Database/DatabaseBody/Discbrake_FL                                     size=7364  [dup]
+rad       GO=RadioVolume              FSM=Knob               PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/RadioVolume    size=17812  [dup]
+rad       GO=RadioVolume              FSM=Consumption        PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/RadioVolume    size=2044  [dup]
+rad       GO=Volume                   FSM=Knob               PATH=ITEMS/radio(itemx)/Volume                                              size=5976  [dup]
+rad       GO=label                    FSM=Get                PATH=ITEMS/CDs/cd case(item3)/label                                         size=3308  [dup]
+rad       GO=RadioVolume              FSM=Consumption        PATH=CARPARTS/PartsCar/radio(Clone)/ButtonsRadio/RadioVolume                size=2044  [dup]
+rad       GO=RadioVolume              FSM=Knob               PATH=CARPARTS/PartsCar/radio(Clone)/ButtonsRadio/RadioVolume                size=21944  [dup]
+rad       GO=trigger_cd               FSM=Assembly           PATH=ITEMS/CDs/cd case(item3)/trigger_cd                                    size=6180  [dup]
+rad       GO=trigger_cd               FSM=Assembly           PATH=CARPARTS/PartsCar/dashboard meters(Clone)/TriggersRadio/trigger_cd     size=8332  [dup]
+rad       GO=RADIO_speaker            FSM=Channel2           PATH=KEKMET(350-400psi)/Dashboard/Radio/RADIO_speaker                       size=19676  [dup]
+rad       GO=BuyClutchDisc            FSM=Buy                PATH=RALLY/PartsSalesman/Functions/Parts/BuyClutchDisc                      size=7692  [dup]
+rad       GO=cd case(item3)           FSM=Use                PATH=ITEMS/CDs/cd case(item3)                                               size=7528  [dup]
+rad       GO=cd case(item3)           FSM=Open               PATH=ITEMS/CDs/cd case(item3)                                               size=5576  [dup]
+rad       GO=Speakers                 FSM=Data               PATH=Database/DatabaseComputer/Speakers                                     size=8308  [dup]
+rad       GO=RadioMast                FSM=Blink              PATH=MAP/RadioMast                                                          size=1152  [dup]
+rad       GO=RadioVolume              FSM=Knob               PATH=HAYOSIKO(1500kg, 250)/RadioPivot/Radio/ButtonsRadio/RadioVolume        size=13196  [dup]
+rad       GO=RadioVolume              FSM=Knob               PATH=KEKMET(350-400psi)/RadioPivot/Radio/ButtonsRadio/RadioVolume           size=13196  [dup]
+rad       GO=WiringRadio              FSM=Data               PATH=Database/DatabaseWiring/WiringRadio                                    size=6544  [dup]
+rad       GO=Power                    FSM=Knob               PATH=ITEMS/radio(itemx)/Power                                               size=8604  [dup]
+rad       GO=Channel                  FSM=Knob               PATH=JAIL/RadioPivot/radio(Clone)/Channel                                   size=5504  [dup]
+rad       GO=RadioPivot               FSM=Horn               PATH=HAYOSIKO(1500kg, 250)/RadioPivot                                       size=4552  [dup]
+rad       GO=TrackChannelSwitch       FSM=ChangeTrack        PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/TrackChannelSwitch size=8040  [dup]
+rad       GO=TrackChannelSwitch       FSM=ChangeChannel      PATH=STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/TrackChannelSwitch size=9792  [dup]
+rad       GO=radio(itemx)             FSM=Data               PATH=ITEMS/radio(itemx)                                                     size=7724  [dup]
+rad       GO=SpeakerBass              FSM=Settings           PATH=SATSUMA(557kg, 248)/Electricity/SpeakerBass                            size=6440  [dup]
+rad       GO=RadioAmplifier           FSM=Assemble           PATH=SATSUMA(557kg, 248)/Wiring/Triggers/AmplifierAudio/RadioAmplifier      size=6196  [dup]
+rad       GO=AmplifierRadio           FSM=Assemble           PATH=SATSUMA(557kg, 248)/Wiring/Triggers/AmplifierAudio/AmplifierRadio      size=6204  [dup]

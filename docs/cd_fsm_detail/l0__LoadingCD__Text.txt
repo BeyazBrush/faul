@@ -1,0 +1,31 @@
+TAG   : l0
+GO    : LoadingCD
+FSM   : Text
+PATH  : Interface/Songs/LoadingCD
+SIZE  : 1356
+
+start : State 1
+
+STRINGS (22):
+  Text
+  State 1
+  State 1
+  HutongGames.PlayMaker.Actions.GetFsmString
+  HutongGames.PlayMaker.Actions.SetProperty
+  SongDatabaseCD
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  Text
+  System.String
+  Playlist
+  Path
+  Text
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  targetProperty
+  everyFrame
+  Text

@@ -1,0 +1,12 @@
+C:\Users\Admin\Documents\s\MSCSteamMP\src\MSCSteamMP\obj\Release\MSCSteamMP.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\s\MSCSteamMP\src\MSCSteamMP\obj\Release\MSCSteamMP.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\s\MSCSteamMP\bin\Release\MSCSteamMP.dll
+C:\Users\Admin\Documents\s\MSCSteamMP\bin\Release\MSCSteamMP.pdb
+C:\Users\Admin\Documents\s\MSCSteamMP\src\MSCSteamMP\obj\Release\MSCSteamMP.dll
+C:\Users\Admin\Documents\s\MSCSteamMP\src\MSCSteamMP\obj\Release\MSCSteamMP.pdb
+D:\modmscMP\MSCSteamMP\src\MSCSteamMP\obj\Release\MSCSteamMP.dll
+D:\modmscMP\MSCSteamMP\src\MSCSteamMP\obj\Release\MSCSteamMP.pdb
+D:\modmscMP\MSCSteamMP\src\MSCSteamMP\obj\Release\MSCSteamMP.csproj.AssemblyReference.cache
+D:\modmscMP\MSCSteamMP\src\MSCSteamMP\obj\Release\MSCSteamMP.csproj.CoreCompileInputs.cache
+D:\modmscMP\MSCSteamMP\bin\Release\MSCSteamMP.dll
+D:\modmscMP\MSCSteamMP\bin\Release\MSCSteamMP.pdb

@@ -1,0 +1,136 @@
+TAG   : l2
+GO    : PayMoney
+FSM   : Use
+PATH  : JOBS/HouseDrunk/BeerCampOld/BeerCamp/KiljuBuyer/Char/skeleton/pelvis/spine_middle/spine_upper/collar_left/shoulder_left/arm_left/hand_left/PayMoney
+start : State 2
+
+STRINGS (129):
+  Use
+  State 2
+  Wait player
+  FINISHED
+  Wait button
+  STOP
+  State 2
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.Wait
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  State 1
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  GUIinteraction
+  Value
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  State 1
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SendEvent
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.FloatAdd
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  POV
+  Logic
+  HouseFoley
+  money_get
+  GUIinteraction
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  floatVariable
+  add
+  everyFrame
+  perSecond
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  State 2
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.ConvertFloatToString
+  HutongGames.PlayMaker.Actions.BuildString
+  QT
+  Value
+  TAKE MONEY 
+  Value
+   MK
+  Value
+  HutongGames.PlayMaker.FsmString
+  floatVariable
+  stringVariable
+  format
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  FINISHED
+  CLOSE
+  OPEN
+  STOP
+  USE
+  Money
+  RandomCash
+  Value

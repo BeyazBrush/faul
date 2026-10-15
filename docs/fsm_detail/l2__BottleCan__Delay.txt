@@ -1,0 +1,39 @@
+TAG   : l2
+GO    : BottleCan
+FSM   : Delay
+PATH  : JOBS/HouseDrunk/BeerCampOld/BeerCamp/KiljuBuyer/Char/skeleton/pelvis/spine_middle/spine_upper/collar_right/shoulder_right/arm_right/hand_right/BottleCan
+start : State 1
+
+STRINGS (32):
+  Delay
+  State 1
+  State 1
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  State 2
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.SendEventByName
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  OtherCan
+  OtherCan
+  Use
+  NPCDRINK
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  FINISHED
+  OtherCan

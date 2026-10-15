@@ -1,0 +1,98 @@
+TAG   : l2
+GO    : Play
+FSM   : Charge
+PATH  : ITEMS/radio(itemx)/Play
+SIZE  : 3636
+
+start : State 2
+
+STRINGS (89):
+  Charge
+  State 2
+  State 1
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.SetFloatValue
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.FloatSubtract
+  HutongGames.PlayMaker.Actions.FloatClamp
+  HutongGames.PlayMaker.Actions.SetFsmFloat
+  HutongGames.PlayMaker.Actions.Wait
+  Speaker
+  Settings
+  Volume
+  floatVariable
+  floatValue
+  everyFrame
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  floatVariable
+  subtract
+  everyFrame
+  perSecond
+  floatVariable
+  minValue
+  maxValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  State 2
+  STOP
+  State 3
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.FloatClamp
+  HutongGames.PlayMaker.Actions.GetFsmInt
+  HutongGames.PlayMaker.Actions.IntCompare
+  Assembly
+  Batteries
+  floatVariable
+  minValue
+  maxValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  State 3
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.SetFsmFloat
+  HutongGames.PlayMaker.Actions.Wait
+  3s
+  Speaker
+  Settings
+  Volume
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  FINISHED
+  STOP
+  Charge
+  Consumption
+  ConsumptionDivider
+  Volume
+  VolumeCharge
+  Batteries
+  Speaker

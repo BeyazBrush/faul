@@ -1,0 +1,152 @@
+TAG   : l0
+GO    : CD3
+FSM   : LoadSongs
+PATH  : Radio/CD/CD3
+SIZE  : 5976
+
+start : Init
+
+STRINGS (143):
+  LoadSongs
+  Init
+  Load
+  FAIL
+  Fail
+  LOAD
+  Add List
+  HutongGames.PlayMaker.Actions.SetFsmString
+  HutongGames.PlayMaker.Actions.WWWPOST
+  Playlist
+  Path
+  Path
+  Path
+  Error
+  UnityEngine.Object
+  UnityEngine.Object
+  Song
+  UnityEngine.AudioClip
+  HutongGames.PlayMaker.FsmString
+  HutongGames.PlayMaker.FsmVar
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  url
+  postKeys
+  postValues
+  storeText
+  storeTexture
+  storeMovieTexture
+  storeAudio
+  audio3d
+  audioStream
+  audioType
+  errorString
+  progress
+  isDone
+  isError
+  Fail
+  FINISHED
+  Get file name
+  Add List
+  FINISHED
+  Get file name
+  HutongGames.PlayMaker.Actions.ArrayListAdd
+  Ref
+  Song
+  gameObject
+  reference
+  variable
+  Get file name
+  FINISHED
+  Load
+  LOAD
+  Off
+  HutongGames.PlayMaker.Actions.GetAppPath
+  HutongGames.PlayMaker.Actions.IntAdd
+  HutongGames.PlayMaker.Actions.ConvertIntToString
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.IntCompare
+  Name
+  file:///
+  FolderName
+  CD1/
+  track
+  Name
+  .ogg
+  Path
+  HutongGames.PlayMaker.FsmString
+  DataPathResult
+  AppFolderResult
+  PersistentPathResult
+  PlaformResult
+  intVariable
+  add
+  everyFrame
+  intVariable
+  stringVariable
+  format
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Off
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetIntValue
+  HutongGames.PlayMaker.Actions.EnableFSM
+  Playlist
+  Ref
+  LoadSongs
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  intVariable
+  intValue
+  everyFrame
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  Init
+  FINISHED
+  Get file name
+  HutongGames.PlayMaker.Actions.GetName
+  HutongGames.PlayMaker.Actions.ArrayListClear
+  HutongGames.PlayMaker.Actions.Wait
+  Ref
+  Ref
+  gameObject
+  storeName
+  everyFrame
+  gameObject
+  reference
+  time
+  finishEvent
+  realTime
+  FINISHED
+  FAIL
+  JINGLE
+  LOAD
+  PLAY
+  RADIO_FOLK
+  WAKEUP
+  MaxTracks
+  Track
+  Error
+  FolderName
+  CD3/
+  Name
+  Path
+  Ref
+  Song
+  UnityEngine.AudioClip

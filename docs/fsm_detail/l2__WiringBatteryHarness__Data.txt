@@ -1,0 +1,156 @@
+TAG   : l2
+GO    : WiringBatteryHarness
+FSM   : Data
+PATH  : Database/DatabaseWiring/WiringBatteryHarness
+start : Check data
+
+STRINGS (149):
+  Data
+  Check data
+  Load game
+  FINISHED
+  Basic state
+  HutongGames.PlayMaker.Actions.LoadBool
+  HutongGames.PlayMaker.Actions.LoadBool
+  HutongGames.PlayMaker.Actions.SendEvent
+  UniqueTagBolted
+  defaultES2File.txt
+  UniqueTagInstalled
+  defaultES2File.txt
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Save game
+  FINISHED
+  Check data
+  HutongGames.PlayMaker.Actions.SaveBool
+  HutongGames.PlayMaker.Actions.SaveBool
+  UniqueTagBolted
+  defaultES2File.txt
+  UniqueTagInstalled
+  defaultES2File.txt
+  saveValue
+  uniqueTag
+  saveFile
+  saveValue
+  uniqueTag
+  saveFile
+  Basic state
+  INSTALLED
+  Installed
+  NOTINSTALLED
+  Load transform
+  HutongGames.PlayMaker.Actions.BoolTest
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Installed
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  ActivateThis
+  Triggers
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Load transform
+  Check data
+  EXISTS
+  Load game
+  NOTEXISTS
+  Save game
+  HutongGames.PlayMaker.Actions.GetName
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.Exists
+  HutongGames.PlayMaker.Actions.Exists
+  ActivateThis
+  UniqueTag
+  UniqueTag
+  Bolted
+  UniqueTagBolted
+  UniqueTag
+  Installed
+  UniqueTagInstalled
+  UniqueTagBolted
+  defaultES2File.txt
+  UniqueTagInstalled
+  defaultES2File.txt
+  HutongGames.PlayMaker.FsmString
+  HutongGames.PlayMaker.FsmString
+  gameObject
+  storeName
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  ifExists
+  ifDoesNotExist
+  uniqueTag
+  saveFile
+  ifExists
+  ifDoesNotExist
+  uniqueTag
+  saveFile
+  Destroy
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  ActivateThis
+  Triggers
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  FINISHED
+  EXISTS
+  INSTALLED
+  NOTEXISTS
+  NOTINSTALLED
+  SAVEGAME
+  DESTROY
+  DESTROY
+  Destroy
+  SAVEGAME
+  Save game
+  Bolted
+  Installed
+  UniqueTag
+  UniqueTagBolted
+  UniqueTagInstalled
+  ActivateThis
+  Triggers

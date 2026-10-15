@@ -1,0 +1,148 @@
+TAG   : l2
+GO    : cd case(item2)
+FSM   : Open
+PATH  : ITEMS/CDs/cd case(item2)
+SIZE  : 5576
+
+start : Wait player
+
+STRINGS (139):
+  Open
+  Wait player
+  Wait player
+  FINISHED
+  Wait button
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  Bool test
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetButtonDown
+  Use
+  HutongGames.PlayMaker.FsmInt
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  buttonName
+  sendEvent
+  storeResult
+  Open
+  FINISHED
+  Wait player
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.PlayAnimation
+  HutongGames.PlayMaker.Actions.SendEventByName
+  POV
+  CD
+  Removal
+  HouseFoley
+  cd_caseopen
+  cd_open
+  REMOVE
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  gameObject
+  animName
+  playMode
+  blendTime
+  finishEvent
+  loopEvent
+  stopOnExit
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Bool test
+  OPEN
+  Open
+  CLOSE
+  Close
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.BoolFlip
+  HutongGames.PlayMaker.Actions.BoolTest
+  HouseFoley
+  toolbox
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Close
+  FINISHED
+  Wait player
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.PlayAnimation
+  tp
+  POV
+  HouseFoley
+  cd_caseclose
+  cd_close
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  gameObject
+  animName
+  playMode
+  blendTime
+  finishEvent
+  loopEvent
+  stopOnExit
+  FINISHED
+  CLOSE
+  OPEN
+  STOP
+  USE
+  Open
+  CD

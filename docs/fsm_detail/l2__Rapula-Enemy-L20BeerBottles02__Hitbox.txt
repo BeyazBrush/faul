@@ -1,0 +1,94 @@
+TAG   : l2
+GO    : Rapula-Enemy-L20BeerBottles02
+FSM   : Hitbox
+PATH  : YARD/Building/BEDROOM1/COMPUTER/SYSTEM/RAMI-Rapula/Rapula-Enemies/Rapula-Enemy-L20BeerBottles02
+start : Next Frame
+
+STRINGS (87):
+  Hitbox
+  Next Frame
+  State 1
+  Osuma
+  Osuma
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.FloatCompare
+  HutongGames.PlayMaker.Actions.FloatCompare
+  HutongGames.PlayMaker.Actions.FloatCompare
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  target
+  storeResult
+  everyFrame
+  gameObject
+  target
+  storeResult
+  everyFrame
+  gameObject
+  target
+  storeResult
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Osuma
+  FINISHED
+  Reset
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.Wait
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Reset
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Next Frame
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.NextFrameEvent
+  FINISHED
+  sendEvent
+  FINISHED
+  Osuma
+  distance01
+  distance02
+  distance03

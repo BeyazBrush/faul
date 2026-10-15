@@ -1,0 +1,207 @@
+TAG   : l2
+GO    : battery_terminal_plus(xxxxx)
+FSM   : BoltCheck
+PATH  : SATSUMA(557kg, 248)/Wiring/Parts/battery_terminal_plus(xxxxx)
+start : Check load
+
+STRINGS (200):
+  BoltCheck
+  Check load
+  Bolts OFF
+  FINISHED
+  Bolts ON
+  HutongGames.PlayMaker.Actions.FloatClamp
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.FloatCompare
+  db_ThisPart
+  Data
+  Bolted
+  floatVariable
+  minValue
+  maxValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Bolts ON
+  FINISHED
+  Bolts OFF
+  HutongGames.PlayMaker.Actions.FloatClamp
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.FloatCompare
+  db_ThisPart
+  db_ThisPart
+  Data
+  Bolted
+  Data
+  Installed
+  floatVariable
+  minValue
+  maxValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Check float
+  DOESNOTEXIST
+  Save float
+  EXISTS
+  Load float
+  HutongGames.PlayMaker.Actions.GetName
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.Exists
+  db_ThisPart
+  Part
+  Part
+  Tightness
+  UniqueTagFloat
+  UniqueTagFloat
+  defaultES2File.txt
+  HutongGames.PlayMaker.FsmString
+  gameObject
+  storeName
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  ifExists
+  ifDoesNotExist
+  uniqueTag
+  saveFile
+  Load float
+  FINISHED
+  Check array
+  HutongGames.PlayMaker.Actions.LoadFloat
+  UniqueTagFloat
+  defaultES2File.txt
+  loadValue
+  uniqueTag
+  saveFile
+  loadFromResources
+  Save float
+  FINISHED
+  Load float
+  HutongGames.PlayMaker.Actions.SaveFloat
+  UniqueTagFloat
+  defaultES2File.txt
+  saveValue
+  uniqueTag
+  saveFile
+  Check array
+  DOESNOTEXIST
+  Save array
+  EXISTS
+  Load array
+  HutongGames.PlayMaker.Actions.GetName
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.Exists
+  db_ThisPart
+  Part
+  Part
+  Bolts
+  UniqueTagArray
+  UniqueTagArray
+  defaultES2File.txt
+  HutongGames.PlayMaker.FsmString
+  gameObject
+  storeName
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  ifExists
+  ifDoesNotExist
+  uniqueTag
+  saveFile
+  Save array
+  FINISHED
+  Load array
+  HutongGames.PlayMaker.Actions.ArrayListEasySave
+  UniqueTagArray
+  defaultES2File.txt
+  gameObject
+  reference
+  uniqueTag
+  saveFile
+  Load array
+  FINISHED
+  Bolts OFF
+  HutongGames.PlayMaker.Actions.ArrayListEasyLoad
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  ;>
+  UniqueTagArray
+  defaultES2File.txt
+  gameObject
+  reference
+  uniqueTag
+  saveFile
+  loadFromResources
+  boolVariable
+  boolValue
+  everyFrame
+  Save
+  HutongGames.PlayMaker.Actions.ArrayListEasySave
+  HutongGames.PlayMaker.Actions.SaveFloat
+  UniqueTagArray
+  defaultES2File.txt
+  UniqueTagFloat
+  defaultES2File.txt
+  gameObject
+  reference
+  uniqueTag
+  saveFile
+  saveValue
+  uniqueTag
+  saveFile
+  Check load
+  EXISTS
+  Bolts OFF
+  DOESNOTEXIST
+  Check float
+  HutongGames.PlayMaker.Actions.BoolTest
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  FINISHED
+  DOESNOTEXIST
+  EXISTS
+  SAVEGAME
+  BREAK
+  SAVEGAME
+  Save
+  BoltedNO
+  BoltedYES
+  Tightness
+  TightnessMax
+  SameLoad
+  Part
+  UniqueTagArray
+  UniqueTagFloat
+  db_ThisPart

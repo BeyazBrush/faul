@@ -1,0 +1,43 @@
+TAG   : l2
+GO    : CollectedBottles-Text
+FSM   : Pullot
+PATH  : YARD/Building/BEDROOM1/COMPUTER/SYSTEM/RAMI-Simppa&Jokke/CollectedBottles-Text
+start : Alkuasetukset
+
+STRINGS (36):
+  Pullot
+  Alkuasetukset
+  Alkuasetukset
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.SetIntValue
+  intVariable
+  intValue
+  everyFrame
+  State 2
+  HutongGames.PlayMaker.Actions.GetFsmInt
+  HutongGames.PlayMaker.Actions.ConvertIntToString
+  HutongGames.PlayMaker.Actions.SetProperty
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  bottlesString
+  System.String
+  CollectedBottles
+  CollectedBottles
+  bottlesString
+  00
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  intVariable
+  stringVariable
+  format
+  everyFrame
+  targetProperty
+  everyFrame
+  FINISHED
+  CollectedBottles
+  bottlesString

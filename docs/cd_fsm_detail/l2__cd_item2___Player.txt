@@ -1,0 +1,117 @@
+TAG   : l2
+GO    : cd(item2)
+FSM   : Player
+PATH  : ITEMS/CDs/cd(item2)
+SIZE  : 5644
+
+start : State 1
+
+STRINGS (108):
+  Player
+  State 1
+  Remove part
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.AddComponent
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetVelocity
+  HutongGames.PlayMaker.Actions.SetTag
+  HutongGames.PlayMaker.Actions.EnableFSM
+  Case
+  UnityEngine.Object
+  UnityEngine.BoxCollider
+  enabled
+  System.Boolean
+  Rigidbody
+  UnityEngine.Rigidbody
+  UnityEngine.Rigidbody
+  collisionDetectionMode
+  Continuous
+  UnityEngine.CollisionDetectionMode
+  Use
+  DiscInPlayer
+  Rigidbody
+  PART
+  Player
+  Rigidbody
+  UnityEngine.Rigidbody
+  targetProperty
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  gameObject
+  component
+  storeComponent
+  removeOnExit
+  targetProperty
+  everyFrame
+  gameObject
+  vector
+  space
+  everyFrame
+  gameObject
+  tag
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  State 1
+  REMOVE
+  Remove part
+  HutongGames.PlayMaker.Actions.SetTag
+  HutongGames.PlayMaker.Actions.DestroyComponent
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetFsmString
+  HutongGames.PlayMaker.Actions.SetParent
+  Case
+  UnityEngine.Object
+  UnityEngine.BoxCollider
+  enabled
+  System.Boolean
+  Untagged
+  Rigidbody
+  Use
+  DiscInPlayer
+  Update
+  CurrentCD
+  ThisCD
+  CD1
+  gameObject
+  tag
+  gameObject
+  component
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  targetProperty
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  FINISHED
+  REMOVE
+  ASSEMBLE
+  LOOP
+  Detach
+  ThisCD
+  CD2
+  Case
+  Rigidbody
+  UnityEngine.Rigidbody

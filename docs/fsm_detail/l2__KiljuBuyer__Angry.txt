@@ -1,0 +1,70 @@
+TAG   : l2
+GO    : KiljuBuyer
+FSM   : Angry
+PATH  : JOBS/HouseDrunk/BeerCampOld/BeerCamp/KiljuBuyer
+start : Check angry
+
+STRINGS (63):
+  Angry
+  Check angry
+  Check angry
+  ANGRY
+  Angry
+  FINISHED
+  Not angry
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  Logic
+  Angry
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Angry
+  FINISHED
+  Not angry
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.RandomFloat
+  HutongGames.PlayMaker.Actions.Wait
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  min
+  max
+  storeResult
+  time
+  finishEvent
+  realTime
+  Not angry
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  FINISHED
+  ANGRY
+  CHECK
+  CHECK
+  Check angry
+  Wait
+  Angry

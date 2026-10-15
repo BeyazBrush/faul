@@ -1,0 +1,119 @@
+TAG   : l2
+GO    : Power
+FSM   : Use
+PATH  : KEKMET(350-400psi)/Dashboard/Radio/Power
+SIZE  : 4720
+
+start : Save material
+
+STRINGS (110):
+  Use
+  Save material
+  Wait player
+  FINISHED
+  Wait button
+  OFF
+  Off
+  HutongGames.PlayMaker.Actions.SetMaterial
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  Material
+  UnityEngine.Object
+  HutongGames.PlayMaker.FsmInt
+  gameObject
+  materialIndex
+  material
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Save material
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.GetMaterial
+  Material
+  UnityEngine.Object
+  gameObject
+  materialIndex
+  material
+  getSharedMaterial
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  Switch
+  HutongGames.PlayMaker.Actions.SetMaterial
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  UnityEngine.Object
+  HutongGames.PlayMaker.FsmInt
+  gameObject
+  materialIndex
+  material
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  Switch
+  ON
+  On
+  OFF
+  Off
+  HutongGames.PlayMaker.Actions.BoolFlip
+  HutongGames.PlayMaker.Actions.BoolTest
+  boolVariable
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  On
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.AudioMute
+  gameObject
+  mute
+  Off
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.GetFsmString
+  MasterAudioPlaylistStop
+  HutongGames.PlayMaker.Actions.AudioMute
+  Use
+  Playlist
+  Playlist
+  CD1
+  Playlist
+  CD1
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  allPlaylistControllers
+  playlistControllerName
+  gameObject
+  mute
+  FINISHED
+  OFF
+  ON
+  USE
+  BatteryCharge
+  RadioOn
+  Playlist
+  CD1
+  Battery
+  Target
+  Material
+  UnityEngine.Object

@@ -1,0 +1,204 @@
+TAG   : l2
+GO    : BuyStarter
+FSM   : Buy
+PATH  : REPAIRSHOP/LOD/Store/Parts/BuyStarter
+start : State 2
+
+STRINGS (197):
+  Buy
+  State 2
+  State 2
+  INSTALLED
+  State 3
+  FINISHED
+  Wait player 2
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  Product
+  db_Thispart
+  Data
+  Installed
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  State 3
+  FINISHED
+  Wait player 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  Product
+  db_Thispart
+  Data
+  Installed
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Wait player 2
+  FINISHED
+  Check quantity
+  REPAIRMODE_OFF
+  State 2
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button 2
+  FINISHED
+  Wait player 2
+  USE
+  Play anim 2
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  GUIinteraction
+  Notification
+  FAN BELT 295 MK
+  HutongGames.PlayMaker.FsmInt
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  Reset
+  FINISHED
+  Wait player 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  Product
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  Check quantity
+  FINISHED
+  Wait button 2
+  STOP
+  Wait
+  HutongGames.PlayMaker.Actions.BoolTest
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Wait
+  FINISHED
+  Wait player 2
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  Play anim 2
+  HutongGames.PlayMaker.Actions.AddFsmFloat
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.SendEvent
+  CashRegister
+  CashRegister
+  Product
+  CashRegister
+  Data
+  Data
+  Total
+  Data
+  QStarter
+  gameObject
+  fsmName
+  variableName
+  addValue
+  everyFrame
+  perSecond
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  FINISHED
+  GLOBALEVENT
+  INSTALLED
+  STOP
+  USE
+  REPAIRMODE_OFF
+  GLOBALEVENT
+  Reset
+  Price
+  Installed
+  Removal
+  Notification
+  STARTER 295 MK
+  CashRegister
+  Product
+  db_Thispart

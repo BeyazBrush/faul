@@ -1,0 +1,109 @@
+TAG   : l2
+GO    : PriceDiscount
+FSM   : Name
+PATH  : Sheets/ServiceBrochure/PriceDiscount
+SIZE  : 4644
+
+start : State 3
+
+STRINGS (100):
+  Name
+  State 3
+  State 1
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.FloatOperator
+  HutongGames.PlayMaker.Actions.ConvertFloatToString
+  HutongGames.PlayMaker.Actions.BuildString
+  HutongGames.PlayMaker.Actions.SetProperty
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  Text
+  System.String
+  Name
+  FinalPrice
+  ,-
+  Text
+  HutongGames.PlayMaker.FsmString
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  float1
+  float2
+  operation
+  storeResult
+  everyFrame
+  floatVariable
+  stringVariable
+  format
+  everyFrame
+  stringParts
+  separator
+  storeResult
+  everyFrame
+  targetProperty
+  everyFrame
+  State 3
+  FINISHED
+  State 4
+  HutongGames.PlayMaker.Actions.GetSystemDateTime
+  Date
+  MMdd
+  storeString
+  format
+  everyFrame
+  State 4
+  DISCOUNT
+  State 5
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.StringCompare
+  HutongGames.PlayMaker.Actions.StringCompare
+  HutongGames.PlayMaker.Actions.StringCompare
+  Date
+  1224
+  Date
+  1225
+  Date
+  1226
+  stringVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  stringVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  stringVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  State 5
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetFloatValue
+  floatVariable
+  floatValue
+  everyFrame
+  FINISHED
+  DISCOUNT
+  Discount
+  DiscountPercent
+  FinalPrice
+  Date
+  Text
+  Package

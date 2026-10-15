@@ -1,0 +1,1790 @@
+LICENSE SYSTEM [20261007 22:48:27] Next license update check is after 2026-10-08T19:44:31
+Built from '5.0/release' branch; Version is '5.0.0f4 (5b98b70ebeb9) revision 6002871'; Using compiler version '160040219'
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/Mono/lib/mono/2.0'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/UnityScript'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/Mono/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y
+
+ BATCHMODE ARGUMENTS:
+
+-batchmode
+-quit
+-nographics
+-projectPath
+D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder
+-executeMethod
+BuildNPCBundle.Build
+-logFile
+D:\modmscMP\MSCSteamMP\unity\build_npc.log
+Successfully changed project path to: D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder
+D:/modmscMP/MSCSteamMP/unity/MPNPCBuilder
+Loading GUID <-> Path mappings...0.000616 seconds
+Loading Asset Database...0.002663 seconds
+AssetDatabase consistency checks...0.008939 seconds
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+Forcing GfxDevice: 4
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\UnityEngine.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\UnityEditor.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Unity.Locator.dll (this message is harmless)
+Refreshing native plugins compatible for Editor in 0.10 ms, found 0 plugins.
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\I18N.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\I18N.MidEast.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Unity.DataContract.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\System.Core.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Unity.IvyParser.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\System.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\System.Xml.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PackageManager\Unity\PackageManager\5.0.0\Unity.PackageManager.dll (this message is harmless)
+Initializing Unity.PackageManager (PackageManager) v5.0.0 for Unity v5.0.0f4
+Setting Android v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\androidplayer
+Setting BlackBerry v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\blackberryplayer
+Setting iOS v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport
+Setting StandaloneLinux v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\linuxstandalonesupport
+Setting StandaloneOSXIntel v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\macstandalonesupport
+Setting WSAPlayer v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport
+Setting WebGL v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\webglsupport
+Setting StandaloneWindows v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\windowsstandalonesupport
+Setting WP8Player v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support
+Setting GUISystem v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem
+Setting IL2CPP v0.10.1 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\il2cpp
+Registering custom dll's ...
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\androidplayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support/UnityEditor.WP8.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport/UnityEditor.Metro.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\blackberryplayer/UnityEditor.BB10.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\webglsupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\linuxstandalonesupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.004809 seconds.
+Non platform assembly: D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll (this message is harmless)
+Loading D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PackageManager\Unity\PackageManager\5.0.0\Unity.PackageManager.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PackageManager\Unity\PackageManager\5.0.0\Unity.PackageManager.dll into Unity Child Domain
+Non platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll into Unity Child Domain
+Non platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\UnityEditor.Graphs.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\UnityEditor.Graphs.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\androidplayer\UnityEditor.Android.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\androidplayer\UnityEditor.Android.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport\UnityEditor.iOS.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport\UnityEditor.iOS.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support\UnityEditor.WP8.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support\UnityEditor.WP8.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport\UnityEditor.Metro.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport\UnityEditor.Metro.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\blackberryplayer\UnityEditor.BB10.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\blackberryplayer\UnityEditor.BB10.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\webglsupport\UnityEditor.WebGL.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\webglsupport\UnityEditor.WebGL.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\linuxstandalonesupport\UnityEditor.LinuxStandalone.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\linuxstandalonesupport\UnityEditor.LinuxStandalone.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\windowsstandalonesupport\UnityEditor.WindowsStandalone.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\windowsstandalonesupport\UnityEditor.WindowsStandalone.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\macstandalonesupport\UnityEditor.OSXStandalone.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\macstandalonesupport\UnityEditor.OSXStandalone.Extensions.dll into Unity Child Domain
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Mono.Cecil.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Unity.SerializationLogic.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\UnityScript.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\ICSharpCode.NRefactory.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport\UnityEditor.iOS.Extensions.Xcode.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\System.Xml.Linq.dll (this message is harmless)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.242 seconds
+Registering platform support modules:
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\Boo.Lang.Compiler.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\Boo.Lang.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\Boo.Lang.Parser.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\Mono.Security.dll (this message is harmless)
+Registered platform support modules in: 0.0292606s.
+Native extension for OSXStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Native extension for BlackBerry target not found
+Load native extension module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport/x86_64/UnityEditor.Metro.Extensions.Native.dll
+Load native extension module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support/x86_64/UnityEditor.WP8.Extensions.Native.dll
+Load native extension module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport/x86_64/UnityEditor.iOS.Extensions.Native.dll
+Native extension for Android target not found
+Validating Project structure ... 0.000477 seconds.
+Refresh: detecting if any assets need to be imported or removed ... 
+Hashing assets ... 0.000290 seconds
+----- Compute hash(es) for 1 asset(s).
+
+Refresh: elapses 0.008653 seconds
+Updating ProjectSettings/ProjectSettings.asset - GUID: 00000000000000004000000000000000...
+ done. [Time: 13.646000 ms] 
+Updating Assets/Editor/BuildNPCBundle.cs - GUID: cf1b1da48ea047b4c865f5e60067f8f7...
+- starting compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll, for buildtarget 5
+
+-----Compiler Commandline Arguments:
+Filename: "C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\bin\mono.exe"
+Arguments: "C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\gmcs.exe"  @Temp/UnityTempFile-db76b726c1375ce49933196776126e98
+MONO_PATH: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0
+MONO_CFG_DIR: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\etc
+index: 85
+Responsefile: Temp/UnityTempFile-db76b726c1375ce49933196776126e98 Contents: 
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp-Editor.dll
+-r:"C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/Managed/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\androidplayer/UnityEditor.Android.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport/UnityEditor.iOS.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support/UnityEditor.WP8.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport/UnityEditor.Metro.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\blackberryplayer/UnityEditor.BB10.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\webglsupport/UnityEditor.WebGL.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\linuxstandalonesupport/UnityEditor.LinuxStandalone.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport\UnityEditor.iOS.Extensions.Xcode.dll"
+-define:UNITY_5_0_0
+-define:UNITY_5_0
+-define:UNITY_5
+-define:ENABLE_LICENSE_RENAME
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_4_6_FEATURES
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_NEW_HIERARCHY
+-define:ENABLE_PHYSICS
+-define:ENABLE_PHYSICS_PHYSX3
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_AUDIOMIXER_SUSPEND
+-define:ENABLE_NONPRO
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+Assets/Editor/BuildNPCBundle.cs
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\System.Xml.Linq.dll"
+
+-----CompilerOutput:-stdout--exitcode: 0--compilationhadfailure: False--outfile: Temp/Assembly-CSharp-Editor.dll
+Compilation succeeded - 5 warning(s)
+-----CompilerOutput:-stderr----------
+Assets/Editor/BuildNPCBundle.cs(319,49): warning CS0618: `UnityEditor.BuildAssetBundleOptions.CollectDependencies' is obsolete: `This has been made obsolete. It is always enabled in the new AssetBundle build system introduced in 5.0.'
+Assets/Editor/BuildNPCBundle.cs(317,41): warning CS0618: `UnityEditor.BuildPipeline.BuildAssetBundle(UnityEngine.Object, UnityEngine.Object[], string, UnityEditor.BuildAssetBundleOptions)' is obsolete: `BuildAssetBundle has been made obsolete. Please use the new AssetBundle build system introduced in 5.0 and check BuildAssetBundles documentation for details.'
+Assets/Editor/BuildNPCBundle.cs(992,22): warning CS0219: The variable `suffix' is assigned but its value is never used
+Assets/Editor/BuildNPCBundle.cs(58,43): warning CS0649: Field `BuildNPCBundle.BoneRec.parentPath' is never assigned to, and will always have its default value `null'
+Assets/Editor/BuildNPCBundle.cs(59,36): warning CS0649: Field `BuildNPCBundle.BoneRec.skinIndex' is never assigned to, and will always have its default value `0'
+-----EndCompilerOutput---------------
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+Assets/Editor/BuildNPCBundle.cs(319,49): warning CS0618: `UnityEditor.BuildAssetBundleOptions.CollectDependencies' is obsolete: `This has been made obsolete. It is always enabled in the new AssetBundle build system introduced in 5.0.'
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 319)
+
+Assets/Editor/BuildNPCBundle.cs(317,41): warning CS0618: `UnityEditor.BuildPipeline.BuildAssetBundle(UnityEngine.Object, UnityEngine.Object[], string, UnityEditor.BuildAssetBundleOptions)' is obsolete: `BuildAssetBundle has been made obsolete. Please use the new AssetBundle build system introduced in 5.0 and check BuildAssetBundles documentation for details.'
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 317)
+
+Assets/Editor/BuildNPCBundle.cs(992,22): warning CS0219: The variable `suffix' is assigned but its value is never used
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 992)
+
+Assets/Editor/BuildNPCBundle.cs(58,43): warning CS0649: Field `BuildNPCBundle.BoneRec.parentPath' is never assigned to, and will always have its default value `null'
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 58)
+
+Assets/Editor/BuildNPCBundle.cs(59,36): warning CS0649: Field `BuildNPCBundle.BoneRec.skinIndex' is never assigned to, and will always have its default value `0'
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 59)
+
+Reloading assemblies after successful script compilation.
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\UnityEngine.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\UnityEditor.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Unity.Locator.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\I18N.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\I18N.MidEast.dll (this message is harmless)
+Registering custom dll's ...
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\androidplayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support/UnityEditor.WP8.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport/UnityEditor.Metro.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\blackberryplayer/UnityEditor.BB10.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\webglsupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\linuxstandalonesupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.005290 seconds.
+Non platform assembly: D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll (this message is harmless)
+Loading D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PackageManager\Unity\PackageManager\5.0.0\Unity.PackageManager.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PackageManager\Unity\PackageManager\5.0.0\Unity.PackageManager.dll into Unity Child Domain
+Non platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll into Unity Child Domain
+Non platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem\Editor\UnityEditor.UI.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\UnityEditor.Graphs.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\UnityEditor.Graphs.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\androidplayer\UnityEditor.Android.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\androidplayer\UnityEditor.Android.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport\UnityEditor.iOS.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport\UnityEditor.iOS.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support\UnityEditor.WP8.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support\UnityEditor.WP8.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport\UnityEditor.Metro.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport\UnityEditor.Metro.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\blackberryplayer\UnityEditor.BB10.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\blackberryplayer\UnityEditor.BB10.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\webglsupport\UnityEditor.WebGL.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\webglsupport\UnityEditor.WebGL.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\linuxstandalonesupport\UnityEditor.LinuxStandalone.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\linuxstandalonesupport\UnityEditor.LinuxStandalone.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\windowsstandalonesupport\UnityEditor.WindowsStandalone.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\windowsstandalonesupport\UnityEditor.WindowsStandalone.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\macstandalonesupport\UnityEditor.OSXStandalone.Extensions.dll (this message is harmless)
+Loading C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\macstandalonesupport\UnityEditor.OSXStandalone.Extensions.dll into Unity Child Domain
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Unity.DataContract.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\System.Core.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Unity.IvyParser.dll (this message is harmless)
+Initializing Unity.PackageManager (PackageManager) v5.0.0 for Unity v5.0.0f4
+Setting Android v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\androidplayer
+Setting BlackBerry v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\blackberryplayer
+Setting iOS v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport
+Setting StandaloneLinux v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\linuxstandalonesupport
+Setting StandaloneOSXIntel v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\macstandalonesupport
+Setting WSAPlayer v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\metrosupport
+Setting WebGL v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\webglsupport
+Setting StandaloneWindows v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\windowsstandalonesupport
+Setting WP8Player v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\wp8support
+Setting GUISystem v5.0.0 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\UnityExtensions\Unity\GUISystem
+Setting IL2CPP v0.10.1 for Unity v5.0.0f4 to C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\il2cpp
+Refreshing native plugins compatible for Editor in 0.03 ms, found 0 plugins.
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Mono.Cecil.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\Unity.SerializationLogic.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\UnityScript.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Managed\ICSharpCode.NRefactory.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\PlaybackEngines\iossupport\UnityEditor.iOS.Extensions.Xcode.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\System.Xml.Linq.dll (this message is harmless)
+Mono: successfully reloaded assembly
+- Completed reload, in  0.232 seconds
+Registering platform support modules:
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\Boo.Lang.Compiler.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\Boo.Lang.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\Boo.Lang.Parser.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Hub\Editor\5.0.0f4\Editor\Data\Mono\lib\mono\2.0\UnityScript.Lang.dll (this message is harmless)
+Registered platform support modules in: 0.0226413s.
+Native extension for OSXStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for LinuxStandalone target not found
+Native extension for WebGL target not found
+Native extension for BlackBerry target not found
+Native extension for Android target not found
+ done. [Time: 660.525696 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.698340s, AssetImport time: 0.689961s, Asset hashing: 0.000391s [42.1 KB, 105.082176 mb/s]
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.000750 seconds (Nothing changed)
+Determining assets that need to be reimported for target platform ... 0.017969 seconds.
+Refreshing native plugins compatible for Editor in 0.01 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.018107s, AssetImport time: 0.000000s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Ignoring 'C:/Program Files/Unity/Hub/Editor/5.0.0f4/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll' because we're compiling for WindowsStandaloneSupport
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 8.7 MB.
+System memory in use after: 8.7 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 380.
+Total: 0.296100 ms (FindLiveObjects: 0.018100 ms CreateObjectMapping: 0.006200 ms MarkObjects: 0.264600 ms  DeleteObjects: 0.006500 ms)
+
+[MPNPC] mpnpc.dat: mesh 1712 vertex, iskelet 23, clip 26
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:ReadSkeleton(String) (at Assets\Editor\BuildNPCBundle.cs:455)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:167)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] mpnpc.dat: mesh 1712 vertex, iskelet 23, clip 26
+[MPNPC] iskelet (ortak): 23 dugum (20 skin), clip: 26
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:168)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] iskelet (ortak): 23 dugum (20 skin), clip: 26
+[MPNPC] shader: Legacy Shaders/Diffuse
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FindShader() (at Assets\Editor\BuildNPCBundle.cs:1022)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:174)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] shader: Legacy Shaders/Diffuse
+[MPNPC] doku ice aktarma ayarlari: 0 adet (Clamp, mipmaps yok, max 512)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixTextureImporters() (at Assets\Editor\BuildNPCBundle.cs:977)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:175)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] doku ice aktarma ayarlari: 0 adet (Clamp, mipmaps yok, max 512)
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.018426s, AssetImport time: 0.012065s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/char_shirt02.mat - GUID: 45f0064256174c3449fba7a9209d6ce8...
+----- Compute hash for Assets/MPNPC/char_shirt02.mat.
+ done. [Time: 8.760700 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030408s, AssetImport time: 0.011771s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016561s, AssetImport time: 0.011613s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/char_pants02.mat - GUID: 9a9eb944d2562fc478bafb94084db775...
+----- Compute hash for Assets/MPNPC/char_pants02.mat.
+ done. [Time: 7.860000 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.025886s, AssetImport time: 0.010262s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016714s, AssetImport time: 0.010914s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/char_face01.mat - GUID: 332af8725ee5f4449901567bbbd6ae94...
+----- Compute hash for Assets/MPNPC/char_face01.mat.
+ done. [Time: 8.801500 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.028701s, AssetImport time: 0.012064s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating ProjectSettings/ProjectSettings.asset - GUID: 00000000000000004000000000000000...
+ done. [Time: 5.049700 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016988s, AssetImport time: 0.010619s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] materyal: 3 adet, shader=Legacy Shaders/Diffuse
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:192)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] materyal: 3 adet, shader=Legacy Shaders/Diffuse
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.017417s, AssetImport time: 0.011662s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Idle.anim - GUID: c6fda9e6b021d8646a399b99bc3e0056...
+----- Compute hash for Assets/MPNPC/Idle.anim.
+ done. [Time: 8.460800 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.031027s, AssetImport time: 0.010731s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Idle  11 egri  loop=True  len=1.33
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Idle  11 egri  loop=True  len=1.33
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016243s, AssetImport time: 0.011206s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Walk.anim - GUID: 2e7eead629b7d9b4b8873eab2e2af233...
+----- Compute hash for Assets/MPNPC/Walk.anim.
+ done. [Time: 8.156200 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030968s, AssetImport time: 0.010361s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Walk  11 egri  loop=True  len=1.33
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Walk  11 egri  loop=True  len=1.33
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016332s, AssetImport time: 0.011378s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Wave.anim - GUID: 06bc5482323b69d48b921b001be1f628...
+----- Compute hash for Assets/MPNPC/Wave.anim.
+ done. [Time: 8.478200 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030839s, AssetImport time: 0.010913s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Wave  3 egri  loop=False  len=1.17
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Wave  3 egri  loop=False  len=1.17
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016923s, AssetImport time: 0.012221s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Wave2.anim - GUID: 52c54aca24accc643806ba87ed767548...
+----- Compute hash for Assets/MPNPC/Wave2.anim.
+ done. [Time: 7.869800 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030381s, AssetImport time: 0.010954s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Wave2  4 egri  loop=False  len=1.50
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Wave2  4 egri  loop=False  len=1.50
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015834s, AssetImport time: 0.010939s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/AxSwing.anim - GUID: 084823c8dd83d84479ea9fabefecf121...
+----- Compute hash for Assets/MPNPC/AxSwing.anim.
+ done. [Time: 8.184099 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.032150s, AssetImport time: 0.012220s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: AxSwing  6 egri  loop=False  len=2.00
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: AxSwing  6 egri  loop=False  len=2.00
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016282s, AssetImport time: 0.011128s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/AxThreat.anim - GUID: 087767dcd2764c44fa05d6d34a0e1391...
+----- Compute hash for Assets/MPNPC/AxThreat.anim.
+ done. [Time: 8.215099 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.031088s, AssetImport time: 0.011571s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: AxThreat  5 egri  loop=False  len=3.00
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: AxThreat  5 egri  loop=False  len=3.00
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.018823s, AssetImport time: 0.013778s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Cough.anim - GUID: 5e63e103f3746ee4eb73c64a15c565a3...
+----- Compute hash for Assets/MPNPC/Cough.anim.
+ done. [Time: 8.018900 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030045s, AssetImport time: 0.011002s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Cough  1 egri  loop=False  len=5.50
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Cough  1 egri  loop=False  len=5.50
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016070s, AssetImport time: 0.011024s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Drink.anim - GUID: 91f0ad6f965837841850f8af0e8c533b...
+----- Compute hash for Assets/MPNPC/Drink.anim.
+ done. [Time: 8.392100 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.033387s, AssetImport time: 0.012249s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Drink  3 egri  loop=False  len=3.00
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Drink  3 egri  loop=False  len=3.00
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016763s, AssetImport time: 0.011666s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/DrinkR.anim - GUID: 298e48123fdafd743ba889ceb7f2e8d7...
+----- Compute hash for Assets/MPNPC/DrinkR.anim.
+ done. [Time: 8.387900 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030506s, AssetImport time: 0.010630s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: DrinkR  4 egri  loop=False  len=4.17
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: DrinkR  4 egri  loop=False  len=4.17
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016228s, AssetImport time: 0.011411s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Carry.anim - GUID: 9d857e4e0a36b294cbe671555b5585ae...
+----- Compute hash for Assets/MPNPC/Carry.anim.
+ done. [Time: 8.068100 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.033212s, AssetImport time: 0.011520s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Carry  4 egri  loop=False  len=1.33
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Carry  4 egri  loop=False  len=1.33
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016045s, AssetImport time: 0.010860s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Point.anim - GUID: 657d600996802fb49babee6287af5a58...
+----- Compute hash for Assets/MPNPC/Point.anim.
+ done. [Time: 8.048599 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.031760s, AssetImport time: 0.011630s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Point  4 egri  loop=False  len=2.00
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Point  4 egri  loop=False  len=2.00
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015381s, AssetImport time: 0.010549s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Smoke.anim - GUID: 18c69038c110d15439fc6c316d059d3a...
+----- Compute hash for Assets/MPNPC/Smoke.anim.
+ done. [Time: 7.958301 ms] 
+Refreshing native plugins compatible for Editor in 0.03 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.031653s, AssetImport time: 0.011509s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Smoke  5 egri  loop=False  len=4.00
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Smoke  5 egri  loop=False  len=4.00
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015941s, AssetImport time: 0.011162s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/OfferOn.anim - GUID: 57048ce2ca4f53e408d7f6ebe3854dd1...
+----- Compute hash for Assets/MPNPC/OfferOn.anim.
+ done. [Time: 8.058200 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.032287s, AssetImport time: 0.011587s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: OfferOn  4 egri  loop=False  len=0.83
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: OfferOn  4 egri  loop=False  len=0.83
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015694s, AssetImport time: 0.010856s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/OfferOff.anim - GUID: d47217e340014d34d8b0d73396df799a...
+----- Compute hash for Assets/MPNPC/OfferOff.anim.
+ done. [Time: 7.820000 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030648s, AssetImport time: 0.011596s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: OfferOff  4 egri  loop=False  len=0.83
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: OfferOff  4 egri  loop=False  len=0.83
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.017557s, AssetImport time: 0.012494s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/OfferR.anim - GUID: ae5a21e5cba185c448090e4c390bfc5c...
+----- Compute hash for Assets/MPNPC/OfferR.anim.
+ done. [Time: 7.318400 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030077s, AssetImport time: 0.011218s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: OfferR  4 egri  loop=False  len=0.50
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: OfferR  4 egri  loop=False  len=0.50
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015804s, AssetImport time: 0.010931s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/DriveIdle.anim - GUID: f96ff99d80f1bff41a3f209801f4200d...
+----- Compute hash for Assets/MPNPC/DriveIdle.anim.
+ done. [Time: 8.162700 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.032141s, AssetImport time: 0.010529s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: DriveIdle  12 egri  loop=True  len=3.00
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: DriveIdle  12 egri  loop=True  len=3.00
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015818s, AssetImport time: 0.011142s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Drive.anim - GUID: 65f66f70f0095a94cbc4a65bf39dec51...
+----- Compute hash for Assets/MPNPC/Drive.anim.
+ done. [Time: 8.809999 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.031432s, AssetImport time: 0.010815s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Drive  12 egri  loop=True  len=6.00
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Drive  12 egri  loop=True  len=6.00
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016250s, AssetImport time: 0.011633s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/CarIn.anim - GUID: 201e740b8994a8b4080ad277759d6904...
+----- Compute hash for Assets/MPNPC/CarIn.anim.
+ done. [Time: 8.362700 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030763s, AssetImport time: 0.010709s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: CarIn  11 egri  loop=False  len=3.75
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: CarIn  11 egri  loop=False  len=3.75
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.017224s, AssetImport time: 0.012334s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/CarOut.anim - GUID: 35ae734f620e3594ba30ee69f252aa58...
+----- Compute hash for Assets/MPNPC/CarOut.anim.
+ done. [Time: 7.949800 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030455s, AssetImport time: 0.010909s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: CarOut  11 egri  loop=False  len=3.47
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: CarOut  11 egri  loop=False  len=3.47
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015803s, AssetImport time: 0.011011s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/CarPay1.anim - GUID: 159b799020b37c54ba362521ae602868...
+----- Compute hash for Assets/MPNPC/CarPay1.anim.
+ done. [Time: 8.920899 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.033833s, AssetImport time: 0.013257s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: CarPay1  13 egri  loop=False  len=3.05
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: CarPay1  13 egri  loop=False  len=3.05
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015728s, AssetImport time: 0.010863s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/CarPay2.anim - GUID: b997db5bd62e26640bf43ff7419ae883...
+----- Compute hash for Assets/MPNPC/CarPay2.anim.
+ done. [Time: 7.969600 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030510s, AssetImport time: 0.010660s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: CarPay2  13 egri  loop=False  len=0.83
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: CarPay2  13 egri  loop=False  len=0.83
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015856s, AssetImport time: 0.011126s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/Vomit.anim - GUID: 8ca1b63d70f39af43bdc5eb6bc664360...
+----- Compute hash for Assets/MPNPC/Vomit.anim.
+ done. [Time: 7.905300 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.032429s, AssetImport time: 0.012165s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: Vomit  12 egri  loop=False  len=7.50
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: Vomit  12 egri  loop=False  len=7.50
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.017044s, AssetImport time: 0.012238s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/VanIdle1.anim - GUID: 2e328196947127f4cb728d6a2d09d8f3...
+----- Compute hash for Assets/MPNPC/VanIdle1.anim.
+ done. [Time: 7.569800 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030923s, AssetImport time: 0.011392s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: VanIdle1  12 egri  loop=True  len=5.00
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: VanIdle1  12 egri  loop=True  len=5.00
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015769s, AssetImport time: 0.010906s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/VanIdle2.anim - GUID: b40bc9b81de2d05449ea4922a5994cb5...
+----- Compute hash for Assets/MPNPC/VanIdle2.anim.
+ done. [Time: 8.477200 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.032607s, AssetImport time: 0.011228s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: VanIdle2  12 egri  loop=True  len=6.00
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: VanIdle2  12 egri  loop=True  len=6.00
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016019s, AssetImport time: 0.011363s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/VanIn.anim - GUID: b0afdbb8644196e4eb114503bbd329e5...
+----- Compute hash for Assets/MPNPC/VanIn.anim.
+ done. [Time: 8.237101 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.032212s, AssetImport time: 0.012289s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: VanIn  12 egri  loop=False  len=3.75
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: VanIn  12 egri  loop=False  len=3.75
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016145s, AssetImport time: 0.011474s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/VanOut.anim - GUID: 6fce8c130bbd02a4e8a17efb31943db9...
+----- Compute hash for Assets/MPNPC/VanOut.anim.
+ done. [Time: 7.831300 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030574s, AssetImport time: 0.010497s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] clip: VanOut  12 egri  loop=False  len=3.75
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:234)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] clip: VanOut  12 egri  loop=False  len=3.75
+[MPNPC] mpnpc_1712.dat: mesh 1712 vertex, iskelet 23, clip 26
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:ReadSkeleton(String) (at Assets\Editor\BuildNPCBundle.cs:455)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:571)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] mpnpc_1712.dat: mesh 1712 vertex, iskelet 23, clip 26
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015430s, AssetImport time: 0.010665s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1712_mesh.asset - GUID: 8c53bd2937c3fdb4e945fceca1fdc867...
+----- Compute hash for Assets/MPNPC/mpnpc_1712_mesh.asset.
+ done. [Time: 8.060800 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030769s, AssetImport time: 0.010971s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)  yuz merkezi (0.001, 0.000, 1.679)  ortalama normal (0.319, 0.000, 0.169)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:804)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)  yuz merkezi (0.001, 0.000, 1.679)  ortalama normal (0.319, 0.000, 0.169)
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)): (0.4996, 0.5004, 0.5004, -0.4996)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.001, 0.000) -> (0.000, 0.000, 1.000)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:828)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)): (0.4996, 0.5004, 0.5004, -0.4996)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.001, 0.000) -> (0.000, 0.000, 1.000)
+[MPNPC] ayak hizasi: kok Y -0.0067 m kaydirildi  kut(u) X 1.354 Y 1.820 Z 0.375
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:GroundFeet(GameObject, GameObject[], List`1, Int32, Mesh) (at Assets\Editor\BuildNPCBundle.cs:881)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:672)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] ayak hizasi: kok Y -0.0067 m kaydirildi  kut(u) X 1.354 Y 1.820 Z 0.375
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015333s, AssetImport time: 0.010641s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1712.prefab - GUID: 95b4dd5710f635c40b45b39b8cbfe862...
+----- Compute hash for Assets/MPNPC/mpnpc_1712.prefab.
+ done. [Time: 8.940800 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.028411s, AssetImport time: 0.011537s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.000320 seconds
+Updating Assets/MPNPC/mpnpc_1712.prefab - GUID: 95b4dd5710f635c40b45b39b8cbfe862...
+ done. [Time: 4.074200 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.020711s, AssetImport time: 0.015608s, Asset hashing: 0.000422s [4.2 KB, 9.785449 mb/s]
+
+
+Hashing assets ... 0.000258 seconds
+Updating Assets/MPNPC/mpnpc_1712.prefab - GUID: 95b4dd5710f635c40b45b39b8cbfe862...
+ done. [Time: 3.534200 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016460s, AssetImport time: 0.009604s, Asset hashing: 0.000384s [14.2 KB, 35.963745 mb/s]
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1712.prefab
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:255)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1712.prefab
+[MPNPC] mpnpc_1714.dat: mesh 1714 vertex, iskelet 23, clip 26
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:ReadSkeleton(String) (at Assets\Editor\BuildNPCBundle.cs:455)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:571)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] mpnpc_1714.dat: mesh 1714 vertex, iskelet 23, clip 26
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016058s, AssetImport time: 0.011025s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1714_mesh.asset - GUID: b8671cf1ace899d4c8c69365dc42bb99...
+----- Compute hash for Assets/MPNPC/mpnpc_1714_mesh.asset.
+ done. [Time: 8.178000 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030976s, AssetImport time: 0.010705s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] mpnpc_1714.dat: 1 bone name(s) aligned to the reference rig (clip curves would have been dropped).
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:663)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] mpnpc_1714.dat: 1 bone name(s) aligned to the reference rig (clip curves would have been dropped).
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)  yuz merkezi (-0.002, 0.000, 1.680)  ortalama normal (0.295, 0.001, 0.131)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:804)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)  yuz merkezi (-0.002, 0.000, 1.680)  ortalama normal (0.295, 0.001, 0.131)
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)): (0.4991, 0.5009, 0.5009, -0.4991)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.004, 0.000) -> (0.000, 0.000, 1.000)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:828)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)): (0.4991, 0.5009, 0.5009, -0.4991)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.004, 0.000) -> (0.000, 0.000, 1.000)
+[MPNPC] ayak hizasi: kok Y -0.0068 m kaydirildi  kut(u) X 1.354 Y 1.820 Z 0.321
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:GroundFeet(GameObject, GameObject[], List`1, Int32, Mesh) (at Assets\Editor\BuildNPCBundle.cs:881)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:672)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] ayak hizasi: kok Y -0.0068 m kaydirildi  kut(u) X 1.354 Y 1.820 Z 0.321
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015786s, AssetImport time: 0.011064s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1714.prefab - GUID: 5327c1797fc0b03488c0875dd945e2b2...
+----- Compute hash for Assets/MPNPC/mpnpc_1714.prefab.
+ done. [Time: 8.209200 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.028215s, AssetImport time: 0.012024s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.000281 seconds
+Updating Assets/MPNPC/mpnpc_1714.prefab - GUID: 5327c1797fc0b03488c0875dd945e2b2...
+ done. [Time: 3.320700 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.018624s, AssetImport time: 0.014562s, Asset hashing: 0.000384s [4.2 KB, 10.759912 mb/s]
+
+
+Hashing assets ... 0.000256 seconds
+Updating Assets/MPNPC/mpnpc_1714.prefab - GUID: 5327c1797fc0b03488c0875dd945e2b2...
+ done. [Time: 3.387200 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015736s, AssetImport time: 0.008940s, Asset hashing: 0.000357s [14.2 KB, 38.713139 mb/s]
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1714.prefab
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:255)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1714.prefab
+[MPNPC] mpnpc_1709.dat: mesh 1709 vertex, iskelet 23, clip 26
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:ReadSkeleton(String) (at Assets\Editor\BuildNPCBundle.cs:455)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:571)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] mpnpc_1709.dat: mesh 1709 vertex, iskelet 23, clip 26
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015552s, AssetImport time: 0.010777s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1709_mesh.asset - GUID: b60edfabea063d047ba4359681ec56f4...
+----- Compute hash for Assets/MPNPC/mpnpc_1709_mesh.asset.
+ done. [Time: 8.136900 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030389s, AssetImport time: 0.010586s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)  yuz merkezi (0.000, 0.000, 1.680)  ortalama normal (0.307, 0.000, 0.162)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:804)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)  yuz merkezi (0.000, 0.000, 1.680)  ortalama normal (0.307, 0.000, 0.162)
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)): (0.4997, 0.5003, 0.5003, -0.4997)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.001, 0.000) -> (0.000, 0.000, 1.000)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:828)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)): (0.4997, 0.5003, 0.5003, -0.4997)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.001, 0.000) -> (0.000, 0.000, 1.000)
+[MPNPC] ayak hizasi: kok Y -0.0067 m kaydirildi  kut(u) X 1.353 Y 1.820 Z 0.340
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:GroundFeet(GameObject, GameObject[], List`1, Int32, Mesh) (at Assets\Editor\BuildNPCBundle.cs:881)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:672)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] ayak hizasi: kok Y -0.0067 m kaydirildi  kut(u) X 1.353 Y 1.820 Z 0.340
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015700s, AssetImport time: 0.010870s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1709.prefab - GUID: 19a314dd9d444e14784a474aec27abfa...
+----- Compute hash for Assets/MPNPC/mpnpc_1709.prefab.
+ done. [Time: 8.268100 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.026766s, AssetImport time: 0.010901s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.000281 seconds
+Updating Assets/MPNPC/mpnpc_1709.prefab - GUID: 19a314dd9d444e14784a474aec27abfa...
+ done. [Time: 3.254900 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.019289s, AssetImport time: 0.015267s, Asset hashing: 0.000385s [4.2 KB, 10.729146 mb/s]
+
+
+Hashing assets ... 0.000267 seconds
+Updating Assets/MPNPC/mpnpc_1709.prefab - GUID: 19a314dd9d444e14784a474aec27abfa...
+ done. [Time: 3.203200 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016000s, AssetImport time: 0.008997s, Asset hashing: 0.000367s [14.2 KB, 37.668835 mb/s]
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1709.prefab
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:255)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1709.prefab
+[MPNPC] mpnpc_1697.dat: mesh 1697 vertex, iskelet 23, clip 26
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:ReadSkeleton(String) (at Assets\Editor\BuildNPCBundle.cs:455)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:571)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] mpnpc_1697.dat: mesh 1697 vertex, iskelet 23, clip 26
+Refreshing native plugins compatible for Editor in 0.03 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.017598s, AssetImport time: 0.012453s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1697_mesh.asset - GUID: 0ee3651d8771e704693bdd84d2642366...
+----- Compute hash for Assets/MPNPC/mpnpc_1697_mesh.asset.
+ done. [Time: 7.992800 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030595s, AssetImport time: 0.011109s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)  yuz merkezi (0.002, 0.000, 1.535)  ortalama normal (0.308, 0.001, 0.154)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:804)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)  yuz merkezi (0.002, 0.000, 1.535)  ortalama normal (0.308, 0.001, 0.154)
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)): (0.4993, 0.5007, 0.5007, -0.4993)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.003, 0.000) -> (0.000, 0.000, 1.000)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:828)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 298 ucgen)): (0.4993, 0.5007, 0.5007, -0.4993)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.003, 0.000) -> (0.000, 0.000, 1.000)
+[MPNPC] ayak hizasi: kok Y -0.0102 m kaydirildi  kut(u) X 1.229 Y 1.668 Z 0.427
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:GroundFeet(GameObject, GameObject[], List`1, Int32, Mesh) (at Assets\Editor\BuildNPCBundle.cs:881)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:672)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] ayak hizasi: kok Y -0.0102 m kaydirildi  kut(u) X 1.229 Y 1.668 Z 0.427
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016772s, AssetImport time: 0.011888s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1697.prefab - GUID: 02482f9d42b9c92419bb66d4eaf74222...
+----- Compute hash for Assets/MPNPC/mpnpc_1697.prefab.
+ done. [Time: 9.558101 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.029045s, AssetImport time: 0.010909s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.000423 seconds
+Updating Assets/MPNPC/mpnpc_1697.prefab - GUID: 02482f9d42b9c92419bb66d4eaf74222...
+ done. [Time: 3.372100 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.020197s, AssetImport time: 0.015396s, Asset hashing: 0.000523s [4.2 KB, 7.891973 mb/s]
+
+
+Hashing assets ... 0.000258 seconds
+Updating Assets/MPNPC/mpnpc_1697.prefab - GUID: 02482f9d42b9c92419bb66d4eaf74222...
+ done. [Time: 3.361500 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015647s, AssetImport time: 0.008842s, Asset hashing: 0.000357s [14.2 KB, 38.745689 mb/s]
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1697.prefab
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:255)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1697.prefab
+[MPNPC] mpnpc_1789.dat: mesh 1789 vertex, iskelet 23, clip 26
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:ReadSkeleton(String) (at Assets\Editor\BuildNPCBundle.cs:455)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:571)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] mpnpc_1789.dat: mesh 1789 vertex, iskelet 23, clip 26
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015027s, AssetImport time: 0.010325s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1789_mesh.asset - GUID: 16519275e35021d42a216a5f1373aa06...
+----- Compute hash for Assets/MPNPC/mpnpc_1789_mesh.asset.
+ done. [Time: 9.042400 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.031407s, AssetImport time: 0.010584s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 314 ucgen)  yuz merkezi (-0.003, 0.000, 1.536)  ortalama normal (0.263, 0.001, 0.096)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:804)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 314 ucgen)  yuz merkezi (-0.003, 0.000, 1.536)  ortalama normal (0.263, 0.001, 0.096)
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 314 ucgen)): (0.4993, 0.5007, 0.5007, -0.4993)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.003, 0.000) -> (0.000, 0.000, 1.000)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:828)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 314 ucgen)): (0.4993, 0.5007, 0.5007, -0.4993)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.003, 0.000) -> (0.000, 0.000, 1.000)
+[MPNPC] ayak hizasi: kok Y -0.0102 m kaydirildi  kut(u) X 1.228 Y 1.668 Z 0.295
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:GroundFeet(GameObject, GameObject[], List`1, Int32, Mesh) (at Assets\Editor\BuildNPCBundle.cs:881)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:672)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] ayak hizasi: kok Y -0.0102 m kaydirildi  kut(u) X 1.228 Y 1.668 Z 0.295
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016764s, AssetImport time: 0.011032s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_1789.prefab - GUID: 6bd8e567afd6a5d429f2b3c211444d9e...
+----- Compute hash for Assets/MPNPC/mpnpc_1789.prefab.
+ done. [Time: 8.790600 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.027468s, AssetImport time: 0.010937s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.000291 seconds
+Updating Assets/MPNPC/mpnpc_1789.prefab - GUID: 6bd8e567afd6a5d429f2b3c211444d9e...
+ done. [Time: 5.394000 ms] 
+Refreshing native plugins compatible for Editor in 0.03 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.020934s, AssetImport time: 0.016724s, Asset hashing: 0.000396s [4.2 KB, 10.428253 mb/s]
+
+
+Hashing assets ... 0.000258 seconds
+Updating Assets/MPNPC/mpnpc_1789.prefab - GUID: 6bd8e567afd6a5d429f2b3c211444d9e...
+ done. [Time: 3.507900 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015815s, AssetImport time: 0.009037s, Asset hashing: 0.000358s [14.2 KB, 38.615818 mb/s]
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1789.prefab
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:255)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_1789.prefab
+[MPNPC] mpnpc_960.dat: mesh 960 vertex, iskelet 22, clip 26
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:ReadSkeleton(String) (at Assets\Editor\BuildNPCBundle.cs:455)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:571)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] mpnpc_960.dat: mesh 960 vertex, iskelet 22, clip 26
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015886s, AssetImport time: 0.010930s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_960_mesh.asset - GUID: 81d9f40872ecdd146aa2b92846d80132...
+----- Compute hash for Assets/MPNPC/mpnpc_960_mesh.asset.
+ done. [Time: 8.205800 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.030672s, AssetImport time: 0.010771s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+[MPNPC] mpnpc_960.dat: 1 identity HeadPivot inserted (head bone curve was dropped).
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:667)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] mpnpc_960.dat: 1 identity HeadPivot inserted (head bone curve was dropped).
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 181 ucgen)  yuz merkezi (-0.012, 0.000, 1.681)  ortalama normal (0.212, 0.001, 0.142)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:804)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon kaynagi: mesh (govde ekseni #2, yuz submesh #2, 181 ucgen)  yuz merkezi (-0.012, 0.000, 1.681)  ortalama normal (0.212, 0.001, 0.142)
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 181 ucgen)): (0.4989, 0.5011, 0.5011, -0.4989)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.004, 0.000) -> (0.000, 0.000, 1.000)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:FixWorldOrientation(GameObject, GameObject[], Mesh) (at Assets\Editor\BuildNPCBundle.cs:828)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:671)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] yon duzeltmesi (mesh (govde ekseni #2, yuz submesh #2, 181 ucgen)): (0.4989, 0.5011, 0.5011, -0.4989)  det=1.000  up=(0.000, 0.000, 1.000) -> (0.000, 1.000, 0.000)  fwd=(1.000, 0.004, 0.000) -> (0.000, 0.000, 1.000)
+[MPNPC] ayak hizasi: kok Y -0.0068 m kaydirildi  kut(u) X 1.355 Y 1.820 Z 0.323
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:GroundFeet(GameObject, GameObject[], List`1, Int32, Mesh) (at Assets\Editor\BuildNPCBundle.cs:881)
+BuildNPCBundle:BuildOneBody(String, String, Material[], List`1, String[]) (at Assets\Editor\BuildNPCBundle.cs:672)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:245)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] ayak hizasi: kok Y -0.0068 m kaydirildi  kut(u) X 1.355 Y 1.820 Z 0.323
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.016970s, AssetImport time: 0.012113s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+Updating Assets/MPNPC/mpnpc_960.prefab - GUID: 5bc2531109a60ec43b5b7ffe78970895...
+----- Compute hash for Assets/MPNPC/mpnpc_960.prefab.
+ done. [Time: 9.092999 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.027433s, AssetImport time: 0.010501s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.000320 seconds
+Updating Assets/MPNPC/mpnpc_960.prefab - GUID: 5bc2531109a60ec43b5b7ffe78970895...
+ done. [Time: 3.472000 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.019404s, AssetImport time: 0.015152s, Asset hashing: 0.000514s [4.2 KB, 8.027037 mb/s]
+
+
+Hashing assets ... 0.000258 seconds
+Updating Assets/MPNPC/mpnpc_960.prefab - GUID: 5bc2531109a60ec43b5b7ffe78970895...
+ done. [Time: 4.750500 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.018067s, AssetImport time: 0.010889s, Asset hashing: 0.000361s [14.2 KB, 38.273708 mb/s]
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_960.prefab
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:255)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] govde prefab: Assets/MPNPC/mpnpc_960.prefab
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.003433s, AssetImport time: 0.000000s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+
+Hashing assets ... 0.000262 seconds
+Updating Assets/MPNPC/mpnpc.txt - GUID: 264a9ec761c4fe240a164a6488f0cb40...
+ done. [Time: 3.045900 ms] 
+Refreshing native plugins compatible for Editor in 0.02 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.018954s, AssetImport time: 0.015139s, Asset hashing: 0.000422s [183 B, 0.413364 mb/s]
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.000772 seconds (Nothing changed)
+[MPNPC] skin dokusu: 47 adet
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:301)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] skin dokusu: 47 adet
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.000721 seconds (Nothing changed)
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.000737 seconds (Nothing changed)
+Determining assets that need to be reimported for target platform ... 0.015628 seconds.
+Refreshing native plugins compatible for Editor in 0.01 ms, found 0 plugins.
+
+----- Total AssetImport time: 0.015763s, AssetImport time: 0.000000s, Asset hashing: 0.000000s [0 B, 0.000000 mb/s]
+
+DisplayProgressbar: Building AssetBundle
+
+Packing sprites:
+- Grouping sprites using the selected SpritePackerPolicy.
+- Packing 0 atlases.
+- Packing completed.
+
+Textures      7.8 mb	 73.5% 
+Meshes        845.6 kb	 7.8% 
+Animations    1.9 mb	 18.0% 
+Sounds        0.0 kb	 0.0% 
+Shaders       0.0 kb	 0.0% 
+Other Assets  35.3 kb	 0.3% 
+Levels        0.0 kb	 0.0% 
+Scripts       0.0 kb	 0.0% 
+Included DLLs 0.0 kb	 0.0% 
+File headers  36.5 kb	 0.3% 
+Complete size 10.6 mb	 100.0% 
+
+Used Assets, sorted by uncompressed size:
+ 682.8 kb	 6.3% Assets/MPNCTextures/char_shirt14.png
+ 277.3 kb	 2.6% Assets/MPNPC/Vomit.anim
+ 222.5 kb	 2.1% Assets/MPNPC/VanIdle2.anim
+ 222.5 kb	 2.1% Assets/MPNPC/Drive.anim
+ 185.9 kb	 1.7% Assets/MPNPC/VanIdle1.anim
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_face04_woman.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_face11.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_face09.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_face07.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_face05.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_face04.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_face03.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/rally_pants01.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/rally_shirt.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/cop_shirt2.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/cop_shirt.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/cop_pants01.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt22.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt20.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt19.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt18.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt17.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt16.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt15.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt13.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt12.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt11.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt10.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt09.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt08.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt07.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt06.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt05.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt03.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt02.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_shirt01.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_pants08.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_pants07.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_pants06.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_pants05.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_pants04.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_pants03.png
+ 170.8 kb	 1.6% Assets/MPNCTextures/char_pants02.png
+ 170.7 kb	 1.6% Assets/MPNCTextures/fabric23.png
+ 158.2 kb	 1.5% Assets/MPNPC/mpnpc_1789_mesh.asset
+ 151.3 kb	 1.4% Assets/MPNPC/mpnpc_1714_mesh.asset
+ 151.1 kb	 1.4% Assets/MPNPC/mpnpc_1712_mesh.asset
+ 150.9 kb	 1.4% Assets/MPNPC/mpnpc_1709_mesh.asset
+ 149.5 kb	 1.4% Assets/MPNPC/mpnpc_1697_mesh.asset
+ 128.1 kb	 1.2% Assets/MPNCTextures/char_shirt04.png
+ 128.1 kb	 1.2% Assets/MPNCTextures/char_pants01.png
+ 125.0 kb	 1.2% Assets/MPNPC/VanIn.anim
+ 119.7 kb	 1.1% Assets/MPNPC/VanOut.anim
+ 112.8 kb	 1.0% Assets/MPNPC/DriveIdle.anim
+ 112.4 kb	 1.0% Assets/MPNPC/CarIn.anim
+ 97.2 kb	 0.9% Assets/MPNPC/CarOut.anim
+ 85.4 kb	 0.8% Assets/MPNCTextures/char_face08.png
+ 85.4 kb	 0.8% Assets/MPNCTextures/char_face06.png
+ 85.4 kb	 0.8% Assets/MPNCTextures/char_face01.png
+ 84.5 kb	 0.8% Assets/MPNPC/mpnpc_960_mesh.asset
+ 64.1 kb	 0.6% Assets/MPNCTextures/char_face02.png
+ 63.4 kb	 0.6% Assets/MPNPC/Smoke.anim
+ 56.3 kb	 0.5% Assets/MPNPC/CarPay1.anim
+ 53.1 kb	 0.5% Assets/MPNPC/DrinkR.anim
+ 43.7 kb	 0.4% Assets/MPNPC/Walk.anim
+ 42.7 kb	 0.4% Assets/MPNCTextures/fabric6.png
+ 39.1 kb	 0.4% Assets/MPNPC/AxSwing.anim
+ 29.6 kb	 0.3% Assets/MPNPC/Drink.anim
+ 27.4 kb	 0.3% Assets/MPNPC/Idle.anim
+ 26.7 kb	 0.2% Assets/MPNPC/Point.anim
+ 20.6 kb	 0.2% Assets/MPNPC/Wave2.anim
+ 18.6 kb	 0.2% Assets/MPNPC/Cough.anim
+ 18.5 kb	 0.2% Assets/MPNPC/Carry.anim
+ 15.9 kb	 0.1% Assets/MPNPC/CarPay2.anim
+ 14.6 kb	 0.1% Assets/MPNPC/AxThreat.anim
+ 12.8 kb	 0.1% Assets/MPNPC/Wave.anim
+ 12.4 kb	 0.1% Assets/MPNPC/OfferOn.anim
+ 12.4 kb	 0.1% Assets/MPNPC/OfferOff.anim
+ 12.2 kb	 0.1% AssetBundle Object
+ 6.9 kb	 0.1% Assets/MPNPC/OfferR.anim
+ 3.8 kb	 0.0% Assets/MPNPC/mpnpc_960.prefab
+ 3.8 kb	 0.0% Assets/MPNPC/mpnpc_1789.prefab
+ 3.8 kb	 0.0% Assets/MPNPC/mpnpc_1714.prefab
+ 3.8 kb	 0.0% Assets/MPNPC/mpnpc_1712.prefab
+ 3.8 kb	 0.0% Assets/MPNPC/mpnpc_1709.prefab
+ 3.8 kb	 0.0% Assets/MPNPC/mpnpc_1697.prefab
+ 0.1 kb	 0.0% Assets/MPNPC/char_shirt02.mat
+ 0.1 kb	 0.0% Assets/MPNPC/char_pants02.mat
+ 0.1 kb	 0.0% Assets/MPNPC/char_face01.mat
+ 0.0 kb	 0.0% Assets/MPNPC/mpnpc.txt
+
+***Player size statistics***
+Level 0 '' uses 4.0 MB compressed / 10.6 MB uncompressed.
+Total compressed size 4.0 MB. Total uncompressed size 10.6 MB.
+Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 20.9 MB.
+System memory in use after: 20.1 MB.
+
+Unloading 397 unused Assets to reduce memory usage. Loaded Objects now: 399.
+Total: 0.629000 ms (FindLiveObjects: 0.053800 ms CreateObjectMapping: 0.014400 ms MarkObjects: 0.458800 ms  DeleteObjects: 0.100800 ms)
+
+
+*** Cancelled 'Build.WebAssetBundle.WebPlayer' in 2 seconds (2184 ms)
+
+Failed to replace file 
+UnityEditor.BuildPipeline:BuildAssetBundleInternal(Object, Object[], String[], String, BuildAssetBundleOptions, BuildTarget, UInt32&)
+UnityEditor.BuildPipeline:BuildAssetBundle(Object, Object[], String, UInt32&, BuildAssetBundleOptions, BuildTarget) (at C:\buildslave\unity\build\artifacts\generated\common\editor\BuildPipeline.gen.cs:249)
+UnityEditor.BuildPipeline:BuildAssetBundle(Object, Object[], String, BuildAssetBundleOptions, BuildTarget) (at C:\buildslave\unity\build\artifacts\generated\common\editor\BuildPipeline.gen.cs:223)
+UnityEditor.BuildPipeline:BuildAssetBundle(Object, Object[], String, BuildAssetBundleOptions) (at C:\buildslave\unity\build\artifacts\generated\common\editor\BuildPipeline.gen.cs:231)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:317)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+
+[C:/buildslave/unity/build/artifacts/generated/common/editor/BuildPipeline.gen.cpp line 139] 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 317)
+
+[MPNPC] BuildAssetBundle(mpnpc, 53 asset, variant=null) -> False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:320)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] BuildAssetBundle(mpnpc, 53 asset, variant=null) -> False
+[MPNPC] BuildAssetBundle false dondu; Temp/unitystream.unity3d (4189630 bayt) tasiniyor -> D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder\mpnpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:336)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] BuildAssetBundle false dondu; Temp/unitystream.unity3d (4189630 bayt) tasiniyor -> D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder\mpnpc
+[MPNPC] bundle: D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder\mpnpc  4189630 bayt
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:341)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] bundle: D:\modmscMP\MSCSteamMP\unity\MPNPCBuilder\mpnpc  4189630 bayt
+[MPNPC] bundle icindeki prefab: assets/mpnpc/mpnpc.prefab
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Log(String) (at Assets\Editor\BuildNPCBundle.cs:1081)
+BuildNPCBundle:Run() (at Assets\Editor\BuildNPCBundle.cs:342)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:115)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 1081)
+
+[MPNPC] bundle icindeki prefab: assets/mpnpc/mpnpc.prefab
+[MPNPC] BUILD OK
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+BuildNPCBundle:Build() (at Assets\Editor\BuildNPCBundle.cs:116)
+ 
+(Filename: Assets/Editor/BuildNPCBundle.cs Line: 116)
+

@@ -1,0 +1,37 @@
+TAG   : l2
+GO    : Data
+FSM   : Data
+PATH  : Systems/Death/GameOverScreen/Orbituary/Stats/Beer/Data
+start : State 1
+
+STRINGS (30):
+  Data
+  State 1
+  State 1
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  HutongGames.PlayMaker.Actions.ConvertFloatToString
+  HutongGames.PlayMaker.Actions.SetProperty
+  Statistics
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  Text
+  System.String
+  Data
+  LitresBeer
+  Text
+  0.0
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  floatVariable
+  stringVariable
+  format
+  everyFrame
+  targetProperty
+  everyFrame
+  Amount
+  Text
+  Statistics

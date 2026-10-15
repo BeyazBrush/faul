@@ -1,0 +1,372 @@
+TAG   : l2
+GO    : OjastaAlkoon-CollectedBottles
+FSM   : CollectedBottles
+PATH  : YARD/Building/BEDROOM1/COMPUTER/SYSTEM/RAMI-OjastaAl(lik)koon/OjastaAlkoon-CollectedBottles
+start : State 1
+
+STRINGS (365):
+  CollectedBottles
+  State 1
+  State 1
+  FINISHED
+  Pullo 0
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Pullo 0
+  jatka
+  Pullo 1
+  HutongGames.PlayMaker.Actions.IntChanged
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 1
+  jatka
+  Pullo 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 2
+  jatka
+  Pullo 3
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 3
+  jatka
+  Pullo 4
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 4
+  jatka
+  Pullo 5
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 5
+  jatka
+  Pullo 6
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 6
+  jatka
+  Pullo 7
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 7
+  jatka
+  Pullo 8
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 8
+  jatka
+  Pullo 9
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 9
+  jatka
+  Pullo 10
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 10
+  jatka
+  Pullo 11
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 11
+  jatka
+  Pullo 12
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 12
+  jatka
+  Pullo 13
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 13
+  jatka
+  Pullo 14
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.IntChanged
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  intVariable
+  changedEvent
+  storeResult
+  Pullo 14
+  FINISHED
+  AchiActivation
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  WIN
+  reset
+  Reset
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.SetMaterialTexture
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.GetKeyDown
+  Janolaskuri
+  GameOver
+  _MainTex
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  materialIndex
+  material
+  namedTexture
+  texture
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  key
+  sendEvent
+  storeResult
+  Reset
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  AchiActivation
+  FINISHED
+  WIN
+  HutongGames.PlayMaker.Actions.SendEventByName
+  Achievement
+  Activate
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  FINISHED
+  jatka
+  reset
+  Collected

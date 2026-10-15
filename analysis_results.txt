@@ -1,0 +1,61 @@
+MSCSteamMP Codebase Analysis - Issues Fixed and Optimizations Applied
+
+=== ISSUES IDENTIFIED ===
+
+1. SILENT ERROR SWALLOWING (Multiple files)
+   - catch { } blocks that log nothing and swallow real errors
+   - Made worse by the "Guard" pattern isolating module failures but hiding root causes
+
+2. BINARY READER WITHOUT STREAM POSITION CHECKS
+   - Economy and Job sync packets reading "Failed to read past end of stream" 17x per packet (v9 issue)
+   - No validation that enough bytes remain before ReadBoolean/ReadString/ReadSingle calls
+   - Live log: economy 17x, jobs 17x "Failed to read past end of stream"
+
+3. REDUNDANT SORTING in WorldSync.Discover()
+   - Bindings sorted every time Discover() is called, even when nothing changed
+   - Performance impact: FSM scanning is expensive (37,000 objects)
+
+4. MISSING NULL CHECKS
+   - Accessing PlayMakerFSM components without null checks
+   - GetComponent<Drivetrain>() returning null for non-vehicle objects
+
+5. PERFORMANCE OVERHEADS
+   - ~35 Guard() calls per frame in SteamMPBehaviour.Update()
+   - WorldSync.Discover() sorting bindings unconditionally
+
+=== FIXES APPLIED ===
+
+1. PROTOCOL STREAM VALIDATION (Critical)
+   - Added Protocol.AssertBytesRemaining() calls before all BinaryReader operations
+   - Affected files: SteamMPBehaviour.cs, VehicleRegistry.cs, WorldSync.cs
+   - Prevents "Failed to read past end of stream" deserialization errors
+
+2. WORLDSYNC BINDINGS CACHING (Performance)
+   - Added bindingsDirty flag to avoid unnecessary sorting
+   - Only resort bindings when they actually change
+   - Reset flag in Clear() method
+   - Reduces CPU overhead when Discover() is called multiple times
+
+3. VEHICLE REGISTRY STREAM VALIDATION
+   - Added AssertBytesRemaining to all 9 message handlers
+   - Added null checks for vehicle lookups
+
+4. INTERACTION MANAGER IMPROVEMENTS
+   - Restructured try-catch in OnFsmEvent to isolate probe logging errors
+
+5. SAFE PACKET LENGTH CALCULATION
+   - Added Protocol.AssertBytesRemaining() in SteamMPBehaviour.Dispatch()
+
+=== KEY FILES MODIFIED ===
+
+1. SteamMPBehaviour.cs - Added stream position validation
+2. Net/WorldSync.cs - Added bindingsDirty caching, AssertBytesRemaining
+3. Vehicle/VehicleRegistry.cs - Added AssertBytesRemaining to all handlers, null checks
+4. Interaction/InteractionManager.cs - Restructured try-catch in OnFsmEvent
+5. Net/Protocol.cs - Methods already existed, now used consistently
+
+=== REMAINING OPPORTUNITIES ===
+
+1. WorldObjectSync.cs OnMessage - Add stream position validation
+2. Further Guard pattern optimizations
+3. Additional null checks and caching

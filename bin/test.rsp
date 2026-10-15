@@ -1,0 +1,10 @@
+/nologo
+/target:library
+/nostdlib+
+/optimize+
+/out:D:\modmscMP\MSCSteamMP\bin\test.dll
+/r:"D:\Steam\steamapps\common\My Summer Car\mysummercar_Data\Managed\mscorlib.dll"
+/r:"D:\Steam\steamapps\common\My Summer Car\mysummercar_Data\Managed\System.dll"
+/r:"D:\Steam\steamapps\common\My Summer Car\mysummercar_Data\Managed\System.Core.dll"
+/r:"D:\Steam\steamapps\common\My Summer Car\mysummercar_Data\Managed\UnityEngine.dll"
+/r:"D:\Steam\steamapps\common\My Summer Car\mysummercar_Data\Managed\PlayMaker.dll"

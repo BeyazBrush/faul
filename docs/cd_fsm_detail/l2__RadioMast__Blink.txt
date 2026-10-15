@@ -1,0 +1,32 @@
+TAG   : l2
+GO    : RadioMast
+FSM   : Blink
+PATH  : MAP/RadioMast
+SIZE  : 1152
+
+start : State 1
+
+STRINGS (23):
+  Blink
+  State 1
+  State 1
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.Wait
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  time
+  finishEvent
+  realTime
+  State 2
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  FINISHED

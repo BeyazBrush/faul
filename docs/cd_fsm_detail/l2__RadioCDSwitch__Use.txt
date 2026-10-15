@@ -1,0 +1,152 @@
+TAG   : l2
+GO    : RadioCDSwitch
+FSM   : Use
+PATH  : STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/RadioCDSwitch
+SIZE  : 5924
+
+start : Switch 2
+
+STRINGS (143):
+  Use
+  Switch 2
+  Wait player
+  FINISHED
+  Wait button
+  SUSKI
+  Switch
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  Switch
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  GUIinteraction
+  RADIO / CD
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  Switch
+  ON
+  On
+  OFF
+  Off
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.BoolTest
+  tp
+  CarFoley
+  cd_button
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  On
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.SendEventByName
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  Update
+  STOP CD
+  ChangeChannel
+  ChangeTrack
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  boolVariable
+  boolValue
+  everyFrame
+  Off
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  ChangeChannel
+  ChangeTrack
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  boolVariable
+  boolValue
+  everyFrame
+  Switch 2
+  ON
+  On
+  OFF
+  Off
+  HutongGames.PlayMaker.Actions.BoolTest
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  FINISHED
+  BATTERY
+  OFF
+  ON
+  SUSKI
+  USE
+  RadioOn
+  RadioChannels

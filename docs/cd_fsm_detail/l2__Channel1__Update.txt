@@ -1,0 +1,106 @@
+TAG   : l2
+GO    : Channel1
+FSM   : Update
+PATH  : RADIO/RadioChannels/Channel1
+SIZE  : 4032
+
+start : Channel1
+
+STRINGS (97):
+  Update
+  Channel1
+  Play radio 2
+  FINISHED
+  Channel1
+  HutongGames.PlayMaker.Actions.SetObjectValue
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  HutongGames.PlayMaker.Actions.AudioPlay
+  AudioOld
+  UnityEngine.Object
+  Audio
+  UnityEngine.AudioClip
+  Audio
+  UnityEngine.AudioClip
+  UnityEngine.Object
+  objectVariable
+  objectValue
+  everyFrame
+  gameObject
+  audioClip
+  gameObject
+  volume
+  oneShotClip
+  finishedEvent
+  State 1
+  Play program
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  HutongGames.PlayMaker.Actions.AudioPlay
+  RadioOnAir
+  UnityEngine.AudioClip
+  UnityEngine.Object
+  gameObject
+  audioClip
+  gameObject
+  volume
+  oneShotClip
+  finishedEvent
+  Channel1
+  FINISHED
+  Play radio 2
+  LOOP
+  Loop
+  HutongGames.PlayMaker.Actions.ArrayListGetRandom
+  HutongGames.PlayMaker.Actions.ObjectCompare
+  HutongGames.PlayMaker.Actions.Wait
+  Music
+  Audio
+  UnityEngine.AudioClip
+  AudioOld
+  UnityEngine.Object
+  Audio
+  gameObject
+  reference
+  randomItem
+  randomIndex
+  failureEvent
+  objectVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Loop
+  FINISHED
+  Channel1
+  FINISHED
+  10
+  12
+  14
+  16
+  18
+  20
+  22
+  24
+  DOESNOTEXISTS
+  EXISTS
+  FOLK
+  GLOBALEVENT
+  LOOP
+  PLAYLIST
+  RADIO_FOLK
+  RADIO_UPDATE
+  SAVEGAME
+  GLOBALEVENT
+  Play program
+  RADIO_UPDATE
+  Channel1
+  Volume
+  Audio
+  UnityEngine.AudioClip
+  AudioOld
+  UnityEngine.Object

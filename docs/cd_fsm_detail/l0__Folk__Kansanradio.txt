@@ -1,0 +1,185 @@
+TAG   : l0
+GO    : Folk
+FSM   : Kansanradio
+PATH  : Radio/Folk
+SIZE  : 7948
+
+start : Check
+
+STRINGS (176):
+  Kansanradio
+  Check
+  Play song 2
+  HutongGames.PlayMaker.Actions.SetObjectValue
+  HutongGames.PlayMaker.Actions.SetObjectValue
+  HutongGames.PlayMaker.Actions.SendEvent
+  RadioOnFolk
+  UnityEngine.AudioClip
+  Song
+  UnityEngine.AudioClip
+  SongOld
+  UnityEngine.Object
+  Song
+  UnityEngine.AudioClip
+  objectVariable
+  objectValue
+  everyFrame
+  objectVariable
+  objectValue
+  everyFrame
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Get song
+  FAIL
+  Play mute 2
+  FINISHED
+  Play song 2
+  LOOP
+  State 2
+  HutongGames.PlayMaker.Actions.ArrayListGetRandom
+  HutongGames.PlayMaker.Actions.ObjectCompare
+  Songs
+  Song
+  UnityEngine.AudioClip
+  SongOld
+  UnityEngine.Object
+  Song
+  gameObject
+  reference
+  randomItem
+  randomIndex
+  failureEvent
+  objectVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  Play mute 2
+  HutongGames.PlayMaker.Actions.SetObjectValue
+  HutongGames.PlayMaker.Actions.SendEvent
+  RadioOnFolk
+  UnityEngine.AudioClip
+  Mute
+  UnityEngine.AudioClip
+  objectVariable
+  objectValue
+  everyFrame
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  State 10
+  PLAY
+  Get song
+  ADVERT1
+  Play advert 1
+  HutongGames.PlayMaker.Actions.SetFloatValue
+  HutongGames.PlayMaker.Actions.SendRandomEvent
+  HutongGames.PlayMaker.FsmEvent
+  HutongGames.PlayMaker.FsmFloat
+  floatVariable
+  floatValue
+  everyFrame
+  events
+  weights
+  delay
+  Play advert 1
+  LOOP
+  State 1
+  HutongGames.PlayMaker.Actions.ArrayListGetRandom
+  HutongGames.PlayMaker.Actions.ObjectCompare
+  HutongGames.PlayMaker.Actions.SetObjectValue
+  HutongGames.PlayMaker.Actions.SetObjectValue
+  HutongGames.PlayMaker.Actions.SendEvent
+  Ads
+  Advert1
+  UnityEngine.AudioClip
+  AdvertOld
+  UnityEngine.Object
+  RadioOnFolk
+  UnityEngine.AudioClip
+  Advert1
+  UnityEngine.AudioClip
+  AdvertOld
+  UnityEngine.Object
+  Advert1
+  UnityEngine.AudioClip
+  Advert1
+  gameObject
+  reference
+  randomItem
+  randomIndex
+  failureEvent
+  objectVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  objectVariable
+  objectValue
+  everyFrame
+  objectVariable
+  objectValue
+  everyFrame
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Init
+  FINISHED
+  State 10
+  HutongGames.PlayMaker.Actions.DontDestroyOnLoad
+  HutongGames.PlayMaker.Actions.GetOwner
+  SongDatabase
+  gameObject
+  storeGameObject
+  Check
+  FINISHED
+  Init
+  DESTROY
+  State 4
+  HutongGames.PlayMaker.Actions.GameObjectCompare
+  SongDatabase
+  gameObjectVariable
+  compareTo
+  equalEvent
+  notEqualEvent
+  storeResult
+  everyFrame
+  State 4
+  HutongGames.PlayMaker.Actions.DestroySelf
+  detachChildren
+  State 1
+  FINISHED
+  Play advert 1
+  State 2
+  FINISHED
+  Get song
+  FINISHED
+  ADVERT1
+  DESTROY
+  FAIL
+  JINGLE
+  LOAD
+  LOOP
+  PLAY
+  RADIO_FOLK
+  WAKEUP
+  WAKEUP
+  State 10
+  Imported
+  Parent
+  Advert1
+  UnityEngine.AudioClip
+  AdvertOld
+  UnityEngine.Object
+  Mute
+  UnityEngine.AudioClip
+  Song
+  UnityEngine.AudioClip
+  SongOld
+  UnityEngine.Object

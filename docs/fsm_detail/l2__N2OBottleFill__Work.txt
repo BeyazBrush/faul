@@ -1,0 +1,95 @@
+TAG   : l2
+GO    : N2OBottleFill
+FSM   : Work
+PATH  : REPAIRSHOP/Jobs/N2OBottleFill
+start : State 2
+
+STRINGS (88):
+  Work
+  State 2
+  Wait1
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetFsmFloat
+  HutongGames.PlayMaker.Actions.SetFsmFloat
+  HutongGames.PlayMaker.Actions.SetFsmFloat
+  HutongGames.PlayMaker.Actions.SetFsmFloat
+  Dynamics
+  Dynamics
+  Data
+  Fluid
+  Data
+  Setting
+  Pressure
+  Fluid
+  Pressure
+  Setting
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  State 2
+  ASSEMBLE
+  Distance
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  Data
+  N2OBottleFill
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  State 1
+  Distance
+  WORK
+  Wait1
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.GetDistance
+  HutongGames.PlayMaker.Actions.FloatCompare
+  _DistanceTarget
+  Bottle
+  gameObject
+  target
+  storeResult
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  FINISHED
+  ASSEMBLE
+  OFF
+  SAVEGAME
+  TIGHTEN
+  UNTIGHTEN
+  WORK
+  _Distance
+  Work
+  Bottle
+  Dynamics
+  _DistanceTarget

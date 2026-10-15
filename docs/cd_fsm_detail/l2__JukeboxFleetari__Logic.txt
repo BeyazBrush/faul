@@ -1,0 +1,71 @@
+TAG   : l2
+GO    : JukeboxFleetari
+FSM   : Logic
+PATH  : REPAIRSHOP/LOD/Office/Fleetari/JukeboxFleetari
+SIZE  : 3200
+
+start : State 1
+
+STRINGS (62):
+  Logic
+  State 1
+  State 1
+  FINISHED
+  Play radio 2
+  HutongGames.PlayMaker.Actions.ArrayListGetRandom
+  HutongGames.PlayMaker.Actions.ArrayListGet
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  SongList
+  SongList
+  Jukebox
+  Music
+  Clip
+  UnityEngine.AudioClip
+  Index
+  Clip
+  gameObject
+  reference
+  randomItem
+  randomIndex
+  failureEvent
+  gameObject
+  reference
+  atIndex
+  result
+  failureEvent
+  gameObject
+  audioClip
+  State 4
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  Play radio 2
+  FINISHED
+  State 4
+  HutongGames.PlayMaker.Actions.SetAudioClip
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.AudioPlay
+  UnityEngine.Object
+  UnityEngine.AudioSource
+  enabled
+  System.Boolean
+  Clip
+  UnityEngine.AudioClip
+  UnityEngine.Object
+  gameObject
+  audioClip
+  targetProperty
+  everyFrame
+  gameObject
+  volume
+  oneShotClip
+  finishedEvent
+  FINISHED
+  Volume
+  Index
+  SongList
+  Clip
+  UnityEngine.AudioClip

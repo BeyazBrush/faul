@@ -1,0 +1,179 @@
+TAG   : l2
+GO    : beer case(itemx)
+FSM   : Use
+PATH  : JOBS/HouseDrunkNew/LOD1/DrunkParty/Garbage/beer case(itemx)
+start : Wait player
+
+STRINGS (172):
+  Use
+  Wait player
+  Wait player
+  FINISHED
+  Wait button
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  Check drink
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetButtonDown
+  Use
+  HutongGames.PlayMaker.FsmInt
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  buttonName
+  sendEvent
+  storeResult
+  Remove bottle
+  FINISHED
+  Play anim
+  STOP
+  State 4
+  HutongGames.PlayMaker.Actions.IntAdd
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GameObjectHasChildren
+  HutongGames.PlayMaker.Actions.GetRandomChild
+  HutongGames.PlayMaker.Actions.DestroyObject
+  Bottle
+  Bottle
+  intVariable
+  add
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  trueEvent
+  falseEvent
+  storeResult
+  everyFrame
+  gameObject
+  storeResult
+  gameObject
+  delay
+  detachChildren
+  Play anim
+  FINISHED
+  Check bottles
+  HutongGames.PlayMaker.Actions.EnableFSM
+  HutongGames.PlayMaker.Actions.GetChild
+  HutongGames.PlayMaker.Actions.SendEvent
+  HutongGames.PlayMaker.Actions.Wait
+  Hand
+  SavePlayerCam
+  SavePlayerCam
+  Hand
+  Drink
+  PlayerFunctions
+  Drink
+  Untagged
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  gameObject
+  childName
+  withTag
+  storeResult
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  time
+  finishEvent
+  realTime
+  State 4
+  HutongGames.PlayMaker.Actions.SetMass
+  HutongGames.PlayMaker.Actions.SetName
+  HutongGames.PlayMaker.Actions.DestroyComponent
+  empty(itemx)
+  EventSounds
+  gameObject
+  mass
+  gameObject
+  name
+  gameObject
+  component
+  Check drink
+  USE
+  Remove bottle
+  STOP
+  Wait player
+  HutongGames.PlayMaker.Actions.BoolTest
+  HutongGames.PlayMaker.Actions.BoolTest
+  34
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  Check bottles
+  USE
+  Wait player
+  STOP
+  State 4
+  HutongGames.PlayMaker.Actions.GameObjectHasChildren
+  gameObject
+  trueEvent
+  falseEvent
+  storeResult
+  everyFrame
+  Bottles
+  DESTROY
+  State 4
+  USE
+  Wait player
+  HutongGames.PlayMaker.Actions.GameObjectHasChildren
+  gameObject
+  trueEvent
+  falseEvent
+  storeResult
+  everyFrame
+  FINISHED
+  CONSUMED
+  DESTROY
+  GARBAGE
+  OFF
+  SAVE
+  SAVEGAME
+  STOP
+  USE
+  DestroyProgress
+  DestroyedBottles
+  Consumed
+  ID
+  UniqueTagBottles
+  UniqueTagConsumed
+  UniqueTagTransform
+  Bottle
+  Hand
+  Owner

@@ -1,0 +1,197 @@
+TAG   : l2
+GO    : cd(item1)
+FSM   : Removal
+PATH  : ITEMS/CDs/cd(item1)
+SIZE  : 9044
+
+start : State 1
+
+STRINGS (188):
+  Removal
+  State 1
+  Mouse off
+  FINISHED
+  Mouse over
+  REMOVE
+  Remove part
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.BoolTest
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Mouse over
+  FINISHED
+  Mouse off
+  REMOVE
+  Remove part
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  Remove part
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetParent
+  HutongGames.PlayMaker.Actions.AddComponent
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetVelocity
+  HutongGames.PlayMaker.Actions.SetTag
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.EnableFSM
+  Case
+  UnityEngine.Object
+  UnityEngine.BoxCollider
+  enabled
+  System.Boolean
+  Rigidbody
+  UnityEngine.Rigidbody
+  UnityEngine.Rigidbody
+  collisionDetectionMode
+  Continuous
+  UnityEngine.CollisionDetectionMode
+  CarBuilding
+  disassemble
+  Use
+  DiscIn
+  Rigidbody
+  PART
+  Removal
+  Rigidbody
+  UnityEngine.Rigidbody
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  targetProperty
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  parent
+  resetLocalPosition
+  resetLocalRotation
+  gameObject
+  component
+  storeComponent
+  removeOnExit
+  targetProperty
+  everyFrame
+  gameObject
+  vector
+  space
+  everyFrame
+  gameObject
+  tag
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  fsmName
+  enable
+  resetOnExit
+  State 1
+  FINISHED
+  Mouse off
+  HutongGames.PlayMaker.Actions.SetTag
+  HutongGames.PlayMaker.Actions.DestroyComponent
+  HutongGames.PlayMaker.Actions.SetPosition
+  HutongGames.PlayMaker.Actions.SetRotation
+  HutongGames.PlayMaker.Actions.SetFsmBool
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.Wait
+  Case
+  UnityEngine.Object
+  UnityEngine.BoxCollider
+  enabled
+  System.Boolean
+  Untagged
+  Rigidbody
+  Use
+  DiscIn
+  gameObject
+  tag
+  gameObject
+  component
+  gameObject
+  vector
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  quaternion
+  vector
+  xAngle
+  yAngle
+  zAngle
+  space
+  everyFrame
+  lateUpdate
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  targetProperty
+  everyFrame
+  time
+  finishEvent
+  realTime
+  FINISHED
+  REMOVE
+  ASSEMBLE
+  LOOP
+  Detach
+  Case
+  Rigidbody
+  UnityEngine.Rigidbody

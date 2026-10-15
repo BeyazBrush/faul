@@ -1,0 +1,59 @@
+TAG   : l2
+GO    : Seikailu-MusicActivator
+FSM   : MusicActivator
+PATH  : YARD/Building/BEDROOM1/COMPUTER/SYSTEM/RAMI-Simppa&Jokke/Seikailu-Timer/Seikailu-MusicActivator
+SIZE  : 2364
+
+start : Alkuasetus
+
+STRINGS (50):
+  MusicActivator
+  Alkuasetus
+  State 1
+  Kiire
+  Kiire
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  HutongGames.PlayMaker.Actions.FloatCompare
+  Timer
+  aika_float
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Kiire
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  Alkuasetus
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.SetFloatValue
+  floatVariable
+  floatValue
+  everyFrame
+  FINISHED
+  Kiire
+  aika_float

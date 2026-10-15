@@ -1,0 +1,56 @@
+TAG   : maindata
+GO    : Disclaimer
+FSM   : FSM
+PATH  : Disclaimer
+SIZE  : 2052
+
+start : State 1
+
+STRINGS (47):
+  FSM
+  State 1
+  State 1
+  FINISHED
+  State 2
+  HutongGames.PlayMaker.Actions.ArrayListGet
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.Wait
+  Page
+  Pages
+  Page
+  gameObject
+  reference
+  atIndex
+  result
+  failureEvent
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  time
+  finishEvent
+  realTime
+  State 2
+  FINISHED
+  State 1
+  HutongGames.PlayMaker.Actions.IntAdd
+  HutongGames.PlayMaker.Actions.IntCompare
+  HutongGames.PlayMaker.Actions.SetIntValue
+  intVariable
+  add
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  intVariable
+  intValue
+  everyFrame
+  FINISHED
+  RotateSpeed
+  CurrentPage
+  Pages
+  Page

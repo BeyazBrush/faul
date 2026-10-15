@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 1588314740
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b15f119b1461c225fd906f201860d019
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 85c909fccd45f7a02ea24f9b68272990
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 111
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/MPPlayerModel/Materials/MPchar_face03.mat
+- Assets/MPPlayerModel/Materials/MPchar_pants03.mat
+- Assets/MPPlayerModel/MPPlayerModel.fbx
+- Assets/MPPlayerModel/Materials/MPchar_shirt06.mat
+- Assets/MPPlayerModel/Textures/MPchar_shirt06.dds
+- Assets/MPPlayerModel/Textures/MPchar_pants03.dds
+- Assets/MPPlayerModel/Textures/MPchar_face03.dds
+Dependencies: []

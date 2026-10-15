@@ -1,0 +1,115 @@
+TAG   : l2
+GO    : PickupTrigger
+FSM   : Use
+PATH  : ITEMS/wood carrier(itemx)/PickupTrigger
+start : Wait player
+
+STRINGS (108):
+  Use
+  Wait player
+  Wait player
+  FINISHED
+  Check wood
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  stringVariable
+  stringValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  Bool test
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetButtonDown
+  GUIinteraction
+  PICK FIRE WOOD
+  Use
+  HutongGames.PlayMaker.FsmInt
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  buttonName
+  sendEvent
+  storeResult
+  Bool test
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SendEventByName
+  Trigger
+  GUIinteraction
+  PICKWOOD
+  boolVariable
+  boolValue
+  everyFrame
+  stringVariable
+  stringValue
+  everyFrame
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Check wood
+  FINISHED
+  Wait button
+  STOP
+  Delay
+  HutongGames.PlayMaker.Actions.GetFsmInt
+  HutongGames.PlayMaker.Actions.IntCompare
+  Trigger
+  WoodsIndex
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  integer1
+  integer2
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  Delay
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  FINISHED
+  CLOSE
+  OPEN
+  STOP
+  USE
+  Woods

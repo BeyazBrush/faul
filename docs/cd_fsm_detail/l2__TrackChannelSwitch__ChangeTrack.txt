@@ -1,0 +1,185 @@
+TAG   : l2
+GO    : TrackChannelSwitch
+FSM   : ChangeTrack
+PATH  : STORE/Boxes/cd player(Clone)/cd player(Clone)/ButtonsCD/TrackChannelSwitch
+SIZE  : 8040
+
+start : Play song
+
+STRINGS (176):
+  ChangeTrack
+  Play song
+  Wait player
+  FINISHED
+  Wait button
+  OFF
+  SUSKI
+  State 1
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  GUIinteraction
+  HutongGames.PlayMaker.FsmInt
+  stringVariable
+  stringValue
+  everyFrame
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Wait button
+  FINISHED
+  Wait player
+  USE
+  State 1
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.SetStringValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  GUIinteraction
+  NEXT TRACK
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  stringVariable
+  stringValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  Play song
+  FINISHED
+  Check disc
+  HutongGames.PlayMaker.Actions.SendEventByName
+  RadioChannels
+  Fetch
+  OFF
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Check disc
+  ON
+  Check disc 2
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetFsmString
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.BoolTest
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  no cd
+  System.String
+  Knob
+  Channel
+  no cd
+  Assembly
+  CDin
+  targetProperty
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  State 1
+  FINISHED
+  Wait player
+  MasterAudioPlaySound
+  HutongGames.PlayMaker.Actions.SendEventByName
+  HutongGames.PlayMaker.Actions.Wait
+  Update
+  CarFoley
+  cd_button
+  NEXT
+  gameObject
+  soundGroupName
+  variationName
+  volume
+  delaySound
+  useThisLocation
+  attachToGameObject
+  useFixedPitch
+  fixedPitch
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  time
+  finishEvent
+  realTime
+  Play
+  FINISHED
+  Wait player
+  HutongGames.PlayMaker.Actions.SendEventByName
+  Update
+  PLAY CD
+  eventTarget
+  sendEvent
+  delay
+  everyFrame
+  Check disc 2
+  FINISHED
+  Play
+  HutongGames.PlayMaker.Actions.SetProperty
+  HutongGames.PlayMaker.Actions.SetFsmString
+  HutongGames.PlayMaker.Actions.Wait
+  UnityEngine.Object
+  UnityEngine.TextMesh
+  text
+  playing
+  System.String
+  Knob
+  Channel
+  playing
+  targetProperty
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  setValue
+  everyFrame
+  time
+  finishEvent
+  realTime
+  FINISHED
+  CHANNEL2
+  FOLKRADIO
+  NO CD
+  OFF
+  ON
+  SUSKI
+  USE
+  NO CD
+  Check disc
+  CD
+  Ok
+  CDobject
+  RadioChannels

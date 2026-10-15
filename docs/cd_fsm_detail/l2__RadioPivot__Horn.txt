@@ -1,0 +1,117 @@
+TAG   : l2
+GO    : RadioPivot
+FSM   : Horn
+PATH  : HAYOSIKO(1500kg, 250)/RadioPivot
+SIZE  : 4552
+
+start : Mouse off
+
+STRINGS (108):
+  Horn
+  Mouse off
+  Mouse off
+  FINISHED
+  Mouse over 2
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  Mouse over 2
+  FINISHED
+  State 2
+  LOOP
+  Mouse off
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.MousePickEvent
+  HutongGames.PlayMaker.Actions.GetMouseButtonDown
+  HutongGames.PlayMaker.FsmInt
+  boolVariable
+  boolValue
+  everyFrame
+  GameObject
+  rayDistance
+  mouseOver
+  mouseDown
+  mouseUp
+  mouseOff
+  layerMask
+  invertMask
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  State 1
+  FINISHED
+  Mouse over 2
+  HutongGames.PlayMaker.Actions.ActivateGameObject
+  HutongGames.PlayMaker.Actions.GetMouseButtonUp
+  gameObject
+  activate
+  recursive
+  resetOnExit
+  everyFrame
+  button
+  sendEvent
+  storeResult
+  State 2
+  FINISHED
+  State 1
+  LOOP
+  State 3
+  HutongGames.PlayMaker.Actions.SetBoolValue
+  HutongGames.PlayMaker.Actions.GetFsmBool
+  HutongGames.PlayMaker.Actions.GetFsmFloat
+  HutongGames.PlayMaker.Actions.FloatCompare
+  HutongGames.PlayMaker.Actions.BoolTest
+  Data
+  Installed
+  Data
+  Charge
+  boolVariable
+  boolValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  gameObject
+  fsmName
+  variableName
+  storeValue
+  everyFrame
+  float1
+  float2
+  tolerance
+  equal
+  lessThan
+  greaterThan
+  everyFrame
+  boolVariable
+  isTrue
+  isFalse
+  everyFrame
+  State 3
+  FINISHED
+  Mouse over 2
+  HutongGames.PlayMaker.Actions.Wait
+  time
+  finishEvent
+  realTime
+  FINISHED
+  CLOSE
+  LOOP
+  OPEN
+  Charge
+  Electricity

@@ -1,0 +1,177 @@
+/// <summary>
+		/// Sahnedeki tüm INSAN NPC şablonlarını listeler. /npc scan bunu kullanır.
+		///
+		/// ÖLÇÜLMÜŞ TABAN — bu eşikler tahmin değil, asset taramasıyla
+		/// belirlendi. level2 + level3 + sharedassets UnityPy ile ayrıştırıldı
+		/// (37.607 GameObject) ve kurallar tek tek denendi:
+		///
+		///   1) kemik adı (pelvis + head|spine) ............ 825 geçer (22 araç!)
+		///   2) + uzuv kemiği (knee/ankle/shoulder &gt;= 2) . 785 geçer (22 araç!)
+		///   3) + SkinnedMeshRenderer ve Animation ....... 384 geçer (22 araç!)
+		///   4) + KAPSAYICI ELEMESİ ..................... 117 geçer (3 araç)
+		///
+		/// NEDEN ADIM 1 YETMİYOR: ARABALARDA DA RAGDOLLAR VAR.
+		/// AIboat1 / TRUCK / RagDollCar alt ağacında pelvis, spine_mid,
+		/// shoulders ve ankle bulunur — çarpma mankeni insan iskeletine
+		/// çok benzer. Kemik adı tek başına taşıtı elemiyor.
+		///
+		/// NEDEN ADIM 4 ŞART: MSC'de NPC'ler kapsayıcıların altındadır
+		/// (HUMANS/Randomizer/Walkers/Julli, COPS/Char/..., RALLY/...).
+		/// Kapsayıcı da tüm alt ağacını "insan" saydığı için yüzlerce SAHTE
+		/// aday (BeerCamp, CABIN, SOCCER, YARD, HUMANS...) üretiliyordu.
+		/// Kural: bir adayın altında başka bir aday varsa üstteki KAPSAYICI
+		/// elenir; çünkü klonlanacak şey en derindeki gerçek karakterdir.
+		///
+		/// KALAN 117 ADIN NİTELİĞİ (asset'ten okundu): Char (×45), Driver,
+		/// Passenger, KUSKI (Fince "sürücü"), VICTRO, FITTAN, SVOBODA,
+		/// LAMORE, POLSA, Teimo, Cousin, Neighbour, Man, Drummer, Synthist,
+		/// ShitMan1-4. Kökleri COPS / DANCEHALL / RALLY / JOBS / TRAFFIC /
+		/// YARD / SOCCER / THEATRE / STORE / NPC_CARS. Hepsi insan.
+		///
+		/// PLAYMAKERFSM GATE'İ KALDIRILDI. Önceden kök üzerinde
+		/// PlayMakerFSM aranıyordu; ölçülen kazananlar `Char` / `Driver` /
+		/// `Passenger` düğümleri ve bunların FSM taşıdığı ÇİNKİ ÇĞÜM
+		/// ÜZERİNDEN DOĞRULANAMAZ (player build tip ağaçlarını keser, yani
+		/// MonoBehaviour sınıf adları asset'ten okunamıyor). Klonlama için
+		/// FSM zaten gereksiz: StripAI var olanı siliyor, konumu biz
+		/// (ağdan) yazıyoruz. Zorunlu kapı, doğru adayları eliyordu.
+		/// </summary>
+		public static List<string> ScanTemplates(int max) {
+			List<string> found = new List<string>(128);
+			if (max <= 0) max = 120;
+
+			List<GameObject> candidates = new List<GameObject>(512);
+			GameObject[] all = Resources.FindObjectsOfTypeAll<GameObject>();
+			if (all == null) return found;
+
+			for (int i = 0; i < all.Length; i++) {
+				GameObject go = all[i];
+				if (go == null) continue;
+				string n = go.name;
+				if (string.IsNullOrEmpty(n) || IsOwnClone(n)) continue;
+				if (!IsSceneObject(go)) continue;
+				if (n.StartsWith("trigger_", System.StringComparison.OrdinalIgnoreCase)) continue;
+				if (IsVehicleName(n)) continue;
+
+				// Kural 2+3: iskelet + deri + animasyon birlikte.
+				if (!IsHumanoid(go)) continue;
+				if (!HasCharacterSkin(go)) continue;
+
+				candidates.Add(go);
+			}
+
+			// Kural 4: kapsayıcı elemesi. Aday listesi şu an tamamen dolu;
+			// bir adayın altında BAŞKA bir aday varsa üstteki elenir.
+			for (int i = 0; i < candidates.Count; i++) {
+				GameObject go = candidates[i];
+				bool isContainer = false;
+				for (int j = 0; j < candidates.Count && !isContainer; j++) {
+					if (i == j) continue;
+					if (IsAncestorOf(candidates[j], go)) isContainer = true;
+				}
+				if (isContainer) continue;
+				string n = go.name;
+				if (!found.Contains(n)) found.Add(n);
+			}
+
+			// İskelet/işçilik adları SONA: "Char", "Pivot", "Mesh" doğru
+			// nesneyi gösterir ama kullanıcı için anlamsızdır; gerçek isimli
+			// NPC varsa önce o listelenir.
+			found.Sort(delegate (string a, string b) {
+				int ia = IsInternalName(a) ? 1 : 0;
+				int ib = IsInternalName(b) ? 1 : 0;
+				if (ia != ib) return ia - ib;
+				return string.CompareOrdinal(a, b);
+			});
+
+			if (found.Count > max) found.RemoveRange(max, found.Count - max);
+			return found;
+		}
+
+		/// <summary>
+		/// İnsan iskeleti mi? ÖLÇÜLMÜŞ KURAL.
+		///
+		///   kalça (hips|pelvis) + (baş | gövde) + EN AZ 2 UZUV KEMİĞİ
+		///
+		/// Uzuv kemikleri (knee / ankle / shoulder / hand / thigh / collar /
+		/// finger) olmadan sadece pelvis+spine bulan şey insan DEĞİL:
+		/// MSC'nin araç ragdoll'ları pelvis + spine + shoulders + ankle
+		/// taşıyor. İki uzuv eşiği mankeni insan saydırmıyor.
+		///
+		/// Dikkat: MSC yürüyüş NPC'lerinde "head" KEMİĞİ YOK — kafa ayrı
+		/// bir nesnedir ("HeadTarget 1" / "LookAt"). Bu yüzden gövde
+		/// (spine) de baş kadar geçerli kanıttır.
+		/// </summary>
+		public static bool IsHumanoid(GameObject go) {
+			if (go == null) return false;
+			Transform[] bones;
+			try { bones = go.GetComponentsInChildren<Transform>(true); }
+			catch { return false; }
+			if (bones == null || bones.Length == 0) return false;
+
+			int limbs = 0;
+			bool hips = false, head = false, spine = false;
+			for (int i = 0; i < bones.Length; i++) {
+				Transform b = bones[i];
+				if (b == null) continue;
+				string bn = b.name;
+				if (string.IsNullOrEmpty(bn)) continue;
+
+				if (!hips && (Has(bn, "hips") || Has(bn, "pelvis"))) hips = true;
+				else if (!head && Has(bn, "head")) head = true;
+				else if (!spine && (Has(bn, "spine") || Has(bn, "chest") || Has(bn, "upperbody"))) spine = true;
+
+				if (Has(bn, "knee") || Has(bn, "ankle") || Has(bn, "shoulder")
+					|| Has(bn, "hand_") || Has(bn, "thigh") || Has(bn, "thig_")
+					|| Has(bn, "collar") || Has(bn, "finger")) limbs++;
+			}
+			return hips && (head || spine) && limbs >= 2;
+		}
+
+		static bool Has(string hay, string needle) {
+			return hay.IndexOf(needle, System.StringComparison.OrdinalIgnoreCase) >= 0;
+		}
+
+		/// <summary>
+		/// Alt ağacında deri (SkinnedMeshRenderer) ve animasyon
+		/// (Animation/Animator) var mı?
+		///
+		/// Ölçüldü: bu iki koşul birlikte 785 -> 384 aday düşürüyor. Kemik
+		/// adı taşıyan ama canlı mesh+animasyon taşımayan sahne dekoru
+		/// ve kukla aksesuarları eleniyor.
+		/// </summary>
+		static bool HasCharacterSkin(GameObject go) {
+			try {
+				if (go.GetComponentInChildren<SkinnedMeshRenderer>(true) == null) return false;
+				return go.GetComponentInChildren<Animation>(true) != null
+					|| go.GetComponentInChildren<Animator>(true) != null;
+			}
+			catch { return false; }
+		}
+
+		/// <summary>ancestor nesnenin altında mı? (kapsayıcı testi)</summary>
+		static bool IsAncestorOf(GameObject ancestor, GameObject node) {
+			if (ancestor == null || node == null) return false;
+			if (ancestor == node) return false;
+			Transform t;
+			try { t = node.transform; } catch { return false; }
+			if (t == null) return false;
+			int guard = 0;
+			t = t.parent;
+			while (t != null && guard++ < 80) {
+				if (t.gameObject == ancestor) return true;
+				t = t.parent;
+			}
+			return false;
+		}
+
+		/// <summary>
+		/// İskelet/işçilik adı: doğru nesneyi gösterir ama kullanıcı için
+		/// anlamsız (Char, Pivot, Mesh, LOD). Otomatik seçimde sona atılır.
+		/// </summary>
+		static bool IsInternalName(string n) {
+			if (string.IsNullOrEmpty(n)) return true;
+			return n == "Char" || n == "Pivot" || n == "PIVOT" || n == "Mesh"
+				|| n == "mesh" || n == "LOD" || n == "Bricks" || n == "bodymesh"
+				|| n == "skeleton" || n == "RagDoll" || n == "Ray";
+		}
